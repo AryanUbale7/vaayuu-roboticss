@@ -1443,3 +1443,23 @@ img, section, div {
         overflow: visible !important;
     }
 }
+/* SERVICE PAGE MOBILE FIX */
+/* Force single column layout on phones */
+@media (max-width: 768px) {
+    .services-grid-new,
+    .services-grid, 
+    .service-grid, 
+    .service-card-container {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 25px !important;
+    }
+
+    .service-card-new-index,
+    .service-card,
+    .service-card-new {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 auto !important;
+    }
+}
