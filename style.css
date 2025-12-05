@@ -1463,3 +1463,30 @@ img, section, div {
         margin: 0 auto !important;
     }
 }
+/* FORCE SINGLE COLUMN ON ALL SERVICE PAGES */
+@media (max-width: 768px) {
+
+    /* Common grid containers */
+    .services-grid,
+    .services-grid-new,
+    .service-grid,
+    .service-list-grid,
+    .seva-grid,
+    .all-services-grid,
+    .service-card-container {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 30px !important;
+    }
+
+    /* Every card full width */
+    .service-card,
+    .service-card-new,
+    .service-card-new-index,
+    .service-item,
+    .seva-card {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 auto !important;
+    }
+}
