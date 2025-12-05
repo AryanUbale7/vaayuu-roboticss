@@ -1538,4 +1538,70 @@ img, section, div {
       font-size: 1rem !important;
   }
 }
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background: white;
+    border-bottom: 1px solid #eee;
+}
+
+@media (max-width: 940px) {
+
+    .main-nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background: #ffffff;
+        padding: 80px 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        box-shadow: -2px 0 10px rgba(0,0,0,0.15);
+        transition: 0.3s ease;
+        z-index: 99999;
+    }
+
+    .main-nav.open {
+        right: 0;
+    }
+
+    .main-nav a,
+    .dropbtn {
+        font-size: 20px;
+        display: block;
+        padding: 10px 0;
+        border-bottom: 1px solid #eee;
+    }
+
+    .dropdown-menu {
+        background: #fff;
+        border: 1px solid #ddd;
+        padding: 10px;
+        margin-left: 10px;
+        border-radius: 8px;
+        display: none;
+    }
+
+    .nav-dropdown:hover .dropdown-menu {
+        display: block;
+    }
+}
+@media (max-width: 940px) {
+    .site-header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 999999;
+        background: #fff;
+    }
+
+    body {
+        padding-top: 90px;
+    }
+}
 
