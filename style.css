@@ -1384,3 +1384,18 @@ img, section, div {
       background-position: center top !important;
   }
 }
+/* Fix Key Highlights cut issue on mobile */
+.key-grid-service {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 0 20px;
+}
+
+.key-card-service {
+    width: 100%;
+    min-height: auto;
+    padding: 25px 20px;
+    border-radius: 18px;
+    box-sizing: border-box;
+}
