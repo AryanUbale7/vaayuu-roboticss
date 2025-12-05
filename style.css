@@ -1283,4 +1283,104 @@ textarea{
     color: #000 !important;
     font-weight: 500;
 }
+/* FIX HORIZONTAL SCROLL AND WHITESPACE */
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
 
+img, section, div {
+    max-width: 100%;
+}
+/* MOBILE NAV FIX */
+.mobile-toggle {
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 18px;
+    font-size: 32px;
+    z-index: 10002;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 940px) {
+
+    .mobile-toggle {
+        display: block;
+    }
+
+    .main-nav {
+        position: fixed;
+        top: 70px;
+        right: -300px;
+        width: 260px;
+        height: calc(100% - 70px);
+        background: white;
+        flex-direction: column;
+        padding: 20px;
+        transition: right 0.3s ease;
+        z-index: 10001;
+    }
+
+    .main-nav.open {
+        right: 0;
+    }
+
+    .main-nav a {
+        padding: 12px 0;
+        display: block;
+        font-size: 18px;
+    }
+}
+
+/* FIX HERO IMAGE CUTTING ON ALL PAGES */
+.hero,
+.hero-page,
+.service-hero-custom {
+    width: 100%;
+    min-height: 70vh;          /* ensures enough height */
+    height: auto;
+
+    background-size: cover;    /* image full cover but no stretch */
+    background-repeat: no-repeat;
+    background-position: center top;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    overflow: hidden;          /* remove extra scroll */
+}
+
+/* If image still cuts on some pages — increase min-height */
+@media (min-width: 768px) {
+    .hero,
+    .hero-page,
+    .service-hero-custom {
+        min-height: 85vh;
+    }
+}
+/* FIX HOME PAGE HERO SLIDER IMAGE CUTTING */
+.hero-slider .slide {
+    height: 90vh !important;
+    min-height: 600px;
+
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .hero-slider .slide {
+      height: 70vh !important;
+      min-height: 450px;
+      background-position: center top !important;
+  }
+}
