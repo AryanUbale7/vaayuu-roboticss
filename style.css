@@ -1426,3 +1426,51 @@ textarea{
 .page-about-section p:first-of-type {
     color: #000 !important;
 }
+.main-nav {
+    display: none;
+}
+
+.main-nav.open {
+    display: block;
+}
+/* DESKTOP NAV */
+.main-nav {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+/* MOBILE — DEFAULT HIDDEN */
+@media (max-width: 940px) {
+
+    .main-nav {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 100%;
+        background: white;
+        display: none; /* HIDDEN */
+        flex-direction: column;
+        padding: 20px 0;
+        gap: 15px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        z-index: 9999;
+    }
+
+    .main-nav.open {
+        display: flex !important; /* VISIBLE WHEN OPEN */
+    }
+
+    .mobile-toggle {
+        display: block;
+        font-size: 30px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+/* MOBILE BUTTON HIDE ON DESKTOP */
+.mobile-toggle {
+    display: none;
+}
