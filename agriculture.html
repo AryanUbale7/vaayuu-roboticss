@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agriculture Drone Services | Vaayuu Robotics</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+
+    <a href="index.html" class="logo">
+      <img src="assets/logo.png" alt="Vaayuu Robotics Logo">
+    </a>
+
+   <nav class="main-nav">
+
+  <a href="index.html">Home</a>
+  <a href="seva.html">Service</a>
+
+  <!-- Company Dropdown -->
+  <div class="nav-dropdown">
+      <button class="dropbtn">Company ▾</button>
+      <div class="dropdown-menu">
+          <a href="company.html">Company Overview</a>
+          <a href="about.html">About Us</a>
+          <a href="faq.html">FAQ</a>
+      </div>
+  </div>
+
+  <a href="contact.html" class="nav-contact-btn">Contact Us</a>
+
+
+</nav>
+
+    <button class="mobile-toggle">☰</button>
+
+  </div>
+</header>
+
+
+<!-- ================= HERO SECTION ================= -->
+
+<section class="hero hero-page service-hero-custom"
+         style="background-image:url('assets/agriculture-cover.jpg');">
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content container">
+
+    <h1 class="hero-title">Agriculture</h1>
+
+    <p class="lead">
+      Enhance crop yields with drone-based spraying, crop health monitoring, precision agriculture, and smart seeding.
+    </p>
+
+    <div class="hero-ctas">
+      <a class="btn btn-download"
+         href="assets/Drone-Booklet1.pdf"
+         download>
+         Download Brochure
+      </a>
+
+      <a class="btn btn-contact" href="contact.html">Contact Us</a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= KEY HIGHLIGHTS ================= -->
+
+<section class="section key-highlight-section">
+  <div class="container center">
+
+    <h2 class="section-title key-title">
+      Key <span class="accent">Highlights</span>
+    </h2>
+
+    <div class="key-grid-service">
+
+      <div class="key-card-service">
+        <div class="key-card-icon">🔍</div>
+        <h3>Drone Spraying</h3>
+        <p>
+          Automated pesticide and fertilizer application for uniform coverage, reduced chemical usage, and increased efficiency.
+        </p>
+      </div>
+
+      <div class="key-card-service">
+        <div class="key-card-icon">🔍</div>
+        <h3>Precision Agriculture</h3>
+        <p>
+          Multispectral and NDVI-based mapping for data-driven irrigation, nutrition planning, and optimized field management.
+        </p>
+      </div>
+
+      <div class="key-card-service">
+        <div class="key-card-icon">🔍</div>
+        <h3>Crop Health Monitoring</h3>
+        <p>
+          Early detection of stress and disease through aerial imaging, enabling timely interventions and reducing crop loss.
+        </p>
+      </div>
+
+      <div class="key-card-service">
+        <div class="key-card-icon">🔍</div>
+        <h3>Seed Dropping</h3>
+        <p>
+          Targeted seeding for cover crops and reforestation in difficult terrains using automated drone payload systems.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+
+    <div>
+      <h4>Vaayuu Robotics</h4>
+      <p>Delivering next-generation UAV solutions to enhance farming efficiency and sustainability.</p>
+    </div>
+
+    <div>
+      <h5>Quick Links</h5>
+      <ul class="footer-links">
+        <li><a href="about.html">About us</a></li>
+        <li><a href="seva.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h5>Contact Us</h5>
+      <p>Email: contact@VaayuuRobotics.com</p>
+      <p>Phone: +91 90000 00000</p>
+      <p>Location: MP Nagar, Bhopal, MP</p>
+
+     <div class="social-links">
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/9000000000" target="_blank" class="social-icon">
+        <img src="assets/icons/whatsapp.svg" class="footer-icon" alt="WhatsApp">
+    </a>
+
+    <!-- Instagram -->
+    <a href="https://instagram.com/" target="_blank" class="social-icon">
+        <img src="assets/icons/instagram.svg" class="footer-icon" alt="Instagram">
+    </a>
+
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/company/vaayu-robotics/" target="_blank" class="social-icon">
+        <img src="assets/icons/linkedin.svg" class="footer-icon" alt="LinkedIn">
+    </a>
+
+</div>
+
+
+  </div>
+
+  <div class="site-copy">© 2025 Vaayuu Robotics. All Rights Reserved.</div>
+</footer>
+
+
+<!-- ================= MOBILE NAV SCRIPT ================= -->
+
+<script>
+(function() {
+  const toggle = document.querySelector(".mobile-toggle");
+  const nav = document.querySelector(".main-nav");
+
+  if (!toggle || !nav) return;
+
+  toggle.addEventListener("click", (e) => {
+    e.stopPropagation();
+    nav.classList.toggle("open");
+  });
+
+  document.addEventListener("click", (e) => {
+    if (window.innerWidth <= 940 && nav.classList.contains("open")) {
+      if (!nav.contains(e.target) && !toggle.contains(e.target)) {
+        nav.classList.remove("open");
+      }
+    }
+  });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 940) nav.classList.remove("open");
+  });
+})();
+</script>
+
+</body>
+</html>

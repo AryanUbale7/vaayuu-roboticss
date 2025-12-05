@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Home - Vaayuu Robotics</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+
+    <a class="logo" href="index.html">
+      <img src="assets/logo.png" alt="Vaayuu Logo">
+    </a>
+
+    <nav class="main-nav">
+
+      <a href="index.html">Home</a>
+      <a href="seva.html">Service</a>
+
+      <!-- Company Dropdown -->
+      <div class="nav-dropdown">
+          <button class="dropbtn">Company ▾</button>
+          <div class="dropdown-menu">
+              <a href="company.html">Company Overview</a>
+              <a href="about.html">About Us</a>
+              <a href="faq.html">FAQ</a>
+          </div>
+      </div>
+
+      <a href="contact.html" class="nav-contact-btn">Contact Us</a>
+
+    </nav>
+
+    <button class="mobile-toggle">☰</button>
+  </div>
+</header>
+
+
+<!-- =================== HERO SLIDER =================== -->
+
+<main>
+
+  <section class="hero hero-slider" id="hero">
+    <div class="slider-inner" id="sliderInner">
+
+      <!-- Slide 1 - Road Survey -->
+      <div class="slide" style="background-image: url('assets/hero-road.png');">
+        <div class="hero-content container">
+          <h1 class="hero-title">Road Survey & Inspection</h1>
+          <p class="lead">Efficiently Survey Highway Roads for Maintenance Planning</p>
+          <a class="btn btn-primary" href="road.html">Know More</a>
+        </div>
+      </div>
+
+      <!-- Slide 2 - Industrial Inspection -->
+      <div class="slide" style="background-image: url('assets/oilgas.png');">
+        <div class="hero-content container">
+          <h1 class="hero-title">Industrial Solution</h1>
+          <p class="lead">Advanced Drone-Based Surveillance for Large Industrial Sites</p>
+          <a class="btn btn-primary" href="industrial.html">View Solutions</a>
+        </div>
+      </div>
+
+      <!-- Slide 3 - Construction Monitoring -->
+      <div class="slide" style="background-image: url('assets/construction.png');">
+        <div class="hero-content container">
+          <h1 class="hero-title">Construction Monitoring</h1>
+          <p class="lead">Real-time Drone Mapping for Construction Progress Tracking</p>
+          <a class="btn btn-primary" href="construction.html">Explore More</a>
+        </div>
+      </div>
+
+      <!-- Slide 4 - Custom Drone Solutions (FIXED SAME IMAGE AS SERVICE PAGE) -->
+      <div class="slide" style="background-image: url('assets/powerline.png');">
+        <div class="hero-content container">
+          <h1 class="hero-title">Custom Drone Solutions</h1>
+          <p class="lead">Tailor-Made UAV Solutions Designed for Unique Industry Needs</p>
+          <a class="btn btn-primary" href="custom-drone.html">Start a Project</a>
+        </div>
+      </div>
+
+    </div>
+
+    <button id="prevSlide" class="slider-nav slider-prev">←</button>
+    <button id="nextSlide" class="slider-nav slider-next">→</button>
+    <div id="heroDots" class="hero-dots"></div>
+
+  </section>
+
+
+  <!-- =================== ACHIEVEMENTS =================== -->
+
+  <section class="section">
+    <div class="container">
+      <div class="ach-grid">
+
+        <div class="ach-card">
+          <div class="ach-num">100+</div>
+          <div class="ach-label">Projects Completed</div>
+        </div>
+
+        <div class="ach-card">
+          <div class="ach-num">1000<span style="font-size: 26px;">hrs</span></div>
+          <div class="ach-label">Flight Hours Logged</div>
+        </div>
+
+        <div class="ach-card">
+          <div class="ach-num">10+</div>
+          <div class="ach-label">States Covered</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =================== SERVICES =================== -->
+
+  <section class="section" style="background: var(--cream);">
+    <div class="container center">
+      <h2 class="section-title">Our <span class="accent">Key Services</span></h2>
+      <p class="section-sub">We specialize in drone solutions across critical sectors to deliver high-impact results.</p>
+
+      <div class="services-grid-new">
+
+        <a href="industrial.html" class="service-card-new-index" style="background-image: url('assets/oilgas.png');">
+          <div class="service-title-index">Industrial Inspection</div>
+        </a>
+
+        <a href="road.html" class="service-card-new-index" style="background-image: url('assets/hero-road.png');">
+          <div class="service-title-index">Road Survey & Inspection</div>
+        </a>
+
+        <a href="construction.html" class="service-card-new-index" style="background-image: url('assets/construction.png');">
+          <div class="service-title-index">Construction Monitoring</div>
+        </a>
+
+        <a href="custom-drone.html" class="service-card-new-index" style="background-image: url('assets/powerline.png');">
+          <div class="service-title-index">Custom Drone Solutions</div>
+        </a>
+
+      </div>
+
+      <a href="seva.html" class="btn btn-primary btn-more" style="margin-top: 30px;">View All Services →</a>
+    </div>
+  </section>
+
+
+  <!-- =================== VISION SECTION =================== -->
+
+  <section class="section">
+    <div class="container row">
+        
+        <div style="flex: 1 1 550px;">
+            <h2 class="section-title" style="text-align: left; margin-bottom: 20px;">
+                Our Vision: Leading India's Drone Revolution
+            </h2>
+
+            <p style="color: var(--muted-2); margin-bottom: 30px; font-size: 17px;">
+                At Vaayuu Robotics, we believe in the transformative power of UAV technology. 
+                Our mission is to integrate sophisticated drone solutions seamlessly into industrial operations, 
+                setting new benchmarks for safety, efficiency, and data quality.
+            </p>
+
+            <a href="company.html" class="btn btn-primary">Learn About Our Company</a>
+        </div>
+        
+        <div style="flex: 1 1 400px; padding: 20px;">
+            <img src="assets/consultation.png" alt="Team discussing drone data" style="border-radius: 12px; box-shadow: var(--shadow-soft);">
+        </div>
+        
+    </div>
+  </section>
+
+</main>
+
+
+<!-- =================== FOOTER =================== -->
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+
+    <div>
+      <h4>Vaayuu Robotics</h4>
+      <p>Providing cutting-edge drone solutions with precision and reliability.</p>
+    </div>
+
+    <div>
+      <h5>Quick Links</h5>
+      <ul class="footer-links">
+        <li><a href="about.html">About us</a></li>
+        <li><a href="seva.html">Services</a></li> 
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h5>Contact Us</h5>
+      <p>Email: contact@VaayuuRobotics.com<br>
+         Phone: +91 90000 00000<br>
+         Location: MP Nagar, Bhopal, MP</p>
+
+      <div class="social-links">
+
+          <a href="https://wa.me/9000000000" target="_blank" class="social-icon">
+              <img src="assets/icons/whatsapp.svg" class="footer-icon" alt="WhatsApp">
+          </a>
+
+          <a href="https://instagram.com/" target="_blank" class="social-icon">
+              <img src="assets/icons/instagram.svg" class="footer-icon" alt="Instagram">
+          </a>
+
+          <a href="https://www.linkedin.com/company/vaayu-robotics/" target="_blank" class="social-icon">
+              <img src="assets/icons/linkedin.svg" class="footer-icon" alt="LinkedIn">
+          </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="site-copy">© 2025 Vaayuu Robotics. All Rights Reserved.</div>
+</footer>
+
+
+<!-- =================== SLIDER JS =================== -->
+
+<script>
+(function(){
+  const sliderInner = document.getElementById('sliderInner');
+  const slides = Array.from(sliderInner.children);
+  const dotsContainer = document.getElementById('heroDots');
+  const nextBtn = document.getElementById('nextSlide');
+  const prevBtn = document.getElementById('prevSlide');
+
+  if (sliderInner && slides.length > 0) {
+    let current = 0;
+    let interval;
+    const slideInterval = 7000;
+
+    function updateSlider() {
+      const offset = -current * 100;
+      sliderInner.style.transform = `translateX(${offset}%)`;
+      Array.from(dotsContainer.children).forEach((d, i) =>
+        d.classList.toggle('active', i === current)
+      );
+    }
+
+    function resetInterval() {
+      clearInterval(interval);
+      interval = setInterval(next, slideInterval);
+    }
+
+    function goTo(n) {
+      current = (n + slides.length) % slides.length;
+      updateSlider();
+      resetInterval();
+    }
+
+    function next() { goTo(current + 1); }
+    function prev() { goTo(current - 1); }
+
+    slides.forEach((_, i) => {
+      const d = document.createElement('button');
+      d.className = 'dot';
+      d.onclick = () => goTo(i);
+      dotsContainer.appendChild(d);
+    });
+
+    nextBtn.onclick = next;
+    prevBtn.onclick = prev;
+
+    goTo(0);
+  }
+})();
+</script>
+
+<script>
+const toggle = document.querySelector(".mobile-toggle");
+const nav = document.querySelector(".main-nav");
+
+toggle.addEventListener("click", () => {
+    nav.classList.toggle("open");
+});
+</script>
+
+</body>
+</html>

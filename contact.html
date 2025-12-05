@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | Vaayuu Robotics</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+    /* CONTACT CARD */
+    .contact-wrapper {
+        max-width: 650px;
+        margin: 120px auto 60px auto;
+        padding: 40px 30px;
+        background: #ffffff;
+        border-radius: 14px;
+        border: 2px solid #f0d77a;
+        box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 34px;
+        font-weight: 700;
+        color: #d99a00;
+        margin-bottom: 5px;
+    }
+
+    .contact-wrapper p {
+        font-size: 15px;
+        color: #555;
+        margin-bottom: 25px;
+    }
+
+    /* LABEL */
+    .contact-label {
+        text-align: left;
+        font-weight: 600;
+        margin-bottom: 6px;
+        margin-top: 10px;
+        color: #333;
+    }
+
+    /* INPUTS */
+    #contactForm input,
+    #contactForm textarea {
+        width: 100%;
+        padding: 14px;
+        margin-bottom: 15px;
+        border-radius: 8px;
+        border: 1px solid #d8d8d8;
+        background: #fafafa;
+        font-size: 16px;
+        transition: 0.2s;
+    }
+
+    #contactForm input:focus,
+    #contactForm textarea:focus {
+        border-color: #d99a00;
+        background: #fff;
+        outline: none;
+    }
+
+    #contactForm textarea {
+        min-height: 130px;
+        resize: vertical;
+    }
+
+    /* WORD COUNTER */
+    #wordCounter {
+        text-align: right;
+        font-size: 13px;
+        margin-top: -10px;
+        margin-bottom: 15px;
+        color: #666;
+    }
+
+    /* BUTTON */
+    .contact-btn {
+        width: 180px;
+        padding: 14px;
+        background: #f5b700;
+        color: #fff;
+        border: none;
+        font-size: 17px;
+        border-radius: 25px;
+        cursor: pointer;
+        font-weight: 600;
+        margin: 10px auto;
+        display: block;
+        box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+        transition: 0.25s;
+    }
+
+    .contact-btn:hover {
+        background: #d99a00;
+    }
+
+    /* SUCCESS MESSAGE */
+    .success-message {
+        background: #d4edda;
+        border: 1px solid #a3d7ae;
+        padding: 12px;
+        border-radius: 6px;
+        color: #155724;
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
+
+</style>
+</head>
+
+<body>
+
+<!-- =============== NAVBAR =============== -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <img src="assets/logo.png" alt="Vaayuu Logo">
+    </a>
+
+   <nav class="main-nav">
+
+  <a href="index.html">Home</a>
+  <a href="seva.html">Service</a>
+
+  <!-- Company Dropdown -->
+  <div class="nav-dropdown">
+      <button class="dropbtn">Company ▾</button>
+      <div class="dropdown-menu">
+          <a href="company.html">Company Overview</a>
+          <a href="about.html">About Us</a>
+          <a href="faq.html">FAQ</a>
+      </div>
+  </div>
+
+ <a href="contact.html" class="nav-contact-btn">Contact Us</a>
+
+
+</nav>
+
+
+    <button class="mobile-toggle">☰</button>
+  </div>
+</header>
+
+<main>
+
+<div class="contact-wrapper">
+
+      <h1>Contact Us</h1>
+      <p>We'd love to hear from you! Whether you have a question or just want to say hi.</p>
+
+      <div id="success" class="success-message" style="display:none;">
+          Thank you! Your message has been sent successfully.
+      </div>
+
+      <form id="contactForm" action="https://formspree.io/f/xyzlnjza" method="POST">
+
+          <label class="contact-label">Full Name</label>
+          <input type="text" name="name" placeholder="Enter your name" required>
+
+          <label class="contact-label">Company Name (Optional)</label>
+          <input type="text" name="company" placeholder="Enter company name">
+
+          <div style="display:flex; gap:15px; width:100%;">
+              <div style="flex:1;">
+                  <label class="contact-label">Email</label>
+                  <input type="email" name="email" placeholder="you@example.com" required>
+              </div>
+
+              <div style="flex:1;">
+                  <label class="contact-label">Phone</label>
+                  <input type="text" name="phone" placeholder="+91 ******" required>
+              </div>
+          </div>
+
+          <label class="contact-label">Your Message</label>
+          <textarea id="messageBox" name="message" placeholder="Write your message..." required></textarea>
+
+          <p id="wordCounter">0 / 200 words</p>
+
+          <button type="submit" class="contact-btn">Send Message</button>
+
+      </form>
+
+      <hr style="margin:30px 0; border:0; border-top:1px solid #eee;">
+
+      <p>Or reach us directly:</p>
+      <h3 style="color:#d99a00; margin:5px 0;">vaayur.c@gmail.com</h3>
+      <h3 style="color:#d99a00;">+91 81208 44716</h3>
+
+</div>
+
+</main>
+
+<!-- =============== FOOTER =============== -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h4>Vaayuu Robotics</h4>
+      <p>Providing cutting-edge drone solutions with precision and reliability.</p>
+    </div>
+
+    <div>
+      <h5>Quick Links</h5>
+      <ul class="footer-links">
+        <li><a href="about.html">About us</a></li>
+        <li><a href="seva.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h5>Contact Us</h5>
+      <p>Email: contact@VaayuuRobotics.com</p>
+      <p>Phone: +91 90000 00000</p>
+      <p>Location: MP Nagar, Bhopal, MP</p>
+
+      <div class="social-links">
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/9000000000" target="_blank" class="social-icon">
+        <img src="assets/icons/whatsapp.svg" class="footer-icon" alt="WhatsApp">
+    </a>
+
+    <!-- Instagram -->
+    <a href="https://instagram.com/" target="_blank" class="social-icon">
+        <img src="assets/icons/instagram.svg" class="footer-icon" alt="Instagram">
+    </a>
+
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/company/vaayu-robotics/" target="_blank" class="social-icon">
+        <img src="assets/icons/linkedin.svg" class="footer-icon" alt="LinkedIn">
+    </a>
+
+</div>
+
+    </div>
+  </div>
+
+  <div class="site-copy">© 2025 Vaayuu Robotics. All Rights Reserved.</div>
+</footer>
+
+<!-- =============== SCRIPTS =============== -->
+<script>
+// WORD LIMIT (200 words)
+const msgBox = document.getElementById("messageBox");
+const wordCounter = document.getElementById("wordCounter");
+
+msgBox.addEventListener("input", () => {
+    let words = msgBox.value.trim().split(/\s+/);
+    if (words[0] === "") words = [];
+
+    if (words.length > 200) {
+        words = words.slice(0, 200);
+        msgBox.value = words.join(" ");
+    }
+
+    wordCounter.textContent = `${words.length} / 200 words`;
+});
+
+// FORM SUCCESS
+const form = document.getElementById('contactForm');
+const success = document.getElementById('success');
+
+form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const data = new FormData(form);
+
+    const res = await fetch(form.action, {
+        method: 'POST',
+        body: data,
+        headers: { Accept: 'application/json' }
+    });
+
+    if(res.ok){
+        success.style.display = 'block';
+        form.reset();
+        wordCounter.textContent = "0 / 200 words";
+        setTimeout(()=> success.style.display='none', 4000);
+    } else {
+        alert('Message not sent. Check Formspree ID.');
+    }
+});
+</script>
+
+</body>
+</html>

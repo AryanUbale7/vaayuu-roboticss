@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ | Frequently Asked Questions | Vaayuu Robotics</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .faq-answer { 
+      overflow: hidden; 
+      max-height: 0; 
+      transition: max-height 0.3s ease; 
+    }
+    .faq-question.active::after {
+      content: "−";
+    }
+    .faq-question::after {
+      content: "+";
+      float: right;
+      font-weight: bold;
+    }
+    .faq-question {
+      width: 100%;
+      text-align: left;
+      border: none;
+      background: var(--cream);
+      padding: 15px 20px;
+      font-size: 18px;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+    .faq-item { margin-bottom: 15px; }
+    .faq-answer { padding: 0 20px; background: #fff; }
+  </style>
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <img src="assets/logo.png" alt="Vaayuu Logo">
+    </a>
+
+   <nav class="main-nav">
+
+  <a href="index.html">Home</a>
+  <a href="seva.html">Service</a>
+
+  <!-- Company Dropdown -->
+  <div class="nav-dropdown">
+      <button class="dropbtn">Company ▾</button>
+      <div class="dropdown-menu">
+          <a href="company.html">Company Overview</a>
+          <a href="about.html">About Us</a>
+          <a href="faq.html">FAQ</a>
+      </div>
+  </div>
+
+  <a href="contact.html" class="nav-contact-btn">Contact Us</a>
+
+
+</nav>
+
+    <button class="mobile-toggle">☰</button>
+  </div>
+</header>
+
+<main>
+
+<!-- =============== HERO SECTION =============== -->
+
+<section class="page-hero-simple">
+    <div class="container center">
+        <p class="hero-sub-text">Find instant answers to common questions about our drone services and operations.</p>
+        <h1 class="page-title">F.A.Q. <span class="accent">Center</span></h1>
+    </div>
+</section>
+
+<!-- =============== COMPARISON FAQS FIRST (as per team demand) =============== -->
+
+<section class="section faq-content-section">
+    <div class="container faq-container">
+        <h2 class="section-title">Manual vs <span class="accent">Drone Inspection</span></h2>
+
+        <!-- Comparison 1: Construction -->
+        <div class="faq-accordion-box">
+
+            <div class="faq-item">
+                <button class="faq-question">Construction – Manual vs Drone Inspection</button>
+                <div class="faq-answer">
+                    <ul>
+                        <li><b>Manual:</b> Slow monitoring, unsafe roof/height inspections, limited data.</li>
+                        <li><b>Drone:</b> Fast progress updates, safe structure inspection, 3D mapping & exact volume analytics.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Comparison 2: Solar -->
+            <div class="faq-item">
+                <button class="faq-question">Solar Power Plants – Manual vs Drone Inspection</button>
+                <div class="faq-answer">
+                    <ul>
+                        <li><b>Manual:</b> Technicians scan one panel at a time → hours of labor, low accuracy.</li>
+                        <li><b>Drone:</b> 10–20 min for full plant scan, thermal defects instantly detected, 98% higher accuracy.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Comparison 3: Industrial -->
+            <div class="faq-item">
+                <button class="faq-question">Industrial Assets – Manual vs Drone Inspection</button>
+                <div class="faq-answer">
+                    <ul>
+                        <li><b>Manual:</b> High-risk zones, shutdown required, limited visibility.</li>
+                        <li><b>Drone:</b> Zero shutdown, safe high-resolution inspection of pipelines, chimneys, tanks.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Comparison 4: Road -->
+            <div class="faq-item">
+                <button class="faq-question">Highways/Road Inspection – Manual vs Drone Survey</button>
+                <div class="faq-answer">
+                    <ul>
+                        <li><b>Manual:</b> Hundreds of man-hours, lane closures, slow mapping.</li>
+                        <li><b>Drone:</b> 10× faster mapping, no lane closure, accurate elevation profiles & defect detection.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- =============== MAIN FAQ SECTION =============== -->
+
+<section class="section faq-content-section">
+    <div class="container faq-container">
+
+        <h2 class="section-title">General <span class="accent">Questions</span></h2>
+
+        <div class="faq-accordion-box">
+
+            <div class="faq-item">
+                <button class="faq-question">What industries do you serve?</button>
+                <div class="faq-answer">
+                    Infrastructure, Solar, Powerlines, Agriculture, Construction, Roads, Industrial assets, and more.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">Are your pilots DGCA certified?</button>
+                <div class="faq-answer">
+                    Yes. All pilots are DGCA-certified and follow strict operational safety guidelines.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">Do drones replace manual inspection?</button>
+                <div class="faq-answer">
+                    In most cases, yes. Drones are faster, safer, and provide higher-quality data compared to manual inspection.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">Do you build custom drones?</button>
+                <div class="faq-answer">
+                    Yes, we offer R&D support, custom UAV builds, and prototype development.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">How long does project delivery take?</button>
+                <div class="faq-answer">
+                    Data capture: Few hours to a day.<br>
+                    Processing: 48–72 hours.<br>
+                    Report: Delivered digitally with actionable analytics.
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+</main>
+
+<!-- =============== FOOTER =============== -->
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+
+    <div>
+      <h4>Vaayuu Robotics</h4>
+      <p>Providing cutting-edge drone solutions with precision and reliability.</p>
+    </div>
+
+    <div>
+      <h5>Quick Links</h5>
+      <ul class="footer-links">
+        <li><a href="about.html">About us</a></li>
+        <li><a href="seva.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h5>Contact Us</h5>
+      <p>Email: contact@VaayuuRobotics.com</p>
+      <p>Phone: +91 90000 00000</p>
+      <p>Location: MP Nagar, Bhopal, MP</p>
+
+   <div class="social-links">
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/9000000000" target="_blank" class="social-icon">
+        <img src="assets/icons/whatsapp.svg" class="footer-icon" alt="WhatsApp">
+    </a>
+
+    <!-- Instagram -->
+    <a href="https://instagram.com/" target="_blank" class="social-icon">
+        <img src="assets/icons/instagram.svg" class="footer-icon" alt="Instagram">
+    </a>
+
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/company/vaayu-robotics/" target="_blank" class="social-icon">
+        <img src="assets/icons/linkedin.svg" class="footer-icon" alt="LinkedIn">
+    </a>
+
+</div>
+
+    </div>
+
+  </div>
+
+  <div class="site-copy">© 2025 Vaayuu Robotics. All Rights Reserved.</div>
+</footer>
+
+<!-- =============== SCRIPT FIXED (ICON BUG FIX) =============== -->
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+        const btn = item.querySelector('.faq-question');
+        const ans = item.querySelector('.faq-answer');
+
+        btn.addEventListener('click', () => {
+            const openNow = btn.classList.contains('active');
+
+            document.querySelectorAll('.faq-question.active').forEach(openBtn => {
+                openBtn.classList.remove('active');
+                openBtn.nextElementSibling.style.maxHeight = null;
+            });
+
+            if (!openNow) {
+                btn.classList.add('active');
+                ans.style.maxHeight = ans.scrollHeight + 'px';
+            }
+        });
+    });
+});
+</script>
+
+</body>
+</html>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const toggle = document.querySelector(".mobile-toggle");
+    const nav = document.querySelector(".main-nav");
+
+    if (toggle && nav) {
+        toggle.addEventListener("click", () => {
+            nav.classList.toggle("open");
+        });
+    }
+});
+</script>

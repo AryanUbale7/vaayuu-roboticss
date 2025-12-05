@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consultation & Training | Vaayuu Robotics</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+
+    <a href="index.html" class="logo">
+      <img src="assets/logo.png" alt="Vaayuu Robotics Logo">
+    </a>
+
+  <nav class="main-nav">
+
+  <a href="index.html">Home</a>
+  <a href="seva.html">Service</a>
+
+  <!-- Company Dropdown -->
+  <div class="nav-dropdown">
+      <button class="dropbtn">Company ▾</button>
+      <div class="dropdown-menu">
+          <a href="company.html">Company Overview</a>
+          <a href="about.html">About Us</a>
+          <a href="faq.html">FAQ</a>
+      </div>
+  </div>
+
+ <a href="contact.html" class="nav-contact-btn">Contact Us</a>
+
+
+</nav>
+
+    <button class="mobile-toggle">☰</button>
+  </div>
+</header>
+
+
+<!-- ================= HERO SECTION ================= -->
+
+<section class="hero hero-page service-hero-custom"
+         style="background-image:url('assets/consultation-cover.jpg');">
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content container">
+
+    <h1 class="hero-title">Consultation & Training</h1>
+
+    <p class="lead">
+      Comprehensive UAV consulting, industrial drone training, R&D support, and regulatory guidance for scalable drone operations.
+    </p>
+
+    <div class="hero-ctas">
+      <a class="btn btn-download"
+         href="assets/Drone-Booklet1.pdf"
+         download>
+         Download Brochure
+      </a>
+
+      <a class="btn btn-contact" href="contact.html">Contact Us</a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= KEY HIGHLIGHTS ================= -->
+
+<section class="section key-highlight-section">
+  <div class="container center">
+
+    <h2 class="section-title key-title">
+      Key <span class="accent">Highlights</span>
+    </h2>
+
+    <div class="key-grid-service">
+
+      <div class="key-card-service">
+        <h3>
+          <span class="key-card-icon">💡</span> R&D Support
+        </h3>
+        <ul>
+          <li>End-to-end UAV research and prototype development.</li>
+          <li>Proof-of-concept creation for new drone applications.</li>
+          <li>Technical design guidance and optimization.</li>
+        </ul>
+      </div>
+
+      <div class="key-card-service">
+        <h3>
+          <span class="key-card-icon">👨‍🏫</span> Industrial Drone Training
+        </h3>
+        <ul>
+          <li>Hands-on training for drone assembly, flying & maintenance.</li>
+          <li>DGCA-compliant training modules for safe operations.</li>
+          <li>Certification and compliance assistance.</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+
+    <div>
+      <h4>Vaayuu Robotics</h4>
+      <p>Your trusted partner for advanced UAV consulting and drone training solutions.</p>
+    </div>
+
+    <div>
+      <h5>Quick Links</h5>
+      <ul class="footer-links">
+        <li><a href="about.html">About us</a></li>
+        <li><a href="seva.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h5>Contact Us</h5>
+      <p>Email: contact@VaayuuRobotics.com</p>
+      <p>Phone: +91 90000 00000</p>
+      <p>Location: MP Nagar, Bhopal, MP</p>
+
+     <div class="social-links">
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/9000000000" target="_blank" class="social-icon">
+        <img src="assets/icons/whatsapp.svg" class="footer-icon" alt="WhatsApp">
+    </a>
+
+    <!-- Instagram -->
+    <a href="https://instagram.com/" target="_blank" class="social-icon">
+        <img src="assets/icons/instagram.svg" class="footer-icon" alt="Instagram">
+    </a>
+
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/company/vaayu-robotics/" target="_blank" class="social-icon">
+        <img src="assets/icons/linkedin.svg" class="footer-icon" alt="LinkedIn">
+    </a>
+
+</div>
+
+
+    </div>
+
+  </div>
+
+  <div class="site-copy">© 2025 Vaayuu Robotics. All Rights Reserved.</div>
+</footer>
+
+
+<!-- ================= MOBILE NAV SCRIPT ================= -->
+
+<script>
+(function() {
+  const toggle = document.querySelector(".mobile-toggle");
+  const nav = document.querySelector(".main-nav");
+
+  if (!toggle || !nav) return;
+
+  toggle.addEventListener("click", (e) => {
+    e.stopPropagation();
+    nav.classList.toggle("open");
+  });
+
+  document.addEventListener("click", (e) => {
+    if (window.innerWidth <= 940 && nav.classList.contains("open")) {
+      if (!nav.contains(e.target) && !toggle.contains(e.target)) {
+        nav.classList.remove("open");
+      }
+    }
+  });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 940) nav.classList.remove("open");
+  });
+})();
+</script>
+
+</body>
+</html>
