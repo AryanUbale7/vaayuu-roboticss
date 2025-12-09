@@ -3,8 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FAQ | Frequently Asked Questions | Vaayuu Robotics</title>
+  
+  <title>Drone Services FAQ | Vaayuu Robotics</title>
+  <meta name="description" content="Find answers to common questions about industrial drone services, manual vs drone inspection, DGCA-certified pilots, custom UAV builds, project timelines and more from Vaayuu Robotics." />
+  <link rel="canonical" href="https://vaayuu-roboticss.vercel.app/faq.html" />
+
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <style>
     .faq-answer { 
       overflow: hidden; 
@@ -33,6 +39,77 @@
     .faq-item { margin-bottom: 15px; }
     .faq-answer { padding: 0 20px; background: #fff; }
   </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What industries do you serve?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We serve infrastructure, solar, powerlines, agriculture, construction, roads, industrial assets and more."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are your pilots DGCA certified?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, all our pilots are DGCA-certified and follow strict operational safety guidelines."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do drones replace manual inspection?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In most cases, yes. Drones are faster, safer and provide higher-quality data compared to manual inspection."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you build custom drones?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we offer R&D support, custom UAV builds and prototype development."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does project delivery take?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Data capture typically takes a few hours to a day. Processing takes 48-72 hours and the final report is delivered digitally with actionable analytics."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://vaayuu-roboticss.vercel.app/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "FAQ",
+        "item": "https://vaayuu-roboticss.vercel.app/faq.html"
+      }
+    ]
+  }
+  </script>
+
 </head>
 
 <body>
@@ -40,15 +117,15 @@
 <header class="site-header">
   <div class="container header-inner">
     <a href="index.html" class="logo">
-      <img src="assets/logo.png" alt="Vaayuu Logo">
+      <img src="assets/logo.png" alt="Vaayuu Robotics Logo">
     </a>
 
    <nav class="main-nav">
+    <button id="closeMenu" class="mobile-close">✕</button>
 
   <a href="index.html">Home</a>
-  <a href="seva.html">Service</a>
+  <a href="seva.html">Services</a>
 
-  <!-- Company Dropdown -->
   <div class="nav-dropdown">
       <button class="dropbtn">Company ▾</button>
       <div class="dropdown-menu">
@@ -58,8 +135,7 @@
       </div>
   </div>
 
-  <a href="contact.html" class="nav-contact-btn">Contact Us</a>
-
+ <a href="contact.html" class="nav-contact-btn">Contact Us</a>
 
 </nav>
 
@@ -69,22 +145,17 @@
 
 <main>
 
-<!-- =============== HERO SECTION =============== -->
-
 <section class="page-hero-simple">
     <div class="container center">
-        <p class="hero-sub-text">Find instant answers to common questions about our drone services and operations.</p>
         <h1 class="page-title">F.A.Q. <span class="accent">Center</span></h1>
-    </div>
+       <p class="hero-sub-text">Find instant answers to common questions about our drone services and operations.</p>
+      </div>
 </section>
-
-<!-- =============== COMPARISON FAQS FIRST (as per team demand) =============== -->
 
 <section class="section faq-content-section">
     <div class="container faq-container">
         <h2 class="section-title">Manual vs <span class="accent">Drone Inspection</span></h2>
 
-        <!-- Comparison 1: Construction -->
         <div class="faq-accordion-box">
 
             <div class="faq-item">
@@ -97,7 +168,6 @@
                 </div>
             </div>
 
-            <!-- Comparison 2: Solar -->
             <div class="faq-item">
                 <button class="faq-question">Solar Power Plants – Manual vs Drone Inspection</button>
                 <div class="faq-answer">
@@ -108,7 +178,6 @@
                 </div>
             </div>
 
-            <!-- Comparison 3: Industrial -->
             <div class="faq-item">
                 <button class="faq-question">Industrial Assets – Manual vs Drone Inspection</button>
                 <div class="faq-answer">
@@ -119,7 +188,6 @@
                 </div>
             </div>
 
-            <!-- Comparison 4: Road -->
             <div class="faq-item">
                 <button class="faq-question">Highways/Road Inspection – Manual vs Drone Survey</button>
                 <div class="faq-answer">
@@ -133,8 +201,6 @@
         </div>
     </div>
 </section>
-
-<!-- =============== MAIN FAQ SECTION =============== -->
 
 <section class="section faq-content-section">
     <div class="container faq-container">
@@ -186,8 +252,6 @@
 
 </main>
 
-<!-- =============== FOOTER =============== -->
-
 <footer class="site-footer">
   <div class="container footer-grid">
 
@@ -208,27 +272,33 @@
     <div>
       <h5>Contact Us</h5>
       <p>Email: contact@VaayuuRobotics.com</p>
-      <p>Phone: +91 90000 00000</p>
+      <p>Phone: +91 81208 44716</p>
       <p>Location: MP Nagar, Bhopal, MP</p>
 
    <div class="social-links">
 
-    <!-- WhatsApp -->
-    <a href="https://wa.me/9000000000" target="_blank" class="social-icon">
-        <img src="assets/icons/whatsapp.svg" class="footer-icon" alt="WhatsApp">
+    <a href="https://facebook.com" target="_blank" class="social-icon">
+        <i class="fab fa-facebook-f"></i>
     </a>
 
-    <!-- Instagram -->
-    <a href="https://instagram.com/" target="_blank" class="social-icon">
-        <img src="assets/icons/instagram.svg" class="footer-icon" alt="Instagram">
+    <a href="https://twitter.com" target="_blank" class="social-icon">
+        <i class="fab fa-twitter"></i>
     </a>
 
-    <!-- LinkedIn -->
-    <a href="https://www.linkedin.com/company/vaayu-robotics/" target="_blank" class="social-icon">
-        <img src="assets/icons/linkedin.svg" class="footer-icon" alt="LinkedIn">
+    <a href="https://youtube.com" target="_blank" class="social-icon">
+        <i class="fab fa-youtube"></i>
+    </a>
+
+    <a href="https://instagram.com" target="_blank" class="social-icon">
+        <i class="fab fa-instagram"></i>
+    </a>
+
+    <a href="https://linkedin.com" target="_blank" class="social-icon">
+        <i class="fab fa-linkedin-in"></i>
     </a>
 
 </div>
+
 
     </div>
 
@@ -236,8 +306,6 @@
 
   <div class="site-copy">© 2025 Vaayuu Robotics. All Rights Reserved.</div>
 </footer>
-
-<!-- =============== SCRIPT FIXED (ICON BUG FIX) =============== -->
 
 <script>
 document.addEventListener('DOMContentLoaded', () => {
@@ -264,17 +332,40 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 </script>
 
+<script>
+(function(){
+  const toggle = document.querySelector(".mobile-toggle"); // ☰
+  const nav = document.querySelector(".main-nav");         // Menu
+  const closeBtn = document.getElementById("closeMenu");   // ✕ close button
+
+  if(!toggle || !nav || !closeBtn) return;
+
+  // Open menu
+  toggle.addEventListener("click", (e)=>{
+    e.stopPropagation();
+    nav.classList.add("open");
+  });
+
+  // Close menu using X button
+  closeBtn.addEventListener("click", ()=>{
+    nav.classList.remove("open");
+  });
+
+  // Close menu on outside click
+  document.addEventListener("click", (e)=>{
+    if(window.innerWidth <= 940 && nav.classList.contains("open")){
+      if(!nav.contains(e.target) && !toggle.contains(e.target)){
+        nav.classList.remove("open");
+      }
+    }
+  });
+
+  // Reset menu on desktop resize
+  window.addEventListener("resize", ()=>{
+    if(window.innerWidth > 940) nav.classList.remove("open");
+  });
+})();
+</script>
+
 </body>
 </html>
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-    const toggle = document.querySelector(".mobile-toggle");
-    const nav = document.querySelector(".main-nav");
-
-    if (toggle && nav) {
-        toggle.addEventListener("click", () => {
-            nav.classList.toggle("open");
-        });
-    }
-});
-</script>

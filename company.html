@@ -3,8 +3,35 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Company | Vaayuu Robotics</title>
+  
+  <title>Vaayuu Robotics Company Overview | India's Industrial Drone Partner</title>
+  <meta name="description" content="Learn about Vaayuu Robotics, India's leading provider of industrial drone solutions for infrastructure, energy, and agriculture with 100+ projects, 1000+ flight hours and DGCA-certified pilots." />
+  <link rel="canonical" href="https://vaayuu-roboticss.vercel.app/company.html" />
+
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://vaayuu-roboticss.vercel.app/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Company",
+        "item": "https://vaayuu-roboticss.vercel.app/company.html"
+      }
+    ]
+  }
+  </script>
+
 </head>
 
 <body>
@@ -13,28 +40,28 @@
   <div class="container header-inner">
     
     <a href="index.html" class="logo">
-      <img src="assets/logo.png" alt="Vaayuu Logo">
+      <img src="assets/logo.png" alt="Vaayuu Robotics Logo">
     </a>
 
     <nav class="main-nav">
+      <button id="closeMenu" class="mobile-close">✕</button>
 
-  <a href="index.html">Home</a>
-  <a href="seva.html">Service</a>
+      <a href="index.html">Home</a>
+      <a href="seva.html">Services</a>
 
-  <!-- Company Dropdown -->
-  <div class="nav-dropdown">
-      <button class="dropbtn">Company ▾</button>
-      <div class="dropdown-menu">
-          <a href="company.html">Company Overview</a>
-          <a href="about.html">About Us</a>
-          <a href="faq.html">FAQ</a>
+      <div class="nav-dropdown">
+          <button class="dropbtn">Company ▾</button>
+          <div class="dropdown-menu">
+              <a href="company.html">Company Overview</a>
+              <a href="about.html">About Us</a>
+              <a href="faq.html">FAQ</a>
+          </div>
       </div>
-  </div>
 
-  <a href="contact.html" class="nav-contact-btn">Contact Us</a>
+      <a href="contact.html" class="nav-contact-btn">Contact Us</a>
 
 
-</nav>
+    </nav>
 
     <button class="mobile-toggle">☰</button>
   </div>
@@ -43,67 +70,64 @@
 
 <main>
 
-<!-- ================= HERO ================= -->
-
 <section class="page-hero-simple">
   <div class="container center">
-    <p class="hero-sub-text">Pioneering the future of drone technology for industrial efficiency and safety.</p>
     <h1 class="page-title">Our <span class="accent">Company</span></h1>
+    <p class="hero-sub-text">Pioneering the future of drone technology for industrial efficiency and safety.</p>
   </div>
 </section>
 
-
-<!-- ================= WHO WE ARE ================= -->
 
 <section class="section about-split-section">
   <div class="container about-split-inner">
     
     <div class="split-text">
       <h2>Who We Are</h2>
+      
       <p>
-        Vaayuu Robotics is India's leading provider of advanced UAV solutions. 
-        We combine precision engineering, AI-driven analytics, and compliant operations 
-        to deliver powerful results across infrastructure, energy, and agriculture.
+        We are a multidisciplinary team of drone professionals, robotics engineers, data analysts, 
+        and certified UAV pilots dedicated to building a safer and more efficient future for industrial operations.
       </p>
-      <p>
-        Our DGCA-certified pilots and expert engineering team ensure safe, efficient, 
-        and reliable mission execution for every operation.
-      </p>
+      
+      <p><strong>Our approach combines:</strong></p>
+      <ul style="list-style: disc; padding-left: 20px; margin-bottom: 20px; color: var(--text-color);">
+        <li>Cutting-edge drone hardware</li>
+        <li>High-precision flight automation</li>
+        <li>Thermal and LiDAR-based insights</li>
+        <li>Real-time data analytics</li>
+      </ul>
 
-      <a href="contact.html" class="btn btn-primary" style="margin-top: 20px;">Get in Touch</a>
+      <a href="contact.html" class="btn btn-primary" style="margin-top: 10px;">Get in Touch</a>
     </div>
 
     <div class="split-img">
-      <img src="assets/company-intro.png" alt="Vaayuu Team Working">
+      <img src="assets/company-intro.png" alt="Vaayuu Robotics team of engineers and pilots">
     </div>
 
   </div>
 </section>
 
-
-<!-- ================= KEY MILESTONES ================= -->
 
 <section class="section achievement-grid-section" style="background: var(--cream);">
   <div class="container center">
 
     <h2 class="section-title">Our <span class="accent">Key Milestones</span></h2>
 
-    <!-- MUST MATCH Home Page -->
     <div class="ach-grid">
 
       <div class="ach-card">
         <div class="ach-num">100+</div>
-        <div class="ach-label">Projects Completed</div>
+        <div class="ach-label">Industrial Projects</div>
       </div>
 
       <div class="ach-card">
-        <div class="ach-num">1000<span style="font-size: 22px;"> hrs</span></div>
-        <div class="ach-label">Flight Hours Logged</div>
+        <div class="ach-num">1000<span style="font-size: 22px;">+ hrs</span></div>
+        <div class="ach-label">Safe Flight Operations</div>
       </div>
 
       <div class="ach-card">
-        <div class="ach-num">10+</div>
-        <div class="ach-label">States Covered</div>
+        <div class="ach-num">600<span style="font-size: 22px;">+ KM</span></div>
+        <div class="ach-label">Aerial Surveys Delivered</div>
       </div>
 
     </div>
@@ -111,8 +135,6 @@
   </div>
 </section>
 
-
-<!-- ================= OUR MISSION + VISION ================= -->
 
 <section class="section about-split-section">
   <div class="container about-split-inner reverse">
@@ -121,27 +143,25 @@
 
       <h2>Our Mission</h2>
       <p>
-        To empower industries through high-performance drone systems that improve 
-        accuracy, safety, and operational efficiency.
+        To empower industries through high-performance drone systems that enhance accuracy, 
+        safety, and operational efficiency across large-scale industrial environments.
       </p>
 
       <h2 style="margin-top: 30px;">Our Vision</h2>
       <p>
-        To lead India’s transformation in industrial drone automation and data analytics, 
-        setting global benchmarks for reliability and innovation.
+        To lead India’s transformation in industrial drone automation and advanced aerial data analytics, 
+        establishing global standards for reliability, innovation, and mission excellence.
       </p>
 
     </div>
 
     <div class="split-img">
-      <img src="assets/mission-vision.png" alt="Drone Over Infrastructure">
+      <img src="assets/mission-vision.png" alt="Industrial drone surveying infrastructure">
     </div>
 
   </div>
 </section>
 
-
-<!-- ================= CTA ================= -->
 
 <section class="section cta-section-about">
   <div class="container center">
@@ -153,8 +173,6 @@
 
 </main>
 
-
-<!-- ================= FOOTER ================= -->
 
 <footer class="site-footer">
   <div class="container footer-grid">
@@ -176,27 +194,33 @@
     <div>
       <h5>Contact Us</h5>
       <p>Email: contact@VaayuuRobotics.com</p>
-      <p>Phone: +91 90000 00000</p>
+      <p>Phone: +91 81208 44716</p>
       <p>Location: MP Nagar, Bhopal, MP</p>
 
   <div class="social-links">
 
-    <!-- WhatsApp -->
-    <a href="https://wa.me/9000000000" target="_blank" class="social-icon">
-        <img src="assets/icons/whatsapp.svg" class="footer-icon" alt="WhatsApp">
+    <a href="https://facebook.com" target="_blank" class="social-icon">
+        <i class="fab fa-facebook-f"></i>
     </a>
 
-    <!-- Instagram -->
-    <a href="https://instagram.com/" target="_blank" class="social-icon">
-        <img src="assets/icons/instagram.svg" class="footer-icon" alt="Instagram">
+    <a href="https://twitter.com" target="_blank" class="social-icon">
+        <i class="fab fa-twitter"></i>
     </a>
 
-    <!-- LinkedIn -->
-    <a href="https://www.linkedin.com/company/vaayu-robotics/" target="_blank" class="social-icon">
-        <img src="assets/icons/linkedin.svg" class="footer-icon" alt="LinkedIn">
+    <a href="https://youtube.com" target="_blank" class="social-icon">
+        <i class="fab fa-youtube"></i>
+    </a>
+
+    <a href="https://instagram.com" target="_blank" class="social-icon">
+        <i class="fab fa-instagram"></i>
+    </a>
+
+    <a href="https://linkedin.com" target="_blank" class="social-icon">
+        <i class="fab fa-linkedin-in"></i>
     </a>
 
 </div>
+
 
     </div>
 
@@ -206,21 +230,27 @@
 </footer>
 
 
-<!-- ================= MOBILE NAV ================= -->
-
 <script>
 (function(){
-  const toggle = document.querySelector(".mobile-toggle");
-  const nav = document.querySelector(".main-nav");
+  const toggle = document.querySelector(".mobile-toggle"); // ☰
+  const nav = document.querySelector(".main-nav");         // Menu
+  const closeBtn = document.getElementById("closeMenu");   // ✕ close button
 
-  if(!toggle || !nav) return;
+  if(!toggle || !nav || !closeBtn) return;
 
-  toggle.addEventListener("click", (e) => {
+  // Open menu
+  toggle.addEventListener("click", (e)=>{
     e.stopPropagation();
-    nav.classList.toggle("open");
+    nav.classList.add("open");
   });
 
-  document.addEventListener("click", (e) => {
+  // Close menu using X button
+  closeBtn.addEventListener("click", ()=>{
+    nav.classList.remove("open");
+  });
+
+  // Close menu on outside click
+  document.addEventListener("click", (e)=>{
     if(window.innerWidth <= 940 && nav.classList.contains("open")){
       if(!nav.contains(e.target) && !toggle.contains(e.target)){
         nav.classList.remove("open");
@@ -228,11 +258,13 @@
     }
   });
 
+  // Reset menu on desktop resize
   window.addEventListener("resize", ()=>{
     if(window.innerWidth > 940) nav.classList.remove("open");
   });
 })();
 </script>
+
 
 </body>
 </html>

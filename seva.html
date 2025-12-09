@@ -3,22 +3,105 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Our Services | Vaayuu Robotics</title>
+  
+  <title>Drone Services in India | Industrial, Solar, Road Survey & Agriculture | Vaayuu Robotics</title>
+  <meta name="description" content="Explore Vaayuu Robotics' full range of drone services: industrial inspection, solar plant inspection, road survey & highway audits, agriculture mapping & spraying, construction monitoring, custom UAV builds, training and disaster management." />
+  <link rel="canonical" href="https://vaayuu-roboticss.vercel.app/seva.html" />
+
   <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    /* SERVICES PAGE BUTTON FIXES */
+    
+    /* "View Details" buttons - YELLOW */
+    .service-card-new .btn-primary {
+        background-color: #FFD700 !important;
+        color: #000000 !important;
+        border: 2px solid #FFC107 !important;
+        font-weight: bold !important;
+    }
+    
+    /* Hover effect for View Details buttons */
+    .service-card-new .btn-primary:hover {
+        background-color: #FFC107 !important;
+    }
+    
+    /* "Request Inspection Quote" button - YELLOW */
+    .seva-page .btn-primary {
+        background-color: #FFD700 !important;
+        color: #000000 !important;
+        border: 2px solid #FFC107 !important;
+        font-weight: bold !important;
+    }
+    
+    /* Hover effect for Request Inspection Quote */
+    .seva-page .btn-primary:hover {
+        background-color: #FFC107 !important;
+    }
+    
+    /* COMPLETE SHADOW AND BORDER REMOVAL FOR THE INFO BOX */
+    /* Option 1: Direct targeting */
+    .page-service-section > .container > div:last-child {
+        box-shadow: none !important;
+        border: none !important;
+        outline: none !important;
+    }
+    
+    /* Option 2: Inline style override */
+    .info-box-no-shadow {
+        background: var(--light-bg) !important;
+        padding: 40px !important;
+        border-radius: 12px !important;
+        margin-top: 50px !important;
+        text-align: center !important;
+        box-shadow: none !important;
+        border: none !important;
+        outline: none !important;
+    }
+    
+    /* Remove any inherited borders */
+    .page-service-section .container > div {
+        border: none !important;
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://vaayuu-roboticss.vercel.app/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Services",
+        "item": "https://vaayuu-roboticss.vercel.app/seva.html"
+      }
+    ]
+  }
+  </script>
+
 </head>
 
-<body>
+<body class="seva-page">
 
 <header class="site-header">
   <div class="container header-inner">
     <a href="index.html" class="logo">
-      <img src="./assets/logo.png" alt="Vaayuu Logo">
+      <img src="./assets/logo.png" alt="Vaayuu Robotics Logo">
     </a>
 
 <nav class="main-nav">
+  <button id="closeMenu" class="mobile-close">✕</button>
 
   <a href="index.html">Home</a>
-  <a href="seva.html">Service</a>
+  <a href="seva.html">Services</a>
 
   <div class="nav-dropdown">
       <button class="dropbtn">Company ▾</button>
@@ -43,9 +126,9 @@
   <section class="section page-service-section">
     <div class="container">
       
-      <h2 class="section-title services-title">
+      <h1 class="section-title services-title">
         Our Full Range of <span class="accent">Services</span>
-      </h2>
+      </h1>
 
       <p class="section-sub">
         Explore all the services we offer with precision, reliability, and a passion for excellence.
@@ -53,87 +136,89 @@
 
       <div class="service-grid-new">
 
-        <!-- Industrial Solutions -->
         <a class="service-card-new" href="industrial.html">
-          <img src="./assets/oilgas.png" alt="Industrial Solutions">
+          <img src="./assets/oilgas.png" alt="Industrial Drone Inspection Services">
           <div class="card-content">
-            <h3>Industrial Solutions</h3>
+            <h2>Industrial Solutions</h2>
             <p>Power, manufacturing, pipelines, structural audits with high-precision sensors.</p>
-            <span class="btn btn-primary btn-small">Know More</span>
+            <span class="btn btn-primary btn-small">View Details</span>
           </div>
         </a>
 
-        <!-- Solar -->
         <a class="service-card-new" href="solar.html">
-          <img src="./assets/solar.png" alt="Solar Plant Inspection">
+          <img src="./assets/solar.png" alt="Solar Plant Thermal Inspection Drone">
           <div class="card-content">
-            <h3>Solar Plant Inspection</h3>
+            <h2>Solar Plant Inspection</h2>
             <p>Thermal anomaly detection and high-accuracy defect mapping for solar farms.</p>
-            <span class="btn btn-primary btn-small">Know More</span>
+            <span class="btn btn-primary btn-small">View Details</span>
           </div>
         </a>
 
-        <!-- Road Survey -->
-        <a class="service-card-new" href="index.html">
-          <img src="./assets/hero-road.png" alt="Road Survey & Inspection">
+        <a class="service-card-new" href="road.html">
+          <img src="./assets/hero-road.png" alt="Drone Road Survey and Highway Inspection">
           <div class="card-content">
-            <h3>Road Survey & Inspection</h3>
+            <h2>Road Survey & Inspection</h2>
             <p>Automated drone surveying for national highways and municipal road audits.</p>
-            <span class="btn btn-primary btn-small">Know More</span>
+            <span class="btn btn-primary btn-small">View Details</span>
           </div>
         </a>
 
-        <!-- Agriculture -->
         <a class="service-card-new" href="agriculture.html">
-          <img src="./assets/agriculture.png" alt="Agriculture Drone Services">
+          <img src="./assets/agriculture.png" alt="Agriculture Drone Spraying and Mapping">
           <div class="card-content">
-            <h3>Agriculture</h3>
+            <h2>Agriculture</h2>
             <p>Crop health mapping, spraying, soil analytics & yield optimization.</p>
-            <span class="btn btn-primary btn-small">Know More</span>
+            <span class="btn btn-primary btn-small">View Details</span>
           </div>
         </a>
 
-        <!-- Construction -->
         <a class="service-card-new" href="construction.html">
-          <img src="./assets/construction.png" alt="Construction Drone Monitoring">
+          <img src="./assets/construction.png" alt="Construction Site Monitoring Drone">
           <div class="card-content">
-            <h3>Construction Monitoring</h3>
+            <h2>Construction Monitoring</h2>
             <p>3D mapping, progress tracking, & automated surveying for large sites.</p>
-            <span class="btn btn-primary btn-small">Know More</span>
+            <span class="btn btn-primary btn-small">View Details</span>
           </div>
         </a>
 
-        <!-- Custom Drone -->
         <a class="service-card-new" href="custom-drone.html">
-          <img src="./assets/powerline.png" alt="Custom Drone Solutions">
+          <img src="./assets/powerline.png" alt="Custom Drone Manufacturing and Solutions">
           <div class="card-content">
-            <h3>Custom Drone Solution</h3>
+            <h2>Custom Drone Solution</h2>
             <p>Tailored UAVs designed for unique industrial requirements and operations.</p>
-            <span class="btn btn-primary btn-small">Know More</span>
+            <span class="btn btn-primary btn-small">View Details</span>
           </div>
         </a>
 
-        <!-- Consultation -->
         <a class="service-card-new" href="consultation.html">
-          <img src="./assets/consultation.png" alt="Consultation & Training">
+          <img src="./assets/consultation.png" alt="Drone Consultation and Pilot Training">
           <div class="card-content">
-            <h3>Consultation & Training</h3>
+            <h2>Consultation & Training</h2>
             <p>DGCA-compliant drone training, research support, and pilot certification.</p>
-            <span class="btn btn-primary btn-small">Know More</span>
+            <span class="btn btn-primary btn-small">View Details</span>
           </div>
         </a>
 
-        <!-- Disaster Management -->
         <a class="service-card-new" href="disaster.html">
-          <img src="./assets/disaster.png" alt="Disaster Management">
+          <img src="./assets/disaster.png" alt="Disaster Management Drone Services">
           <div class="card-content">
-            <h3>Disaster Management</h3>
+            <h2>Disaster Management</h2>
             <p>Rapid mapping, rescue operations support & hazard zone visualization.</p>
-            <span class="btn btn-primary btn-small">Know More</span>
+            <span class="btn btn-primary btn-small">View Details</span>
           </div>
         </a>
 
       </div>
+
+      <!-- COMPLETELY CLEAN BOX - NO SHADOW, NO BORDER -->
+      <div class="info-box-no-shadow">
+        <h3 style="margin-bottom: 15px;">Ready to Inspect Your Site?</h3>
+        <p style="margin-bottom: 25px; max-width: 600px; margin-left: auto; margin-right: auto; color: var(--muted);">
+            Share your project details and our team will respond within 24 hours with a tailored drone inspection plan.
+        </p>
+        <a href="contact.html" class="btn btn-primary">Request Inspection Quote</a>
+      </div>
+
     </div>
   </section>
 
@@ -161,25 +246,34 @@
       <h5>Contact Us</h5>
       <p>
         Email: contact@VaayuuRobotics.com<br>
-        Phone: +91 90000 00000<br>
+        Phone: +91 81208 44716<br>
         Location: MP Nagar, Bhopal, MP
       </p>
 
-     <div class="social-links">
+    <div class="social-links">
 
-    <a href="https://wa.me/9000000000" target="_blank" class="social-icon">
-        <img src="./assets/icons/whatsapp.svg" class="footer-icon" alt="WhatsApp">
+    <a href="https://facebook.com" target="_blank" class="social-icon">
+        <i class="fab fa-facebook-f"></i>
     </a>
 
-    <a href="https://instagram.com/" target="_blank" class="social-icon">
-        <img src="./assets/icons/instagram.svg" class="footer-icon" alt="Instagram">
+    <a href="https://twitter.com" target="_blank" class="social-icon">
+        <i class="fab fa-twitter"></i>
     </a>
 
-    <a href="https://www.linkedin.com/company/vaayu-robotics/" target="_blank" class="social-icon">
-        <img src="./assets/icons/linkedin.svg" class="footer-icon" alt="LinkedIn">
+    <a href="https://youtube.com" target="_blank" class="social-icon">
+        <i class="fab fa-youtube"></i>
+    </a>
+
+    <a href="https://instagram.com" target="_blank" class="social-icon">
+        <i class="fab fa-instagram"></i>
+    </a>
+
+    <a href="https://linkedin.com" target="_blank" class="social-icon">
+        <i class="fab fa-linkedin-in"></i>
     </a>
 
 </div>
+
 
     </div>
   </div>
@@ -190,16 +284,25 @@
 
 <script>
 (function(){
-  const toggle = document.querySelector(".mobile-toggle");
-  const nav = document.querySelector(".main-nav");
-  if(!toggle || !nav) return;
+  const toggle = document.querySelector(".mobile-toggle"); // ☰
+  const nav = document.querySelector(".main-nav");         // Menu
+  const closeBtn = document.getElementById("closeMenu");   // ✕ close button
 
-  toggle.addEventListener("click", (e) => {
+  if(!toggle || !nav || !closeBtn) return;
+
+  // Open menu
+  toggle.addEventListener("click", (e)=>{
     e.stopPropagation();
-    nav.classList.toggle("open");
+    nav.classList.add("open");
   });
 
-  document.addEventListener("click", (e) => {
+  // Close menu using X button
+  closeBtn.addEventListener("click", ()=>{
+    nav.classList.remove("open");
+  });
+
+  // Close menu on outside click
+  document.addEventListener("click", (e)=>{
     if(window.innerWidth <= 940 && nav.classList.contains("open")){
       if(!nav.contains(e.target) && !toggle.contains(e.target)){
         nav.classList.remove("open");
@@ -207,12 +310,13 @@
     }
   });
 
-  window.addEventListener("resize", ()=>{ 
-    if(window.innerWidth > 940) nav.classList.remove("open"); 
+  // Reset menu on desktop resize
+  window.addEventListener("resize", ()=>{
+    if(window.innerWidth > 940) nav.classList.remove("open");
   });
-
 })();
 </script>
+
 
 </body>
 </html>

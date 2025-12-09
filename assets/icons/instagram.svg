@@ -1,9 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-<path fill="#ffffff" d="M224.1 141c-63.6 0-114.9 51.3-114.9 
-114.9S160.5 370.8 224.1 370.8 339 319.5 339 
-255.9 287.7 141 224.1 141zm146.4-28.2c0 
-14.9-12.1 27-27 27h-40.6c-14.9 0-27-12.1-27-27V72.2c0-14.9 
-12.1-27 27-27h40.6c14.9 0 27 12.1 27 27v40.6zM224.1 
-75c-80.6 0-146 65.4-146 146 0 80.6 65.4 146 
-146 146s146-65.4 146-146c0-80.6-65.4-146-146-146z"/>
+<svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+    <linearGradient id="IG" x1="0" y1="24" x2="24" y2="0" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#FEDA75"></stop>
+        <stop offset="0.25" stop-color="#FA7E1E"></stop>
+        <stop offset="0.5" stop-color="#D62976"></stop>
+        <stop offset="0.75" stop-color="#962FBF"></stop>
+        <stop offset="1" stop-color="#4F5BD5"></stop>
+    </linearGradient>
+</defs>
+
+<rect width="24" height="24" rx="6" fill="url(#IG)"></rect>
+
+<!-- Outer white circle -->
+<circle cx="12" cy="12" r="5.3" stroke="white" stroke-width="1.6" fill="none"></circle>
+
+<!-- Inner camera dot -->
+<circle cx="16.2" cy="7.8" r="1.4" fill="white"></circle>
+
 </svg>

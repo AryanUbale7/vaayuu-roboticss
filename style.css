@@ -1604,4 +1604,1092 @@ img, section, div {
         padding-top: 90px;
     }
 }
+/* SAME NAVBAR FOR ALL PAGES */
+.site-header {
+    width: 100%;
+    background: #ffffff;
+    padding: 12px 0;        /* SAME AS HOME PAGE */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
 
+.header-inner {
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;         /* Same padding */
+}
+
+/* NAV LINKS FIX */
+.main-nav a, 
+.dropbtn {
+    font-size: 17px;
+    font-weight: 600;
+    color: #0d1b2a;
+}
+
+/* Contact Button */
+.nav-contact-btn {
+    background: #f5b400;
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-weight: 700;
+    color: #000;
+}
+.footer-icon {
+    width: 34px;
+    height: 34px;
+    object-fit: contain;
+    border-radius: 6px;
+}
+.social-links {
+    display: flex;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.social-icon i {
+    font-size: 20px;
+    color: #8da0ff;   /* blue shade like screenshot */
+    transition: 0.3s ease;
+}
+
+.social-icon i:hover {
+    color: #ffffff;  /* hover effect */
+}
+.btn-yellow,
+.contact-btn,
+.hero-yellow-btn {
+    background: #f5b400 !important;   /* yellow */
+    color: #000 !important;           /* black text */
+    padding: 14px 28px;
+    font-weight: 700;
+    border-radius: 12px;
+    display: inline-block;
+}
+
+.btn-yellow:hover,
+.contact-btn:hover,
+.hero-yellow-btn:hover {
+    background: #ffca28 !important;   /* lighter yellow */
+}
+.btn-yellow {
+    background: #f5b400 !important;   /* Yellow color */
+    color: #ffffff !important;        /* WHITE TEXT */
+    padding: 14px 28px;
+    border-radius: 10px;
+    font-weight: 700;
+    border: none;
+    display: inline-block;
+}
+.mobile-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    background: none;
+    border: none;
+    color: #000;
+    cursor: pointer;
+    z-index: 9999;
+}
+/* Mobile NAV FIX */
+@media (max-width: 768px) {
+
+    .main-nav {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        background: white;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        transition: all 0.3s ease;
+        padding-top: 50px;
+    }
+
+    .main-nav.open {
+        left: 0;
+    }
+
+    /* Make menu text bold */
+    .main-nav a,
+    .dropbtn {
+        font-size: 20px;
+        font-weight: 700;   /* bold */
+        text-align: center;
+    }
+
+    /* Dropdown center */
+    .nav-dropdown {
+        text-align: center;
+        width: 100%;
+    }
+}
+.mobile-close {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: #000;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+/* MOBILE ONLY */
+@media (max-width: 768px) {
+    .mobile-close {
+        display: block;
+    }
+}
+
+/* MOBILE CLOSE BUTTON */
+.mobile-close {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  color: #000;
+  font-size: 28px;
+  border: none;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+/* Show Close Button only on Mobile */
+@media (max-width: 940px) {
+  .mobile-close {
+    display: block;
+  }
+
+  .main-nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    height: 100vh;
+    background: white;
+    padding: 80px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    transition: all 0.3s ease;
+  }
+
+  .main-nav.open {
+    right: 0;
+  }
+
+  .main-nav a, 
+  .dropbtn {
+    font-size: 22px;
+    font-weight: 700;   /* Make Home, Service, Company bold */
+    text-align: left;
+  }
+}
+@media (max-width: 940px){
+  .nav-dropdown {
+    width: 100%;
+  }
+
+  .dropbtn {
+    width: 100%;
+    text-align: left;
+    font-weight: 700;
+  }
+
+  .dropdown-menu {
+    margin-left: 10px;
+  }
+}
+/* Hide close button on desktop */
+.mobile-close {
+    display: none;
+}
+
+/* Show only on mobile */
+@media (max-width: 940px) {
+    .mobile-close {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: none;
+        border: none;
+        font-size: 28px;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    .main-nav.open {
+        display: block;
+    }
+}
+/* ------------------------------------
+   MOBILE NAV MENU FIXES
+------------------------------------ */
+
+/* Hide Close Button on Desktop */
+.mobile-close {
+  display: none;
+}
+
+/* Mobile View */
+@media (max-width: 940px) {
+
+  /* Show Close Button */
+  .mobile-close {
+      display: block;
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: none;
+      border: none;
+      font-size: 28px;
+      cursor: pointer;
+      color: #000;
+      z-index: 9999;
+  }
+
+  /* Mobile Menu Layout */
+  .main-nav {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 75%;
+      height: 100vh;
+      background: #fff;
+      padding: 60px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      transition: 0.3s ease-in-out;
+      z-index: 999;
+  }
+
+  /* When menu is open */
+  .main-nav.open {
+      right: 0;
+  }
+
+  /* Make Company centered */
+  .nav-dropdown {
+      text-align: center;
+  }
+}
+
+/* ------------------------------------
+   TEXT FIXES
+------------------------------------ */
+
+/* Home & Service bold */
+.main-nav a {
+  font-weight: 600; /* bold style */
+}
+
+/* Company dropdown button center & bold */
+.dropbtn {
+  font-weight: 600;
+  width: 100%;
+  text-align: center;
+}
+@media (max-width: 940px) {
+    .main-nav a {
+        font-weight: 600; /* semi-bold */
+    }
+}
+@media (max-width: 940px) {
+    .nav-dropdown {
+        width: 100%;
+        text-align: center;
+    }
+
+    .dropbtn {
+        width: 100%;
+        text-align: center;
+        font-weight: 600;
+    }
+}
+/* MOBILE MENU (initial hidden) */
+@media (max-width: 940px) {
+    .main-nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 250px;
+        height: 100vh;
+        background: white;
+        display: flex;
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 15px;
+        transition: 0.3s ease;
+        z-index: 999;
+    }
+
+    /* When opened */
+    .main-nav.open {
+        right: 0;
+    }
+
+    .main-nav a,
+    .dropbtn {
+        font-size: 18px;
+        font-weight: 600;
+    }
+}
+@media (max-width: 940px) {
+  .nav-dropdown .dropbtn {
+      text-align: center;
+      width: 100%;
+  }
+}
+@media (max-width: 940px) {
+  .main-nav a {
+      font-weight: 600;
+  }
+}
+@media (max-width: 940px) {
+  .mobile-close {
+      display: block;
+      position: absolute;
+      top: 12px;
+      right: 14px;
+      background: none;
+      border: none;
+      font-size: 30px;
+      color: #000;
+      cursor: pointer;
+      z-index: 2000;
+  }
+}
+/* Hide close button on desktop */
+.mobile-close {
+    display: none;
+}
+
+/* Show close button only in mobile menu */
+@media (max-width: 940px) {
+    .mobile-close {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        background: none;
+        border: none;
+        font-size: 30px;
+        color: #000;
+        cursor: pointer;
+        z-index: 10002;
+    }
+}
+/* Yellow Buttons (Global Fix for All Services) */
+.btn.btn-blue,
+.btn.btn-primary {
+    background: #f4c542 !important;   /* Yellow */
+    color: #ffffff !important;        /* White text */
+    border: none !important;
+}
+
+.btn.btn-blue:hover,
+.btn.btn-primary:hover {
+    background: #e0b234 !important;   /* Slight darker yellow */
+    color: #ffffff !important;
+}
+/* Yellow Button Style */
+.btn-yellow,
+.btn.btn-primary,
+.btn-more,
+.service-card a.btn {
+    background: #f7b500 !important;  /* Yellow */
+    color: #ffffff !important;       /* White text */
+    border: none !important;
+}
+
+/* Hover Effect */
+.btn-yellow:hover,
+.btn.btn-primary:hover,
+.btn-more:hover {
+    background: #d99c00 !important;
+    color: #fff !important;
+}
+.service-title-index,
+.service-title {
+    color: #ffffff !important;
+}
+/* --- START: Fix for Road Survey Page White Space --- */
+
+/* Vertical Space Reduction for the main section */
+.key-highlight-section {
+    /* Section की ऊपरी और निचली Padding कम करें */
+    padding-top: 40px !important; 
+    padding-bottom: 40px !important; 
+}
+
+/* Card Grid Spacing Reduction */
+.key-grid-service {
+    /* कार्ड्स के बीच की दूरी कम करें */
+    gap: 15px; 
+    margin-top: 15px; 
+}
+/* --- START: STRONGER Fix for Road Survey Page White Space --- */
+
+/* 1. Section की ऊपरी और निचली Padding (जगह) को कम करें */
+.key-highlight-section {
+    padding-top: 30px !important; 
+    padding-bottom: 40px !important; 
+    margin: 0 !important;
+}
+
+/* 2. H2 Title (Key Highlights) के नीचे की ज़्यादा जगह को कम करें */
+.key-highlight-section .section-title.key-title {
+    margin-bottom: 20px !important; 
+    padding-bottom: 0 !important;
+    margin-top: 0 !important;
+}
+
+/* 3. Cards के Grid के बीच की दूरी कम करें */
+.key-grid-service {
+    gap: 20px !important; 
+    margin-top: 10px !important;
+}
+
+/* --- END: STRONGER Fix for Road Survey Page White Space --- */
+/* --- FINAL FIX: Overrides for Road Survey White Space Issue --- */
+
+/* 1. SECTION PADDING OVERRIDE: Ensure the main container for the content is tight */
+.key-highlight-section {
+    /* Main section padding ko tight kiya */
+    padding-top: 40px !important; 
+    padding-bottom: 50px !important; 
+    margin: 0 !important; /* Exterior margin removed */
+}
+
+/* 2. TITLE MARGIN OVERRIDE: Remove large vertical spacing below H2 title */
+.key-highlight-section .section-title,
+.key-highlight-section .section-title.key-title {
+    margin-bottom: 15px !important; /* Title ke neeche ki jagah kam ki */
+}
+
+/* 3. GRID GAP OVERRIDE: Ensure sufficient but not excessive space between cards */
+.key-grid-service {
+    gap: 20px !important; 
+    margin-top: 25px !important; /* Title aur cards ke beech proper space diya */
+}
+/* --- FINAL FIX: Card Contrast & Separation --- */
+.key-card-service {
+    /* Existing box-shadow को गहरा किया ताकि कार्ड बाहर दिखे */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12) !important;
+    
+    /* हल्का ग्रे बॉर्डर जोड़ा ताकि cream background से कंट्रास्ट मिले */
+    border: 1px solid rgba(0, 0, 0, 0.1) !important; 
+    
+    /* Top border को बरकरार रखा */
+    border-top: 6px solid var(--amber) !important; 
+}
+/* --- FINAL FIX: Overrides for Vertical White Space Reduction --- */
+
+/* 1. SECTION PADDING FIX: पूरे Key Highlights सेक्शन के ऊपर और नीचे की जगह कम करें */
+.key-highlight-section {
+    padding-top: 40px !important; 
+    padding-bottom: 50px !important; 
+    margin: 0 !important; 
+}
+
+/* 2. TITLE MARGIN FIX: "Key Highlights" हेडिंग के ठीक नीचे की ज़्यादा जगह कम करें */
+.key-highlight-section .section-title,
+.key-highlight-section .section-title.key-title {
+    margin-bottom: 15px !important; 
+}
+
+/* 3. GRID GAP FIX: कार्ड्स के बीच की दूरी और Grid की ऊपरी जगह (Title से दूरी) सेट करें */
+.key-grid-service {
+    gap: 20px !important;
+    margin-top: 25px !important; 
+}
+
+/* 4. CARD CONTRAST FIX: कार्ड्स को बैकग्राउंड में 'merge' होने से रोकें */
+.key-card-service {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12) !important;
+    border: 1px solid rgba(0, 0, 0, 0.1) !important; 
+    border-top: 6px solid var(--amber) !important; 
+}
+/* यह CSS सभी HTML files में <style> section में add करें */
+
+/* सभी buttons को rectangular shape */
+.btn, .btn-download, .btn-yellow, .btn-primary, .btn-contact, 
+.nav-contact-btn, .hero-ctas .btn, .lead-gen-block .btn,
+.hero-ctas a, .lead-gen-block a {
+    border-radius: 4px !important; /* rectangular edges */
+}
+
+/* Header में Contact Us button */
+.nav-contact-btn {
+    border-radius: 4px !important;
+    border: none;
+    padding: 8px 20px;
+    background: #f39c12;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* Hero section में buttons */
+.hero-ctas .btn-download {
+    border-radius: 4px !important;
+    background: #fff;
+    color: #333;
+    padding: 12px 28px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.hero-ctas .btn-yellow {
+    border-radius: 4px !important;
+    background: #FFC400;
+    color: black;
+    padding: 12px 28px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.hero-ctas .btn-contact {
+    border-radius: 4px !important;
+    background: #FFC400;
+    color: black;
+    padding: 12px 28px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Section में lead-gen-block के buttons */
+.lead-gen-block .btn-primary {
+    border-radius: 4px !important;
+    background: #2c3e50;
+    color: white;
+    padding: 12px 32px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+}
+
+/* Construction page के special button के लिए */
+.btn-contact {
+    border-radius: 4px !important;
+}
+
+/* सभी buttons को हमेशा rectangular */
+*[class*="btn"] {
+    border-radius: 4px !important;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .hero-ctas {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+    
+    .hero-ctas .btn-download,
+    .hero-ctas .btn-yellow,
+    .hero-ctas .btn-contact {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+}
+
+/* LOGO YELLOW COLOR SCHEME FOR ENTIRE WEBSITE */
+:root {
+    --logo-yellow: #FFD75F;  /* Exact logo yellow */
+    --logo-dark: #2c3e50;    /* Dark blue from logo */
+    --footer-blue: #0a1929;  /* DARK BLUE background only */
+    --button-yellow: #FFC400; /* Slightly darker yellow for buttons */
+    --cream-bg: #FFF9E6;     /* Light cream background */
+}
+
+/* ============ HEADER NAVIGATION ============ */
+/* Main navigation links - Home, Services BLACK and BOLD */
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.main-nav a:not(.nav-contact-btn) {
+    font-weight: 700 !important; /* BOLD */
+    color: #000000 !important; /* BLACK color */
+    text-decoration: none !important;
+    padding: 8px 15px !important;
+    transition: color 0.3s ease !important;
+    font-size: 1rem !important;
+}
+
+.main-nav a:not(.nav-contact-btn):hover {
+    color: var(--logo-yellow) !important; /* Yellow on hover */
+}
+
+/* Dropdown button भी BLACK and BOLD */
+.dropbtn {
+    font-weight: 700 !important; /* BOLD */
+    color: #000000 !important; /* BLACK color */
+    background: transparent !important;
+    border: none !important;
+    padding: 8px 15px !important;
+    cursor: pointer !important;
+    font-size: 1rem !important;
+    font-family: inherit !important;
+}
+
+.dropbtn:hover {
+    color: var(--logo-yellow) !important; /* Yellow on hover */
+}
+
+/* ============ CONTACT US BUTTON ============ */
+.nav-contact-btn {
+    background: var(--logo-yellow) !important;
+    color: var(--logo-dark) !important;
+    border-radius: 4px !important;
+    padding: 8px 20px !important;
+    font-weight: 700 !important; /* BOLD */
+    margin-left: 10px !important;
+    border: none !important;
+}
+
+.nav-contact-btn:hover {
+    background: #FFC400 !important;
+    transform: translateY(-2px) !important;
+}
+
+/* ============ MOBILE VIEW FIX ============ */
+@media (max-width: 940px) {
+    /* Mobile menu button */
+    .mobile-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        color: #000;
+        cursor: pointer;
+        z-index: 1001;
+    }
+    
+    /* Mobile menu - centered */
+    .main-nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 280px;
+        height: 100vh;
+        background: white;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 80px;
+        gap: 0;
+        transition: right 0.3s ease;
+        z-index: 1000;
+        box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+    }
+    
+    .main-nav.open {
+        right: 0;
+    }
+    
+    /* Mobile menu links - centered and full width */
+    .main-nav a:not(.nav-contact-btn) {
+        width: 100%;
+        text-align: center;
+        padding: 15px 20px;
+        border-bottom: 1px solid #f0f0f0;
+        color: #000000 !important;
+        font-weight: 600 !important;
+        display: block;
+    }
+    
+    /* Dropdown in mobile */
+    .nav-dropdown {
+        width: 100%;
+    }
+    
+    .dropbtn {
+        width: 100%;
+        text-align: center;
+        padding: 15px 20px;
+        border-bottom: 1px solid #f0f0f0;
+        color: #000000 !important;
+        font-weight: 600 !important;
+    }
+    
+    .dropdown-menu {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+        border: none;
+        background: #f9f9f9;
+    }
+    
+    .dropdown-menu a {
+        padding: 12px 20px;
+        border-bottom: 1px solid #eee;
+    }
+    
+    /* Contact button in mobile - centered */
+    .main-nav .nav-contact-btn {
+        width: 80%;
+        margin: 20px auto;
+        text-align: center;
+        display: block;
+    }
+    
+    /* Close button */
+    .mobile-close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        color: #000;
+        cursor: pointer;
+    }
+}
+
+/* ============ HERO SECTION ============ */
+.hero-title {
+    color: var(--logo-yellow) !important;
+}
+
+/* Hero buttons */
+.btn-download {
+    background: white !important;
+    color: var(--logo-dark) !important;
+    border-radius: 4px !important;
+    padding: 12px 28px !important;
+    font-weight: 600 !important;
+}
+
+.btn-yellow, .btn-contact {
+    background: var(--logo-yellow) !important;
+    color: var(--logo-dark) !important;
+    border-radius: 4px !important;
+    padding: 12px 28px !important;
+    font-weight: 600 !important;
+}
+
+.btn-yellow:hover, .btn-contact:hover {
+    background: #FFC400 !important;
+}
+
+/* ============ KEY HIGHLIGHTS SECTION ============ */
+.accent {
+    color: var(--logo-yellow) !important;
+}
+
+.key-title span.accent {
+    color: var(--logo-yellow) !important;
+}
+
+/* Cards bullets yellow */
+.key-card-service li:before {
+    color: var(--logo-yellow) !important;
+}
+
+/* ============ LEAD GEN BLOCK ============ */
+.lead-gen-block {
+    background: var(--cream-bg) !important;
+}
+
+.lead-gen-block .btn-primary {
+    background: var(--logo-dark) !important;
+    color: white !important;
+    border-radius: 4px !important;
+    padding: 12px 32px !important;
+    font-weight: 600 !important;
+}
+
+.lead-gen-block .btn-primary:hover {
+    background: #0a1929 !important;
+}
+
+/* ============ FOOTER ============ */
+.site-footer {
+    background: var(--footer-blue) !important;
+    color: white !important;
+    padding: 50px 0 20px !important;
+}
+
+.site-footer h4, 
+.site-footer h5 {
+    color: white !important;
+    font-weight: 600 !important;
+}
+
+.site-footer p {
+    color: white !important;
+    line-height: 1.6 !important;
+}
+
+.site-footer .footer-links li a {
+    color: white !important;
+    text-decoration: none !important;
+    transition: color 0.3s ease !important;
+}
+
+.site-footer .footer-links li a:hover {
+    color: var(--logo-yellow) !important;
+}
+
+.social-links {
+    display: flex !important;
+    gap: 12px !important;
+    margin-top: 20px !important;
+}
+
+.social-icon {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 38px !important;
+    height: 38px !important;
+    background: transparent !important;
+    color: white !important;
+    border: 2px solid white !important;
+    border-radius: 50% !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease !important;
+    font-size: 1rem !important;
+}
+
+.social-icon:hover {
+    background: white !important;
+    color: var(--footer-blue) !important;
+    transform: translateY(-3px) scale(1.1) !important;
+}
+
+.site-copy {
+    background: #061220 !important;
+    color: #b8c1cc !important;
+    padding: 18px 0 !important;
+    margin-top: 50px !important;
+    text-align: center !important;
+    font-size: 0.85rem !important;
+    border-top: 1px solid #1a2d42 !important;
+}
+
+/* ============ ALL BUTTONS RECTANGULAR ============ */
+.btn, .btn-download, .btn-yellow, .btn-primary, .btn-contact, 
+.nav-contact-btn, .hero-ctas .btn, .lead-gen-block .btn,
+.hero-ctas a, .lead-gen-block a,
+input[type="submit"], input[type="button"], button:not(.mobile-toggle):not(.mobile-close):not(.dropbtn) {
+    border-radius: 4px !important;
+}
+
+/* ============ MOBILE RESPONSIVE ============ */
+@media (max-width: 768px) {
+    .hero-ctas {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+    
+    .hero-ctas .btn-download,
+    .hero-ctas .btn-yellow,
+    .hero-ctas .btn-contact {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+    
+    .site-footer {
+        padding: 40px 0 20px !important;
+    }
+    
+    .footer-grid {
+        grid-template-columns: 1fr !important;
+        gap: 30px !important;
+    }
+    
+    .social-links {
+        justify-content: center !important;
+    }
+}
+/* Construction page ke liye specific style */
+.construction-page .schedule-consultation-btn,
+.page-template-construction .schedule-consultation-btn,
+body.construction .schedule-consultation-btn,
+[data-page="construction"] .schedule-consultation-btn {
+    background-color: #FFD700 !important; /* Bright yellow */
+    color: #000000 !important; /* Black text for contrast */
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    border: 2px solid #FFC107; /* Slightly darker yellow border */
+}
+
+/* Hover effect */
+.construction-page .schedule-consultation-btn:hover,
+.page-template-construction .schedule-consultation-btn:hover {
+    background-color: #FFC107 !important; /* Darker yellow on hover */
+    color: #000000 !important;
+}
+
+
+/* ============================================ */
+/* FOR ALL PAGES EXCEPT CONSTRUCTION & INDUSTRIAL */
+/* ============================================ */
+
+/* Download Brochure Button - BLUE */
+.download-brochure-btn,
+.btn-download,
+[class*="brochure"],
+button:contains("Download Brochure"),
+a:contains("Download Brochure") {
+    background-color: #007bff !important;
+    color: white !important;
+    border: 2px solid #0056b3 !important;
+    padding: 12px 24px !important;
+    border-radius: 5px !important;
+    font-weight: bold !important;
+}
+
+/* ============================================ */
+/* CONSTRUCTION PAGE SPECIFIC */
+/* ============================================ */
+
+/* Construction page - Yellow buttons */
+.construction.html .schedule-consultation-btn,
+body.construction .schedule-consultation-btn,
+[data-page="construction"] .schedule-consultation-btn,
+button:contains("Schedule Consultation") {
+    background-color: #FFD700 !important; /* Yellow */
+    color: #000000 !important;
+    border: 2px solid #FFC107 !important;
+}
+
+/* ============================================ */
+/* INDUSTRIAL PAGE SPECIFIC */
+/* ============================================ */
+
+/* Industrial page - Yellow buttons */
+.industrial.html .book-feasibility-btn,
+body.industrial .book-feasibility-btn,
+[data-page="industrial"] .book-feasibility-btn,
+button:contains("Book a Project Feasibility Call") {
+    background-color: #FFD700 !important; /* Yellow */
+    color: #000000 !important;
+    border: 2px solid #FFC107 !important;
+}
+
+/* ============================================ */
+/* PAGE-SPECIFIC TARGETING BASED ON HTML FILE */
+/* ============================================ */
+
+/* For construction.html */
+body:has(link[href*="construction.html"]) .btn,
+html:has([src*="construction.html"]) .btn {
+    /* Yellow for consultation buttons in construction page */
+}
+
+/* For industrial.html */
+body:has(link[href*="industrial.html"]) .btn,
+html:has([src*="industrial.html"]) .btn {
+    /* Yellow for feasibility buttons in industrial page */
+}
+
+/* For all other service pages (agriculture, custom-drone, etc) */
+body:has(link[href*="agriculture.html"]),
+body:has(link[href*="custom-drone.html"]),
+body:has(link[href*="powerline.html"]),
+body:has(link[href*="disaster.html"]) {
+    /* These will use the default blue for download brochure */
+}
+
+/* ============================================ */
+/* BETTER APPROACH: ADD PAGE CLASS TO BODY */
+/* ============================================ */
+
+/* Aap har page ke <body> tag mein class add karein: */
+/* Example: <body class="construction-page"> */
+
+.construction-page .schedule-consultation-btn,
+.construction-page .consultation-btn {
+    background-color: #FFD700 !important;
+    color: #000000 !important;
+}
+
+.industrial-page .book-feasibility-btn,
+.industrial-page .feasibility-btn {
+    background-color: #FFD700 !important;
+    color: #000000 !important;
+}
+
+/* All other pages - Blue for Download Brochure */
+.service-page .download-brochure-btn {
+    background-color: #007bff !important;
+    color: white !important;
+}
+/* Add this at the END of your style.css file */
+
+/* Agriculture Page Specific Styles */
+.agriculture-page .btn-download {
+    background-color: #007bff !important;
+    color: white !important;
+    border: 2px solid #0056b3 !important;
+}
+
+.agriculture-page .lead-gen-block .btn-primary {
+    background-color: #FFD700 !important;
+    color: #000000 !important;
+    border: 2px solid #FFC107 !important;
+}
+/* Card shadow remove karne ke liye */
+.key-card-service {
+    box-shadow: none !important;
+}
+
+/* Ya agar specific shadow class hai toh */
+.shadow-card,
+.card-shadow,
+.box-shadow {
+    box-shadow: none !important;
+}
+
+/* Agar yeh specific section ke cards ka shadow hai toh */
+.lead-gen-block,
+.request-quote-card,
+.inspection-card {
+    box-shadow: none !important;
+}
+
+/* Agar background se differentiate ke liye border chahiye */
+.key-card-service {
+    border: 1px solid #e0e0e0 !important;
+    box-shadow: none !important;
+}
+/* Specific card ki class pe */
+.your-card-class {
+    box-shadow: none !important;
+}
+
+/* Hover effect bhi remove karna hai toh */
+.your-card-class:hover {
+    box-shadow: none !important;
+}

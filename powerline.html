@@ -3,37 +3,230 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Powerline Monitoring | Vaayuu Robotics</title>
+  
+  <title>Powerline Monitoring & Transmission Line Inspection Services | Vaayuu Robotics</title>
+  <meta name="description" content="Vaayuu Robotics offers high-resolution drone inspection and thermal monitoring for transmission lines, substations, and high-voltage (HV) infrastructure to improve safety and asset reliability." />
+  <link rel="canonical" href="https://vaayuu-roboticss.vercel.app/powerline.html" />
+
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    /* FIX FOR WHITE SPACE IN CARDS */
+    .key-card-service {
+      margin: 0;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      line-height: 1.4;
+      height: 100%;
+    }
+    
+    .key-card-service h3 {
+      margin: 0 0 15px 0;
+      padding: 0;
+      font-size: 1.25rem;
+      color: #2c3e50;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    
+    .key-card-service ul {
+      margin: 0;
+      padding: 0 0 0 20px;
+      list-style-type: none;
+    }
+    
+    .key-card-service li {
+      margin: 0 0 8px 0;
+      padding: 0;
+      position: relative;
+    }
+    
+    .key-card-service li:before {
+      content: "•";
+      color: #f39c12;
+      font-weight: bold;
+      position: absolute;
+      left: -15px;
+    }
+    
+    .key-card-service li:last-child {
+      margin-bottom: 0;
+    }
+    
+    .key-card-icon {
+      font-size: 1.5rem;
+    }
+    
+    /* Grid layout fix - 4 cards in 2x2 layout */
+    .key-grid-service {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      margin-top: 30px;
+    }
+    
+    /* Section spacing */
+    .key-highlight-section {
+      padding: 60px 0;
+    }
+    
+    .key-title {
+      margin-bottom: 30px;
+    }
+    
+    /* ADDED STYLE FOR LEAD GEN CTA */
+    .lead-gen-block {
+        background: var(--cream); 
+        padding: 40px; 
+        border-radius: 12px; 
+        margin-top: 50px; 
+        text-align: center; 
+        box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    
+    /* Mobile responsiveness */
+    @media (max-width: 992px) {
+      .key-grid-service {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+      
+      .key-card-service {
+        padding: 15px;
+      }
+      
+      .lead-gen-block {
+        padding: 30px 20px;
+        margin-top: 40px;
+      }
+    }
+
+    /* ============================================ */
+    /* BUTTON COLOR FIXES FOR POWERLINE PAGE */
+    /* ============================================ */
+    
+    /* Download Brochure Button - BLUE */
+    .powerline-page .btn-download {
+        background-color: #007bff !important;
+        color: white !important;
+        border: 2px solid #0056b3 !important;
+        padding: 12px 24px !important;
+        border-radius: 5px !important;
+        font-weight: bold !important;
+        text-decoration: none !important;
+        display: inline-block !important;
+        transition: all 0.3s ease !important;
+    }
+    
+    /* Hover effect for Download Brochure */
+    .powerline-page .btn-download:hover {
+        background-color: #0056b3 !important;
+        transform: translateY(-2px) !important;
+        box-shadow: 0 4px 8px rgba(0, 91, 187, 0.3) !important;
+    }
+    
+    /* Request Inspection Quote Button - YELLOW */
+    .powerline-page .btn-yellow {
+        background-color: #FFD700 !important;
+        color: #000000 !important;
+        border: 2px solid #FFC107 !important;
+        padding: 12px 24px !important;
+        border-radius: 5px !important;
+        font-weight: bold !important;
+        text-decoration: none !important;
+        display: inline-block !important;
+        transition: all 0.3s ease !important;
+    }
+    
+    /* Hover effect for Request Inspection Quote */
+    .powerline-page .btn-yellow:hover {
+        background-color: #FFC107 !important;
+        transform: translateY(-2px) !important;
+        box-shadow: 0 4px 8px rgba(255, 193, 7, 0.3) !important;
+    }
+    
+    /* Book a Consultation Button - YELLOW */
+    .powerline-page .lead-gen-block .btn-primary {
+        background-color: #FFD700 !important;
+        color: #000000 !important;
+        border: 2px solid #FFC107 !important;
+        padding: 12px 24px !important;
+        border-radius: 5px !important;
+        font-weight: bold !important;
+        text-decoration: none !important;
+        display: inline-block !important;
+        transition: all 0.3s ease !important;
+    }
+    
+    /* Hover effect for Book a Consultation */
+    .powerline-page .lead-gen-block .btn-primary:hover {
+        background-color: #FFC107 !important;
+        transform: translateY(-2px) !important;
+        box-shadow: 0 4px 8px rgba(255, 193, 7, 0.3) !important;
+    }
+    /* ============================================ */
+    
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://vaayuu-roboticss.vercel.app/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Services",
+        "item": "https://vaayuu-roboticss.vercel.app/seva.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Powerline Monitoring",
+        "item": "https://vaayuu-roboticss.vercel.app/powerline.html"
+      }
+    ]
+  }
+  </script>
+
 </head>
 
-<body>
+<body class="powerline-page">
 
 <header class="site-header">
   <div class="container header-inner">
     <a href="index.html" class="logo">
-      <img src="assets/logo.png" alt="Vaayuu Logo">
+      <img src="assets/logo.png" alt="Vaayuu Robotics Logo">
     </a>
 
     <nav class="main-nav">
+      <button id="closeMenu" class="mobile-close">✕</button>
 
-  <a href="index.html">Home</a>
-  <a href="seva.html">Service</a>
+      <a href="index.html">Home</a>
+      <a href="seva.html">Services</a>
 
-  <!-- Company Dropdown -->
-  <div class="nav-dropdown">
-      <button class="dropbtn">Company ▾</button>
-      <div class="dropdown-menu">
-          <a href="company.html">Company Overview</a>
-          <a href="about.html">About Us</a>
-          <a href="faq.html">FAQ</a>
+      <div class="nav-dropdown">
+          <button class="dropbtn">Company ▾</button>
+          <div class="dropdown-menu">
+              <a href="company.html">Company Overview</a>
+              <a href="about.html">About Us</a>
+              <a href="faq.html">FAQ</a>
+          </div>
       </div>
-  </div>
 
-  <a href="contact.html" class="nav-contact-btn">Contact Us</a>
+     <a href="contact.html" class="nav-contact-btn">Contact Us</a>
 
-
-</nav>
+    </nav>
 
 
     <button class="mobile-toggle">☰</button>
@@ -41,13 +234,11 @@
 </header>
 
 
-<!-- ================= HERO SECTION ================= -->
-
 <section class="hero hero-page service-hero-custom" style="background-image:url('assets/powerline-cover.jpg');">
   <div class="hero-overlay"></div>
 
   <div class="hero-content container">
-    <h1 class="hero-title">Powerline Monitoring</h1>
+    <h1 class="hero-title">Drone Powerline Monitoring & Inspection</h1>
 
     <p class="lead">
       Drone-based inspections to ensure safe and efficient operation of transmission lines, substations, and power infrastructure.
@@ -55,24 +246,22 @@
 
     <div class="hero-ctas">
       <a class="btn btn-download"
-         href="assets/booklet_of_Vaayu_Robotics_for_transmission_line.pdf"
-         download>
-         Download Brochure
+           href="assets/booklet_of_Vaayu_Robotics_for_transmission_line.pdf"
+           download>
+           Download Brochure
       </a>
 
-      <a class="btn btn-contact" href="contact.html">Contact Us</a>
+      <a class="btn-yellow" href="contact.html">Request Inspection Quote</a>
     </div>
   </div>
 </section>
 
 
-<!-- ================= HIGHLIGHTS ================= -->
-
 <section class="section key-highlight-section">
   <div class="container center">
 
     <h2 class="section-title key-title">
-      Key <span class="accent">Highlights</span>
+      Key Power Infrastructure <span class="accent">Applications</span>
     </h2>
 
     <div class="key-grid-service">
@@ -114,11 +303,18 @@
       </div>
 
     </div>
+    
+    <div class="lead-gen-block">
+        <h2 style="margin-bottom: 15px;">Optimize Your Power Asset Reliability</h2>
+        <p style="margin-bottom: 25px; max-width: 600px; margin-left: auto; margin-right: auto; color: var(--muted);">
+            Book a consultation to implement AI-powered drone monitoring for your transmission lines and grids.
+        </p>
+        <a href="contact.html" class="btn btn-primary">Book a Consultation</a>
+    </div>
+    
   </div>
 </section>
 
-
-<!-- ================= FOOTER ================= -->
 
 <footer class="site-footer">
   <div class="container footer-grid">
@@ -140,27 +336,32 @@
     <div>
       <h5>Contact Us</h5>
       <p>Email: contact@VaayuuRobotics.com</p>
-      <p>Phone: +91 90000 00000</p>
+      <p>Phone: +91 81208 44716</p>
       <p>Location: MP Nagar, Bhopal, MP</p>
+<div class="social-links">
 
-     <div class="social-links">
-
-    <!-- WhatsApp -->
-    <a href="https://wa.me/9000000000" target="_blank" class="social-icon">
-        <img src="assets/icons/whatsapp.svg" class="footer-icon" alt="WhatsApp">
+    <a href="https://facebook.com" target="_blank" class="social-icon">
+        <i class="fab fa-facebook-f"></i>
     </a>
 
-    <!-- Instagram -->
-    <a href="https://instagram.com/" target="_blank" class="social-icon">
-        <img src="assets/icons/instagram.svg" class="footer-icon" alt="Instagram">
+    <a href="https://twitter.com" target="_blank" class="social-icon">
+        <i class="fab fa-twitter"></i>
     </a>
 
-    <!-- LinkedIn -->
-    <a href="https://www.linkedin.com/company/vaayu-robotics/" target="_blank" class="social-icon">
-        <img src="assets/icons/linkedin.svg" class="footer-icon" alt="LinkedIn">
+    <a href="https://youtube.com" target="_blank" class="social-icon">
+        <i class="fab fa-youtube"></i>
+    </a>
+
+    <a href="https://instagram.com" target="_blank" class="social-icon">
+        <i class="fab fa-instagram"></i>
+    </a>
+
+    <a href="https://linkedin.com" target="_blank" class="social-icon">
+        <i class="fab fa-linkedin-in"></i>
     </a>
 
 </div>
+
 
     </div>
 
@@ -170,20 +371,26 @@
 </footer>
 
 
-<!-- ================= MOBILE NAV SCRIPT ================= -->
-
 <script>
 (function() {
   const toggle = document.querySelector(".mobile-toggle");
   const nav = document.querySelector(".main-nav");
+  const closeBtn = document.getElementById("closeMenu");
 
-  if (!toggle || !nav) return;
+  if (!toggle || !nav || !closeBtn) return;
 
+  // Open menu
   toggle.addEventListener("click", (e) => {
     e.stopPropagation();
-    nav.classList.toggle("open");
+    nav.classList.add("open");
   });
 
+  // Close menu using X button
+  closeBtn.addEventListener("click", ()=>{
+    nav.classList.remove("open");
+  });
+
+  // Close menu on outside click and resize
   document.addEventListener("click", (e) => {
     if (window.innerWidth <= 940 && nav.classList.contains("open")) {
       if (!nav.contains(e.target) && !toggle.contains(e.target)) {

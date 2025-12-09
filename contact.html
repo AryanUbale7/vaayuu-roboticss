@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact Us | Vaayuu Robotics</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 
 <link rel="stylesheet" href="style.css">
 
@@ -145,6 +147,7 @@
     </a>
 
     <nav class="main-nav">
+      <button id="closeMenu" class="mobile-close">✕</button>
 
       <a href="index.html">Home</a>
       <a href="seva.html">Service</a>
@@ -242,18 +245,29 @@
       <p>Location: MP Nagar, Bhopal, MP</p>
 
       <div class="social-links">
-        <a href="https://wa.me/9000000000" target="_blank" class="social-icon">
-            <img src="assets/icons/whatsapp.svg" class="footer-icon" alt="WhatsApp">
-        </a>
 
-        <a href="https://instagram.com/" target="_blank" class="social-icon">
-            <img src="assets/icons/instagram.svg" class="footer-icon" alt="Instagram">
-        </a>
+    <a href="https://facebook.com" target="_blank" class="social-icon">
+        <i class="fab fa-facebook-f"></i>
+    </a>
 
-        <a href="https://www.linkedin.com/company/vaayu-robotics/" target="_blank" class="social-icon">
-            <img src="assets/icons/linkedin.svg" class="footer-icon" alt="LinkedIn">
-        </a>
-      </div>
+    <a href="https://twitter.com" target="_blank" class="social-icon">
+        <i class="fab fa-twitter"></i>
+    </a>
+
+    <a href="https://youtube.com" target="_blank" class="social-icon">
+        <i class="fab fa-youtube"></i>
+    </a>
+
+    <a href="https://instagram.com" target="_blank" class="social-icon">
+        <i class="fab fa-instagram"></i>
+    </a>
+
+    <a href="https://linkedin.com" target="_blank" class="social-icon">
+        <i class="fab fa-linkedin-in"></i>
+    </a>
+
+</div>
+
 
     </div>
   </div>
@@ -329,6 +343,40 @@ form.addEventListener('submit', async (e) => {
         alert('Message not sent. Check Formspree ID.');
     }
 });
+</script>
+<script>
+(function(){
+  const toggle = document.querySelector(".mobile-toggle"); // ☰
+  const nav = document.querySelector(".main-nav");         // Menu
+  const closeBtn = document.getElementById("closeMenu");   // ✕ close button
+
+  if(!toggle || !nav || !closeBtn) return;
+
+  // Open menu
+  toggle.addEventListener("click", (e)=>{
+    e.stopPropagation();
+    nav.classList.add("open");
+  });
+
+  // Close menu using X button
+  closeBtn.addEventListener("click", ()=>{
+    nav.classList.remove("open");
+  });
+
+  // Close menu on outside click
+  document.addEventListener("click", (e)=>{
+    if(window.innerWidth <= 940 && nav.classList.contains("open")){
+      if(!nav.contains(e.target) && !toggle.contains(e.target)){
+        nav.classList.remove("open");
+      }
+    }
+  });
+
+  // Reset menu on desktop resize
+  window.addEventListener("resize", ()=>{
+    if(window.innerWidth > 940) nav.classList.remove("open");
+  });
+})();
 </script>
 
 </body>
