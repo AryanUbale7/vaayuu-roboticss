@@ -1,374 +1,212 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact Us | Vaayuu Robotics</title>
+<link rel="icon" type="image/png" href="./assets/favicon.png">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-
-<link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact Us | Vaayuu Robotics</title>
+<link rel="stylesheet" href="./style.css">
 
 <style>
-    /* CONTACT CARD */
-    .contact-wrapper {
-        max-width: 650px;
-        margin: 120px auto 60px auto;
-        padding: 40px 30px;
-        background: #ffffff;
-        border-radius: 14px;
-        border: 2px solid #f0d77a;
-        box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
-        text-align: center;
-    }
+.contact-section{padding:90px 0 60px}
+.contact-card{
+  max-width:620px;
+  margin:auto;
+  background:#fff;
+  border-radius:14px;
+  border:2px solid #f0d77a;
+  padding:26px;
+  box-shadow:0 10px 30px rgba(0,0,0,.08)
+}
+.contact-card h1{text-align:center;color:#d99a00;margin-bottom:6px}
+.contact-card p{text-align:center;color:#555;margin-bottom:18px}
 
-    h1 {
-        font-size: 34px;
-        font-weight: 700;
-        color: #d99a00;
-        margin-bottom: 5px;
-    }
+.contact-label{font-weight:600;margin:10px 0 6px;display:block;font-size:14px}
 
-    .contact-wrapper p {
-        font-size: 15px;
-        color: #555;
-        margin-bottom: 25px;
-    }
+.contact-card input,
+.contact-card textarea{
+  width:100%;padding:12px;border-radius:8px;
+  border:1px solid #d8d8d8;background:#fafafa
+}
 
-    /* LABEL */
-    .contact-label {
-        text-align: left;
-        font-weight: 600;
-        margin-bottom: 6px;
-        margin-top: 10px;
-        color: #333;
-    }
+.contact-row{display:flex;gap:14px}
+@media(max-width:640px){.contact-row{flex-direction:column}}
 
-    /* INPUTS */
-    #contactForm input,
-    #contactForm textarea {
-        width: 100%;
-        padding: 14px;
-        margin-bottom: 15px;
-        border-radius: 8px;
-        border: 1px solid #d8d8d8;
-        background: #fafafa;
-        font-size: 16px;
-        transition: 0.2s;
-    }
+.word-counter{text-align:right;font-size:12px;margin:4px 0 14px;color:#666}
 
-    #contactForm input:focus,
-    #contactForm textarea:focus {
-        border-color: #d99a00;
-        background: #fff;
-        outline: none;
-    }
+.contact-btn{
+  display:block;width:180px;margin:12px auto 0;
+  padding:12px;background:#f5b700;color:#fff;
+  border:none;border-radius:25px;font-size:16px;cursor:pointer
+}
 
-    #contactForm textarea {
-        min-height: 130px;
-        resize: vertical;
-    }
+.success-message{
+  display:none;margin-top:12px;padding:10px;
+  background:#e6f9ee;border:1px solid #9adfb7;
+  color:#0f5132;border-radius:6px;text-align:center
+}
 
-    /* WORD COUNTER */
-    #wordCounter {
-        text-align: right;
-        font-size: 13px;
-        margin-top: -10px;
-        margin-bottom: 15px;
-        color: #666;
-    }
+.direct-contact{text-align:center;margin-top:28px}
+.direct-contact a{color:#d99a00;text-decoration:none}
 
-    /* BUTTON */
-    .contact-btn {
-        width: 180px;
-        padding: 14px;
-        background: #f5b700;
-        color: #fff;
-        border: none;
-        font-size: 17px;
-        border-radius: 25px;
-        cursor: pointer;
-        font-weight: 600;
-        margin: 10px auto;
-        display: block;
-        box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
-        transition: 0.25s;
-    }
-
-    .contact-btn:hover {
-        background: #d99a00;
-    }
-
-    /* SUCCESS MESSAGE */
-    .success-message {
-        background: #d4edda;
-        border: 1px solid #a3d7ae;
-        padding: 12px;
-        border-radius: 6px;
-        color: #155724;
-        margin-bottom: 15px;
-        font-size: 14px;
-    }
-
-    /* MOBILE NAV FIX */
-    @media(max-width:940px){
-        .main-nav {
-            position: absolute;
-            top: 100%;
-            right: 0;
-            background: white;
-            width: 220px;
-            padding: 20px;
-            display: none;
-            flex-direction: column;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-            z-index: 9999;
-        }
-        .main-nav.open {
-            display: flex;
-        }
-        .main-nav a, .dropbtn {
-            color: #000 !important;
-            padding: 10px 0;
-            border-bottom: 1px solid #eee;
-        }
-    }
+/* SOCIAL ICON FIX */
+.social-links a{-webkit-tap-highlight-color:transparent}
+.social-links a:focus,
+.social-links a:active{
+  outline:none;background:none!important;box-shadow:none!important
+}
 </style>
 </head>
 
 <body>
 
-<!-- =============== NAVBAR =============== -->
 <header class="site-header">
   <div class="container header-inner">
-    
-    <a href="index.html" class="logo">
-      <img src="assets/logo.png" alt="Vaayuu Logo">
+
+    <a class="logo" href="index.html">
+      <img src="./assets/logo.png" alt="Vaayuu Robotics">
     </a>
 
+    <!-- HAMBURGER (NAV KE BAHAR) -->
+    <button class="mobile-toggle" aria-label="Open Menu">☰</button>
+
+    <!-- NAV -->
     <nav class="main-nav">
-      <button id="closeMenu" class="mobile-close">✕</button>
+      <button id="closeMenu" class="mobile-close" aria-label="Close Menu">✕</button>
 
       <a href="index.html">Home</a>
-      <a href="seva.html">Service</a>
+      <a href="seva.html">Services</a>
 
       <div class="nav-dropdown">
-          <button class="dropbtn">Company ▾</button>
-          <div class="dropdown-menu">
-              <a href="company.html">Company Overview</a>
-              <a href="about.html">About Us</a>
-              <a href="faq.html">FAQ</a>
-          </div>
+        <button class="dropbtn">Company ▾</button>
+        <div class="dropdown-menu">
+          <a href="company.html">Company Overview</a>
+          <a href="about.html">About Us</a>
+          <a href="faq.html">FAQ</a>
+          <a href="careers.html">Careers & Internships</a>
+        </div>
       </div>
 
       <a href="contact.html" class="nav-contact-btn">Contact Us</a>
-
     </nav>
-
-    <button class="mobile-toggle">☰</button>
 
   </div>
 </header>
 
 <main>
+<section class="contact-section">
+<div class="container">
+<div class="contact-card">
 
-<div class="contact-wrapper">
+<h1>Contact Us</h1>
+<p>We’d love to hear from you.</p>
 
-      <h1>Contact Us</h1>
-      <p>We'd love to hear from you! Whether you have a question or just want to say hi.</p>
+<form id="contactForm" action="https://formspree.io/f/xyzlnjza" method="POST">
 
-      <div id="success" class="success-message" style="display:none;">
-          Thank you! Your message has been sent successfully.
-      </div>
+<label class="contact-label">Full Name</label>
+<input type="text" name="name" required>
 
-      <form id="contactForm" action="https://formspree.io/f/xyzlnjza" method="POST">
+<label class="contact-label">Company (Optional)</label>
+<input type="text" name="company">
 
-          <label class="contact-label">Full Name</label>
-          <input type="text" name="name" placeholder="Enter your name" required>
-
-          <label class="contact-label">Company Name (Optional)</label>
-          <input type="text" name="company" placeholder="Enter company name">
-
-          <div style="display:flex; gap:15px; width:100%;">
-              <div style="flex:1;">
-                  <label class="contact-label">Email</label>
-                  <input type="email" name="email" placeholder="you@example.com" required>
-              </div>
-
-              <div style="flex:1;">
-                  <label class="contact-label">Phone</label>
-                  <input type="text" name="phone" placeholder="+91 ******" required>
-              </div>
-          </div>
-
-          <label class="contact-label">Your Message</label>
-          <textarea id="messageBox" name="message" placeholder="Write your message..." required></textarea>
-
-          <p id="wordCounter">0 / 200 words</p>
-
-          <button type="submit" class="contact-btn">Send Message</button>
-
-      </form>
-
-      <hr style="margin:30px 0; border:0; border-top:1px solid #eee;">
-
-      <p>Or reach us directly:</p>
-      <h3 style="color:#d99a00; margin:5px 0;">vaayur.c@gmail.com</h3>
-      <h3 style="color:#d99a00;">+91 81208 44716</h3>
-
+<div class="contact-row">
+<div>
+<label class="contact-label">Email</label>
+<input type="email" name="email" required>
+</div>
+<div>
+<label class="contact-label">Phone</label>
+<input type="text" name="phone" required>
+</div>
 </div>
 
+<label class="contact-label">Message</label>
+<textarea id="messageBox" name="message" required></textarea>
+
+<div class="word-counter" id="wordCounter">0 / 200 words</div>
+
+<button class="contact-btn">Send Message</button>
+<div id="success" class="success-message">
+Thank you! Your message has been sent successfully.
+</div>
+</form>
+
+<div class="direct-contact">
+<p>Email: <a href="mailto:contact@VaayuuRobotics.com">contact@VaayuuRobotics.com</a></p>
+<p>Phone: <span class="company-phone"></span></p>
+</div>
+
+</div>
+</div>
+</section>
 </main>
 
-<!-- =============== FOOTER =============== -->
 <footer class="site-footer">
-  <div class="container footer-grid">
-
-    <div>
-      <h4>Vaayuu Robotics</h4>
-      <p>Providing cutting-edge drone solutions with precision and reliability.</p>
-    </div>
-
-    <div>
-      <h5>Quick Links</h5>
-      <ul class="footer-links">
-        <li><a href="about.html">About us</a></li>
-        <li><a href="seva.html">Services</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-
-    <div>
-      <h5>Contact Us</h5>
-      <p>Email: contact@VaayuuRobotics.com</p>
-      <p>Phone: +91 90000 00000</p>
-      <p>Location: MP Nagar, Bhopal, MP</p>
-
-      <div class="social-links">
-
-     <a href="https://www.facebook.com/VAAYUROBOTICS/" target="_blank" class="social-icon">
-    <i class="fab fa-facebook-f"></i>
-</a>
-<a href="https://www.instagram.com/vaayurobotics/?hl=en" target="_blank" class="social-icon">
-    <i class="fab fa-instagram"></i>
-</a>
-
-<a href="https://www.linkedin.com/company/vaayu-robotics/posts/?feedView=all" target="_blank" class="social-icon">
-    <i class="fab fa-linkedin-in"></i>
-</a>
-
+<div class="container footer-grid">
+<div>
+<h4>Vaayuu Robotics</h4>
+<p>Providing cutting-edge dron solutions with precision and reliability.</p>
 </div>
 
+<div>
+<h5>Quick Links</h5>
+<ul class="footer-links">
+<li><a href="about.html">About</a></li>
+<li><a href="seva.html">Services</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="careers.html">Careers/internships</a></li>
+</ul>
+</div>
 
-    </div>
-  </div>
+<div>
+<h5>Contact Us</h5>
+<p>
+Email: <a href="mailto:contact@VaayuuRobotics.com">contact@VaayuuRobotics.com</a><br>
+Phone: <span class="company-phone"></span><br>
+Location: MP Nagar, Bhopal, MP
+</p>
 
-  <div class="site-copy">© 2025 Vaayuu Robotics. All Rights Reserved.</div>
+<div class="social-links">
+<a href="https://www.facebook.com/VAAYUROBOTICS/" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+<a href="https://www.instagram.com/vaayurobotics/?hl=en" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+<a href="https://www.linkedin.com/company/vaayu-robotics/posts/?feedView=all" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+</div>
+</div>
+</div>
+
+<div class="site-copy">© 2025 Vaayuu Robotics. All Rights Reserved.</div>
 </footer>
-
-<!-- =============== MOBILE NAV SCRIPT (FIXED) =============== -->
 <script>
 (function(){
   const toggle = document.querySelector(".mobile-toggle");
   const nav = document.querySelector(".main-nav");
+  const closeBtn = document.getElementById("closeMenu");
 
-  if(!toggle || !nav) return;
+  if(!toggle || !nav || !closeBtn){
+    console.error("Mobile nav elements missing on contact page");
+    return;
+  }
 
-  toggle.addEventListener("click", (e)=>{
-    e.stopPropagation();
-    nav.classList.toggle("open");
-  });
-
-  document.addEventListener("click", (e)=>{
-    if(window.innerWidth <= 940 && nav.classList.contains("open")){
-      if(!nav.contains(e.target) && !toggle.contains(e.target)){
-        nav.classList.remove("open");
-      }
-    }
-  });
-
-  window.addEventListener("resize", ()=>{
-    if(window.innerWidth > 940) nav.classList.remove("open");
-  });
-})();
-</script>
-
-<!-- =============== CONTACT PAGE SCRIPT =============== -->
-<script>
-// WORD LIMIT (200 words)
-const msgBox = document.getElementById("messageBox");
-const wordCounter = document.getElementById("wordCounter");
-
-msgBox.addEventListener("input", () => {
-    let words = msgBox.value.trim().split(/\s+/);
-    if (words[0] === "") words = [];
-
-    if (words.length > 200) {
-        words = words.slice(0, 200);
-        msgBox.value = words.join(" ");
-    }
-
-    wordCounter.textContent = `${words.length} / 200 words`;
-});
-
-// FORM SUCCESS
-const form = document.getElementById('contactForm');
-const success = document.getElementById('success');
-
-form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const data = new FormData(form);
-
-    const res = await fetch(form.action, {
-        method: 'POST',
-        body: data,
-        headers: { Accept: 'application/json' }
-    });
-
-    if(res.ok){
-        success.style.display = 'block';
-        form.reset();
-        wordCounter.textContent = "0 / 200 words";
-        setTimeout(()=> success.style.display='none', 4000);
-    } else {
-        alert('Message not sent. Check Formspree ID.');
-    }
-});
-</script>
-<script>
-(function(){
-  const toggle = document.querySelector(".mobile-toggle"); // ☰
-  const nav = document.querySelector(".main-nav");         // Menu
-  const closeBtn = document.getElementById("closeMenu");   // ✕ close button
-
-  if(!toggle || !nav || !closeBtn) return;
-
-  // Open menu
   toggle.addEventListener("click", (e)=>{
     e.stopPropagation();
     nav.classList.add("open");
   });
 
-  // Close menu using X button
   closeBtn.addEventListener("click", ()=>{
     nav.classList.remove("open");
   });
 
-  // Close menu on outside click
-  document.addEventListener("click", (e)=>{
+  document.addEventListener("click",(e)=>{
     if(window.innerWidth <= 940 && nav.classList.contains("open")){
       if(!nav.contains(e.target) && !toggle.contains(e.target)){
         nav.classList.remove("open");
       }
     }
   });
-
-  // Reset menu on desktop resize
-  window.addEventListener("resize", ()=>{
-    if(window.innerWidth > 940) nav.classList.remove("open");
-  });
 })();
 </script>
+
 
 </body>
 </html>
