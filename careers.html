@@ -127,26 +127,38 @@
 
 <!-- HEADER (same as index) -->
 <header class="site-header">
-<div class="container header-inner">
-<a class="logo" href="index.html"><img src="./assets/logo.png"></a>
-<nav class="main-nav">
-<button id="closeMenu" class="mobile-close">✕</button>
-<a href="index.html">Home</a>
-<a href="seva.html">Services</a>
-<div class="nav-dropdown">
-<button class="dropbtn">Company ▾</button>
-<div class="dropdown-menu">
-<a href="company.html">Company Overview</a>
-<a href="about.html">About Us</a>
-<a href="faq.html">FAQ</a>
-<a href="careers.html">Careers & Internships</a>
-</div>
-</div>
-<a href="contact.html" class="nav-contact-btn">Contact</a>
-</nav>
-<button class="mobile-toggle">☰</button>
-</div>
+  <div class="container header-inner">
+
+    <a class="logo" href="index.html">
+      <img src="./assets/logo.png" alt="Vaayuu Robotics Logo">
+    </a>
+
+    <!-- HAMBURGER -->
+    <button class="mobile-toggle" aria-label="Open Menu">☰</button>
+
+    <!-- NAV -->
+    <nav class="main-nav">
+      <button id="closeMenu" class="mobile-close" aria-label="Close Menu">✕</button>
+
+      <a href="index.html">Home</a>
+      <a href="seva.html">Services</a>
+
+      <div class="nav-dropdown">
+        <button class="dropbtn">Company ▾</button>
+        <div class="dropdown-menu">
+          <a href="company.html">Company Overview</a>
+          <a href="about.html">About Us</a>
+          <a href="faq.html">FAQ</a>
+          <a href="careers.html">Careers & Internships</a>
+        </div>
+      </div>
+
+      <a href="contact.html" class="nav-contact-btn">Contact Us</a>
+    </nav>
+
+  </div>
 </header>
+
 
 <!-- HERO -->
 <section class="career-hero">
@@ -297,5 +309,35 @@ and professional mentoring.
 
   <div class="site-copy">© 2025 Vaayuu Robotics. All Rights Reserved.</div>
 </footer>
+<script>
+(function(){
+  const toggle = document.querySelector(".mobile-toggle");
+  const nav = document.querySelector(".main-nav");
+  const closeBtn = document.getElementById("closeMenu");
+
+  if(!toggle || !nav || !closeBtn){
+    console.error("Mobile nav elements missing on careers page");
+    return;
+  }
+
+  toggle.addEventListener("click", (e)=>{
+    e.stopPropagation();
+    nav.classList.add("open");
+  });
+
+  closeBtn.addEventListener("click", ()=>{
+    nav.classList.remove("open");
+  });
+
+  document.addEventListener("click",(e)=>{
+    if(window.innerWidth <= 940 && nav.classList.contains("open")){
+      if(!nav.contains(e.target) && !toggle.contains(e.target)){
+        nav.classList.remove("open");
+      }
+    }
+  });
+})();
+</script>
+
 </body>
 </html>

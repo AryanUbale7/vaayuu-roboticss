@@ -1,9 +1,5 @@
-/* =========================
-   Vaayuu Robotics - FINAL CONSOLIDATED STABLE CSS
-   (Includes fixes for Index, About, Company, Services, and all service detail pages)
-   ========================= */
 
-/* ---------- Theme variables ---------- */
+
 :root{
   --cream: #F7EFD6;
   --navy: #07102a;
@@ -3066,4 +3062,10 @@ form {
 /* push content below fixed header */
 body{
   padding-top: var(--header-height);
+}
+.btn-primary {
+  background: var(--primary);
+}
+.btn-primary:hover {
+  background: var(--primary-dark);
 }
