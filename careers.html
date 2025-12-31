@@ -1,282 +1,183 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" type="image/png" href="./assets/favicon.png">
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+  
+  <title>Careers & Internships | Join the Team at Vaayuu Robotics</title>
+  <meta name="description" content="Build your career in drone technology. Apply for Software Developer Internships or Drone UAV Engineer roles at Vaayuu Robotics. Work on real-world industrial UAV projects." />
+  <meta name="keywords" content="Drone engineering jobs India, Robotics internships Bhopal, UAV software developer careers, Vaayuu Robotics hiring">
+  <link rel="canonical" href="https://vaayuu-roboticss.vercel.app/careers.html" />
+  <link rel="icon" type="image/png" href="./assets/favicon.png">
 
-  <title>Careers | Vaayuu Robotics</title>
-  <meta name="description" content="Careers at Vaayuu Robotics. Apply for Software/Web Developer Internship or Drone/UAV Engineer roles.">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="./style.css">
 
   <style>
-    /* CAREERS – COMPACT & APPLY-FIRST */
-    .careers-compact{
-      padding:90px 0 40px;
-    }
-
-    .careers-hero{
-      max-width:900px;
-      margin:auto;
-      text-align:center;
-      margin-bottom:40px;
-    }
-
-    .careers-hero h1{
-      font-size:42px;
-      margin-bottom:10px;
-    }
-
-    .careers-hero p{
-      color:var(--muted-2);
-      font-size:17px;
-    }
-
-    .career-cards{
-      max-width:900px;
-      margin:0 auto;
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:22px;
-    }
-
-    .career-card{
-      background:#fff;
-      border-radius:14px;
-      padding:22px;
-      box-shadow:var(--shadow-soft);
-      display:flex;
-      flex-direction:column;
-      justify-content:space-between;
-    }
-
-    .career-card h3{
-      margin-bottom:8px;
-    }
-
-    .career-card p{
-      color:var(--muted-2);
-      font-size:15px;
-      margin-bottom:18px;
-    }
+    .careers-compact{ padding:90px 0 40px; }
+    .careers-hero{ max-width:900px; margin:auto; text-align:center; margin-bottom:40px; }
+    .careers-hero h1{ font-size:42px; margin-bottom:10px; }
+    .careers-hero p{ color:var(--muted-2); font-size:17px; }
+    .career-cards{ max-width:900px; margin:0 auto; display:grid; grid-template-columns:1fr 1fr; gap:22px; }
+    .career-card{ background:#fff; border-radius:14px; padding:22px; box-shadow:var(--shadow-soft); display:flex; flex-direction:column; justify-content:space-between; border: 1px solid #eee; }
+    .career-card h3{ margin-bottom:8px; color: #2c3e50; }
+    .career-card p{ color:var(--muted-2); font-size:15px; margin-bottom:18px; }
 
     @media(max-width:900px){
-      .career-cards{
-        grid-template-columns:1fr;
-      }
-      .careers-hero h1{
-        font-size:34px;
+      .career-cards{ grid-template-columns:1fr; }
+      .careers-hero h1{ font-size:34px; }
+    }
+
+    .career-apply-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      padding: 14px 20px;
+      background: linear-gradient(135deg, #f5b700, #fbbf24);
+      color: #0b1220;
+      font-size: 16px;
+      font-weight: 600;
+      border-radius: 10px;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 10px 24px rgba(245, 183, 0, 0.35);
+      transition: all 0.25s ease;
+    }
+    .career-apply-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 30px rgba(245, 183, 0, 0.45);
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "JobPosting",
+    "title": "Drone / UAV Engineer",
+    "description": "Hands-on UAV testing, flight missions and industrial inspection deployments at Vaayuu Robotics.",
+    "hiringOrganization": {
+      "@type": "Organization",
+      "name": "Vaayuu Robotics",
+      "sameAs": "https://vaayuu-roboticss.vercel.app/"
+    },
+    "jobLocation": {
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bhopal",
+        "addressRegion": "MP",
+        "addressCountry": "IN"
       }
     }
-    /* ===== CAREERS APPLY BUTTON (PREMIUM) ===== */
-.career-apply-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-
-  width: 100%;
-  padding: 14px 20px;
-
-  background: linear-gradient(135deg, #f5b700, #fbbf24);
-  color: #0b1220;
-
-  font-size: 16px;
-  font-weight: 600;
-  border-radius: 10px;
-
-  text-decoration: none;
-  border: none;
-  cursor: pointer;
-
-  box-shadow: 0 10px 24px rgba(245, 183, 0, 0.35);
-  transition: all 0.25s ease;
-}
-
-.career-apply-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 14px 30px rgba(245, 183, 0, 0.45);
-  background: linear-gradient(135deg, #fbbf24, #f5b700);
-}
-
-.career-apply-btn:active {
-  transform: translateY(0);
-  box-shadow: 0 8px 18px rgba(245, 183, 0, 0.35);
-}
-
-  </style>
- 
-  <link rel="icon" type="image/png" href="./assets/favicon.png">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-
-  <!-- ✅ FONT AWESOME (MUST) -->
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-  <!-- SITE CSS -->
-  <link rel="stylesheet" href="./style.css">
-
- 
-
+  }
+  </script>
 </head>
 
 <body>
 
-<!-- ================= HEADER (AS-IT-IS FROM INDEX) ================= -->
 <header class="site-header">
   <div class="container header-inner">
-
     <a class="logo" href="index.html">
-      <img src="./assets/logo.png" alt="Vaayuu Robotics Logo">
+      <img src="./assets/logo.png" alt="Vaayuu Robotics - Industrial Drone Experts">
     </a>
-<nav class="main-nav">
-  <button id="closeMenu" class="mobile-close">✕</button>
-
-  <a href="index.html">Home</a>
-  <a href="seva.html">Services</a>
-  <a href="blog.html">Blog</a>
-
-  <div class="nav-dropdown">
-    <button class="dropbtn">Company ▾</button>
-    <div class="dropdown-menu">
-      <a href="company.html">Company Overview</a>
-      <a href="about.html">About Us</a>
-      <a href="faq.html">FAQ</a>
-      <a href="careers.html">Careers & Internships</a>
-    </div>
-  </div>
-
-  <a href="contact.html" class="nav-contact-btn">Contact Us</a>
-</nav>
-
-    <button class="mobile-toggle">☰</button>
+    <nav class="main-nav" aria-label="Main Navigation">
+      <button id="closeMenu" class="mobile-close" aria-label="Close Menu">✕</button>
+      <a href="index.html">Home</a>
+      <a href="seva.html">Services</a>
+      <a href="blog.html">Blog</a>
+      <div class="nav-dropdown">
+        <button class="dropbtn">Company ▾</button>
+        <div class="dropdown-menu">
+          <a href="company.html">Company Overview</a>
+          <a href="about.html">About Us</a>
+          <a href="faq.html">FAQ</a>
+          <a href="careers.html" class="active">Careers & Internships</a>
+        </div>
+      </div>
+      <a href="contact.html" class="nav-contact-btn">Contact Us</a>
+    </nav>
+    <button class="mobile-toggle" aria-label="Open Menu">☰</button>
   </div>
 </header>
 
 <main class="careers-compact">
-
-  <!-- HERO -->
   <section class="careers-hero">
     <h1>Careers at <span class="accent">Vaayuu Robotics</span></h1>
-    <p>
-      Apply now to work on real-world industrial drone and UAV projects.
-    </p>
+    <p>Join India's leading industrial UAV team. Apply now to work on cutting-edge drone technology.</p>
   </section>
 
-  <!-- ROLE CARDS (APPLY IMMEDIATELY VISIBLE) -->
   <section class="career-cards">
-
-    <!-- SOFTWARE INTERN -->
-    <div class="career-card">
+    <article class="career-card">
       <div>
         <h3>Software / Web Developer Intern</h3>
-        <p>
-          Work on dashboards, internal tools and modern web platforms
-          supporting drone operations.
-        </p>
+        <p>Build dashboards, internal tools, and modern web platforms supporting high-stakes drone operations and data analytics.</p>
       </div>
+      <a href="https://forms.gle/2xxuAenZHcufbFKr6" target="_blank" class="career-apply-btn" aria-label="Apply for Software Intern Position">
+        Apply Now <span>→</span>
+      </a>
+    </article>
 
-      <a href="https://forms.gle/2xxuAenZHcufbFKr6"
-   target="_blank"
-   class="career-apply-btn">
-  Apply Now <span>→</span>
-</a>
-
-    </div>
-
-    <!-- DRONE / UAV ENGINEER -->
-    <div class="career-card">
+    <article class="career-card">
       <div>
         <h3>Drone / UAV Engineer</h3>
-        <p>
-          Hands-on UAV testing, flight missions and industrial
-          inspection deployments.
-        </p>
+        <p>Participate in hands-on UAV testing, flight missions, and industrial inspection deployments across various terrains.</p>
       </div>
-
-      <a href="https://forms.gle/UfbLY3bHhTUpLZkT7"
-   target="_blank"
-   class="career-apply-btn">
-  Apply Now <span>→</span>
-</a>
-
-    </div>
-
+      <a href="https://forms.gle/UfbLY3bHhTUpLZkT7" target="_blank" class="career-apply-btn" aria-label="Apply for Drone Engineer Position">
+        Apply Now <span>→</span>
+      </a>
+    </article>
   </section>
-
 </main>
 
-<!-- ================= FOOTER (AS-IT-IS FROM INDEX) ================= -->
 <footer class="site-footer">
   <div class="container footer-grid">
-
     <div>
       <h4>Vaayuu Robotics</h4>
-      <p>Providing cutting-edge drone solutions with precision and reliability.</p>
+      <p>Providing cutting-edge drone solutions with precision and reliability across India.</p>
     </div>
-
     <div>
-     <ul class="footer-links">
-             <h5>Quick Links</h5>
-  <li><a href="about.html">About us</a></li>
-  <li><a href="seva.html">Services</a></li>
-  <li><a href="blog.html">Blog</a></li>
-  <li><a href="contact.html">Contact</a></li>
-  <li><a href="careers.html">Careers / Internships</a></li>
-</ul>
-
+      <ul class="footer-links">
+        <h5>Quick Links</h5>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="seva.html">Services</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="careers.html">Careers / Internships</a></li>
+      </ul>
     </div>
-
     <div>
       <h5>Contact Us</h5>
       <p>
-        Email: contact@VaayuuRobotics.com<br>
+        Email: info@vaayurobotics.in<br>
         Phone: +91 81208 44716<br>
-        Location: MP Nagar, Bhopal, MP
+        Location: MP Nagar, Bhopal, MP, India
       </p>
-
-      <!-- ✅ SOCIAL ICONS (MISSING PART) -->
       <div class="social-links">
-        <a href="https://www.facebook.com/VAAYUROBOTICS/" target="_blank" class="social-icon">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="https://www.instagram.com/vaayurobotics/?hl=en" target="_blank" class="social-icon">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://www.linkedin.com/company/vaayu-robotics/posts/?feedView=all" target="_blank" class="social-icon">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
+        <a href="https://www.facebook.com/VAAYUROBOTICS/" target="_blank" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/vaayurobotics/?hl=en" target="_blank" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/vaayu-robotics/" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
       </div>
     </div>
-
   </div>
-
-  <div class="site-copy">
-    © 2025 Vaayuu Robotics. All Rights Reserved.
-  </div>
+  <div class="site-copy">© 2025 Vaayuu Robotics. All Rights Reserved.</div>
 </footer>
 
-
-<!-- ================= MOBILE NAV SCRIPT (SAME AS INDEX) ================= -->
 <script>
 (function(){
   const toggle = document.querySelector(".mobile-toggle");
   const nav = document.querySelector(".main-nav");
   const closeBtn = document.getElementById("closeMenu");
-
   if(!toggle || !nav || !closeBtn) return;
-
   toggle.addEventListener("click", (e)=>{
     e.stopPropagation();
     nav.classList.add("open");
   });
-
   closeBtn.addEventListener("click", ()=>{
     nav.classList.remove("open");
   });
-
   document.addEventListener("click",(e)=>{
     if(window.innerWidth <= 940 && nav.classList.contains("open")){
       if(!nav.contains(e.target) && !toggle.contains(e.target)){
@@ -284,12 +185,10 @@
       }
     }
   });
-
   window.addEventListener("resize", ()=>{
     if(window.innerWidth > 940) nav.classList.remove("open");
   });
 })();
 </script>
-
 </body>
 </html>

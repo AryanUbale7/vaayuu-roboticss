@@ -1,39 +1,58 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-      integrity="sha512-xh6giXf0P4B+..."
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer" />
-
-  <link rel="icon" type="image/png" href="./assets/favicon.png">
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+  
+  <title>Drone Technology Blog | UAV Insights & Case Studies | Vaayuu Robotics</title>
+  <meta name="description" content="Stay updated with Vaayuu Robotics blog. Explore case studies on industrial drone surveys, agricultural UAV tech, and aerial intelligence in India.">
+  <meta name="keywords" content="Drone blog India, UAV technology updates, industrial drone case studies, Vaayuu Robotics news">
+  <link rel="canonical" href="https://vaayuu-roboticss.vercel.app/blog.html" />
+  <link rel="icon" type="image/png" href="./assets/favicon.png">
 
-  <title>Blog | Vaayuu Robotics</title>
-  <meta name="description" content="Insights, case studies and updates on industrial drone services, UAV technology and aerial intelligence by Vaayuu Robotics.">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="./style.css">
+
+  <style>
+    /* Blog Specific Enhancements */
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+    .blog-card {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+      transition: 0.3s;
+    }
+    .blog-card:hover { transform: translateY(-5px); }
+    .blog-img img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .blog-content { padding: 20px; }
+    .blog-content h3 { font-size: 1.25rem; margin-bottom: 10px; color: #2c3e50; }
+    .blog-meta { font-size: 0.85rem; color: #888; margin-bottom: 15px; }
+    .blog-link { color: #d99a00; font-weight: bold; text-decoration: none; }
+  </style>
 </head>
 
 <body>
 
-<!-- ================= HEADER (SAME AS INDEX) ================= -->
 <header class="site-header">
   <div class="container header-inner">
-
     <a class="logo" href="index.html">
-      <img src="./assets/logo.png" alt="Vaayuu Robotics Logo">
+      <img src="./assets/logo.png" alt="Vaayuu Robotics - Drone Experts Logo">
     </a>
-
-    <nav class="main-nav">
-      <button id="closeMenu" class="mobile-close">✕</button>
-
+    <nav class="main-nav" aria-label="Main Navigation">
+      <button id="closeMenu" class="mobile-close" aria-label="Close menu">✕</button>
       <a href="index.html">Home</a>
       <a href="seva.html">Services</a>
       <a href="blog.html" class="active">Blog</a>
-
       <div class="nav-dropdown">
         <button class="dropbtn">Company ▾</button>
         <div class="dropdown-menu">
@@ -43,95 +62,71 @@
           <a href="careers.html">Careers & Internships</a>
         </div>
       </div>
-
       <a href="contact.html" class="nav-contact-btn">Contact Us</a>
     </nav>
-
-    <button class="mobile-toggle">☰</button>
+    <button class="mobile-toggle" aria-label="Open menu">☰</button>
   </div>
 </header>
 
 <main>
-
-<!-- ================= BLOG HERO ================= -->
 <section class="section" style="background:var(--cream);padding:90px 0 60px;">
   <div class="container center">
-    <h1 class="section-title">
-      Vaayuu Robotics <span class="accent">Blog</span>
-    </h1>
-    <p class="section-sub">
-      Insights on industrial drone services, UAV technology and real-world deployments.
-    </p>
+    <h1 class="section-title">Drone Technology <span class="accent">Blog</span></h1>
+    <p class="section-sub">Insights on industrial drone services, UAV technology, and real-world deployments in India.</p>
   </div>
 </section>
 
-<!-- ================= BLOG LIST ================= -->
 <section class="section">
   <div class="container">
-
     <div class="blog-grid">
 
-      <!-- BLOG CARD -->
       <article class="blog-card">
-        <div class="blog-img placeholder-img">
-          Blog Image
+        <div class="blog-img">
+          <img src="assets/hero-road.png" alt="Drone performing road survey and inspection">
         </div>
         <div class="blog-content">
+          <div class="blog-meta">📅 Jan 2025 | By Vaayuu Tech Team</div>
           <h3>How Drones Are Transforming Road Survey & Inspection</h3>
-          <p>
-            Discover how industrial drones improve accuracy, safety and speed
-            in large-scale road survey projects.
-          </p>
-          <a href="#" class="blog-link">Read More →</a>
+          <p>Discover how industrial drones improve accuracy, safety, and speed in large-scale NHAI road survey projects.</p>
+          <a href="#" class="blog-link" aria-label="Read more about Drone Road Surveys">Read Full Article →</a>
         </div>
       </article>
 
-      <!-- BLOG CARD -->
       <article class="blog-card">
-        <div class="blog-img placeholder-img">
-          Blog Image
+        <div class="blog-img">
+          <img src="assets/construction.png" alt="Construction site monitoring using aerial drones">
         </div>
         <div class="blog-content">
+          <div class="blog-meta">📅 Dec 2024 | By Drone Expert</div>
           <h3>Construction Monitoring Using Aerial Intelligence</h3>
-          <p>
-            Learn how drone-based progress tracking helps construction teams
-            reduce delays and optimize resources.
-          </p>
-          <a href="#" class="blog-link">Read More →</a>
+          <p>Learn how drone-based progress tracking helps construction teams reduce delays and optimize resources effectively.</p>
+          <a href="#" class="blog-link" aria-label="Read more about Construction Monitoring">Read Full Article →</a>
         </div>
       </article>
 
-      <!-- BLOG CARD -->
       <article class="blog-card">
-        <div class="blog-img placeholder-img">
-          Blog Image
+        <div class="blog-img">
+          <img src="assets/oilgas.png" alt="Industrial drone inspecting a factory plant">
         </div>
         <div class="blog-content">
+          <div class="blog-meta">📅 Nov 2024 | By Safety Auditor</div>
           <h3>Industrial Drone Inspection: Use Cases & Benefits</h3>
-          <p>
-            From solar plants to factories, explore key applications of
-            industrial inspection drones.
-          </p>
-          <a href="#" class="blog-link">Read More →</a>
+          <p>From solar plants to oil refineries, explore the key applications and ROI of industrial inspection drones.</p>
+          <a href="#" class="blog-link" aria-label="Read more about Industrial Drone Benefits">Read Full Article →</a>
         </div>
       </article>
 
     </div>
-
   </div>
 </section>
-
 </main>
 
-<!-- ================= FOOTER (SAME AS INDEX) ================= -->
 <footer class="site-footer">
   <div class="container footer-grid">
-
     <div>
       <h4>Vaayuu Robotics</h4>
-      <p>Providing cutting-edge drone solutions with precision and reliability.</p>
+      <p>Providing cutting-edge drone solutions with precision and reliability across India.</p>
     </div>
-
     <div>
       <h5>Quick Links</h5>
       <ul class="footer-links">
@@ -142,36 +137,23 @@
         <li><a href="careers.html">Careers / Internships</a></li>
       </ul>
     </div>
-
     <div>
       <h5>Contact Us</h5>
       <p>
-        Email: contact@VaayuuRobotics.com<br>
+        Email: info@vaayurobotics.in<br>
         Phone: +91 81208 44716<br>
         Location: MP Nagar, Bhopal, MP
-        <div class="social-links">
-  <a href="https://www.facebook.com/VAAYUROBOTICS/" target="_blank" class="social-icon">
-    <i class="fab fa-facebook-f"></i>
-  </a>
-
-  <a href="https://www.instagram.com/vaayurobotics/?hl=en" target="_blank" class="social-icon">
-    <i class="fab fa-instagram"></i>
-  </a>
-
-  <a href="https://www.linkedin.com/company/vaayu-robotics/posts/?feedView=all" target="_blank" class="social-icon">
-    <i class="fab fa-linkedin-in"></i>
-  </a>
-</div>
-
       </p>
+      <div class="social-links">
+        <a href="https://www.facebook.com/VAAYUROBOTICS/" target="_blank" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/vaayurobotics/?hl=en" target="_blank" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/vaayu-robotics/" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
     </div>
-
   </div>
-
   <div class="site-copy">© 2025 Vaayuu Robotics. All Rights Reserved.</div>
 </footer>
 
-<!-- ================= MOBILE NAV SCRIPT ================= -->
 <script>
 (function(){
   const toggle = document.querySelector(".mobile-toggle");

@@ -5,14 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>Drone Construction Monitoring, 3D Mapping & Site Survey | Vaayuu Robotics</title>
-  <meta name="description" content="Vaayuu Robotics provides real-time drone construction monitoring, 3D mapping, earthwork volume calculation, and site progress tracking for faster, safer project delivery." />
+  <meta name="title" content="Drone Construction Monitoring & 3D Site Mapping | Vaayuu Robotics">
+  <meta name="description" content="Vaayuu Robotics offers real-time drone construction monitoring, 3D mapping, and earthwork volume calculation for faster and safer site project delivery across India." />
+  <meta name="keywords" content="Drone construction monitoring, 3D site mapping India, Orthomosaic drone survey, Earthwork volume calculation, Construction drone Bhopal">
   <link rel="canonical" href="https://vaayuu-roboticss.vercel.app/construction.html" />
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vaayuu-roboticss.vercel.app/construction.html">
+  <meta property="og:title" content="Drone Construction Monitoring & 3D Mapping | Vaayuu Robotics">
+  <meta property="og:description" content="Accelerate your construction projects with high-accuracy drone data and 3D modeling.">
+  <meta property="og:image" content="https://vaayuu-roboticss.vercel.app/assets/construction.png">
 
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   
   <style>
-    /* HERO FIX — NO CROPPING */
+    /* HERO FIX */
     .service-hero-custom {
         min-height: auto;
         padding: 140px 0 120px;
@@ -25,7 +33,6 @@
         justify-content: center;
     }
 
-    /* DARK OVERLAY */
     .service-hero-custom .hero-overlay {
         position: absolute;
         top: 0;
@@ -36,7 +43,6 @@
         z-index: 1;
     }
 
-    /* TEXT ABOVE OVERLAY */
     .hero-content {
         position: relative;
         z-index: 2;
@@ -56,132 +62,7 @@
         font-size: 1.1rem;
     }
 
-    /* Contact Us button (Yellow only here) */
-    .hero-ctas .btn-contact {
-        background: #FFC400;
-        color: black;
-        padding: 12px 28px;
-        border-radius: 8px;
-        font-weight: 600;
-        transition: 0.2s ease;
-    }
-
-    .hero-ctas .btn-contact:hover {
-        background: #e6b200;
-    }
-    
-    /* FIX FOR WHITE SPACE IN CARDS - SPECIAL FOR SINGLE-LINE CARDS */
-    .key-card-service {
-      margin: 0;
-      padding: 25px;
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-      line-height: 1.4;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-    
-    .key-card-service h3 {
-      margin: 0 0 15px 0;
-      padding: 0;
-      font-size: 1.25rem;
-      color: #2c3e50;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    
-    .key-card-service ul {
-      margin: 0;
-      padding: 0;
-      list-style-type: none;
-    }
-    
-    .key-card-service li {
-      margin: 0;
-      padding: 0;
-      position: relative;
-    }
-    
-    /* Remove bullets for single-line cards since they have only one item */
-    .key-card-service li:before {
-      content: none;
-    }
-    
-    .key-card-icon {
-      font-size: 1.5rem;
-    }
-    
-    /* Grid layout fix - 4 cards in 2x2 layout */
-    .key-grid-service {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 30px;
-      margin-top: 30px;
-    }
-    
-    /* Section spacing */
-    .key-highlight-section {
-      padding: 60px 0;
-    }
-    
-    .key-title {
-      margin-bottom: 30px;
-    }
-    
-    /* ADDED STYLE FOR LEAD GEN CTA */
-    .lead-gen-block {
-        background: var(--cream); 
-        padding: 40px; 
-        border-radius: 12px; 
-        margin-top: 50px; 
-        text-align: center; 
-        box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    }
-    
-    /* Mobile responsiveness */
-    @media (max-width: 992px) {
-      .key-grid-service {
-        grid-template-columns: 1fr;
-        gap: 20px;
-      }
-      
-      .key-card-service {
-        padding: 20px;
-      }
-      
-      .lead-gen-block {
-        padding: 30px 20px;
-        margin-top: 40px;
-      }
-      
-      .hero-title {
-        font-size: 2.5rem;
-      }
-      
-      .service-hero-custom {
-        padding: 100px 0 80px;
-      }
-    }
-    
-    @media (max-width: 768px) {
-      .hero-title {
-        font-size: 2rem;
-      }
-      
-      .service-hero-custom {
-        padding: 80px 0 60px;
-      }
-    }
-
-    /* ============================================ */
-    /* BUTTON COLOR FIXES FOR CONSTRUCTION PAGE */
-    /* ============================================ */
-    
-    /* Download Brochure Button - BLUE */
+    /* BUTTONS */
     .construction-page .btn-download {
         background-color: #007bff !important;
         color: white !important;
@@ -191,18 +72,10 @@
         font-weight: bold !important;
         text-decoration: none !important;
         display: inline-block !important;
-        transition: all 0.3s ease !important;
+        transition: 0.3s ease;
     }
     
-    /* Hover effect for Download Brochure */
-    .construction-page .btn-download:hover {
-        background-color: #0056b3 !important;
-        transform: translateY(-2px) !important;
-        box-shadow: 0 4px 8px rgba(0, 91, 187, 0.3) !important;
-    }
-    
-    /* Request Monitoring Quote Button - YELLOW */
-    .construction-page .btn-contact {
+    .construction-page .btn-contact, .construction-page .lead-gen-block .btn-primary {
         background-color: #FFD700 !important;
         color: #000000 !important;
         border: 2px solid #FFC107 !important;
@@ -211,37 +84,39 @@
         font-weight: 600 !important;
         text-decoration: none !important;
         display: inline-block !important;
-        transition: all 0.3s ease !important;
+        transition: 0.3s ease;
+    }
+
+    .key-card-service {
+      margin: 0;
+      padding: 25px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
     }
     
-    /* Hover effect for Request Monitoring Quote */
-    .construction-page .btn-contact:hover {
-        background-color: #FFC107 !important;
-        transform: translateY(-2px) !important;
-        box-shadow: 0 4px 8px rgba(255, 193, 7, 0.3) !important;
+    .key-grid-service {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      margin-top: 30px;
     }
     
-    /* Schedule Consultation Button - YELLOW */
-    .construction-page .lead-gen-block .btn-primary {
-        background-color: #FFD700 !important;
-        color: #000000 !important;
-        border: 2px solid #FFC107 !important;
-        padding: 12px 24px !important;
-        border-radius: 5px !important;
-        font-weight: bold !important;
-        text-decoration: none !important;
-        display: inline-block !important;
-        transition: all 0.3s ease !important;
+    .lead-gen-block {
+        background: #fdfaf0; 
+        padding: 40px; 
+        border-radius: 12px; 
+        margin-top: 50px; 
+        text-align: center;
     }
     
-    /* Hover effect for Schedule Consultation */
-    .construction-page .lead-gen-block .btn-primary:hover {
-        background-color: #FFC107 !important;
-        transform: translateY(-2px) !important;
-        box-shadow: 0 4px 8px rgba(255, 193, 7, 0.3) !important;
+    @media (max-width: 992px) {
+      .key-grid-service { grid-template-columns: 1fr; gap: 20px; }
+      .hero-title { font-size: 2.5rem; }
     }
-    /* ============================================ */
-    
   </style>
 
   <script type="application/ld+json">
@@ -270,207 +145,132 @@
     ]
   }
   </script>
-
 </head>
 
 <body class="construction-page">
 
 <header class="site-header">
   <div class="container header-inner">
-
     <a href="index.html" class="logo">
-      <img src="assets/logo.png" alt="Vaayuu Robotics Logo">
+      <img src="assets/logo.png" alt="Vaayuu Robotics - Drone Construction Experts">
     </a>
-
-    <nav class="main-nav">
-  <button id="closeMenu" class="mobile-close">✕</button>
-
-  <a href="index.html">Home</a>
-  <a href="seva.html">Services</a>
-  <a href="blog.html">Blog</a>
-
-  <div class="nav-dropdown">
-    <button class="dropbtn">Company ▾</button>
-    <div class="dropdown-menu">
-      <a href="company.html">Company Overview</a>
-      <a href="about.html">About Us</a>
-      <a href="faq.html">FAQ</a>
-      <a href="careers.html">Careers & Internships</a>
-    </div>
-  </div>
-
-  <a href="contact.html" class="nav-contact-btn">Contact Us</a>
-</nav>
-
-
-
-    <button class="mobile-toggle">☰</button>
-
+    <nav class="main-nav" aria-label="Main Navigation">
+      <button id="closeMenu" class="mobile-close" aria-label="Close menu">✕</button>
+      <a href="index.html">Home</a>
+      <a href="seva.html">Services</a>
+      <a href="blog.html">Blog</a>
+      <div class="nav-dropdown">
+        <button class="dropbtn">Company ▾</button>
+        <div class="dropdown-menu">
+          <a href="company.html">Company Overview</a>
+          <a href="about.html">About Us</a>
+          <a href="faq.html">FAQ</a>
+          <a href="careers.html">Careers & Internships</a>
+        </div>
+      </div>
+      <a href="contact.html" class="nav-contact-btn">Contact Us</a>
+    </nav>
+    <button class="mobile-toggle" aria-label="Open menu">☰</button>
   </div>
 </header>
 
-
-<section class="hero hero-page service-hero-custom"
-          style="background-image:url('assets/construction.png');">
-
+<main>
+<section class="hero hero-page service-hero-custom" style="background-image:url('assets/construction.png');" aria-label="Drone Construction Monitoring Banner">
   <div class="hero-overlay"></div>
-
   <div class="hero-content container">
-
-    <h1 class="hero-title">Drone Construction Monitoring & Mapping</h1>
-
+    <h1 class="hero-title">Drone Construction Monitoring & Site Mapping</h1>
     <p class="lead">
-      Track construction progress, create 3D models, and improve project timelines with high-accuracy drone data.
+      Real-time site progress tracking, high-accuracy 3D models, and earthwork analytics to keep your projects on schedule and under budget.
     </p>
-
     <div class="hero-ctas">
-      <a class="btn btn-download"
-           href="assets/Drone-Booklet2.pdf"
-           download>
-           Download Brochure
-      </a>
-
+      <a class="btn btn-download" href="assets/Drone-Booklet2.pdf" download>Download Brochure</a>
       <a href="contact.html" class="btn-contact">Request Monitoring Quote</a>
-
     </div>
-
   </div>
 </section>
+
 
 
 <section class="section key-highlight-section">
   <div class="container center">
-
-    <h2 class="section-title key-title">
-      Key Construction Monitoring <span class="accent">Benefits</span>
-    </h2>
-
+    <h2 class="section-title key-title">Construction Monitoring <span class="accent">Solutions</span></h2>
     <div class="key-grid-service">
+      <article class="key-card-service">
+        <h3><span class="key-card-icon">🏗️</span> Planning & Design Support</h3>
+        <p>Advanced 3D site modeling to visualize progress, optimize logistics, and streamline architectural workflows.</p>
+      </article>
 
-      <div class="key-card-service">
-        <h3>
-          <span class="key-card-icon">🔍</span> Planning & Design Support
-        </h3>
-        <ul>
-          <li>3D site modeling to visualize structure progress, optimize layouts, and streamline planning.</li>
-        </ul>
-      </div>
+      <article class="key-card-service">
+        <h3><span class="key-card-icon">📊</span> Site Progress Monitoring</h3>
+        <p>Weekly or monthly aerial captures to track build velocity, identify potential delays, and provide visual proof to stakeholders.</p>
+      </article>
 
-      <div class="key-card-service">
-        <h3>
-          <span class="key-card-icon">🔍</span> Progress Monitoring
-        </h3>
-        <ul>
-          <li>Regular aerial captures to track build velocity, identify delays, and inform stakeholders.</li>
-        </ul>
-      </div>
+      <article class="key-card-service">
+        <h3><span class="key-card-icon">⏱️</span> Project Timeline Management</h3>
+        <p>Data-driven milestone verification ensures that every phase of construction stays within the estimated timeframe.</p>
+      </article>
 
-      <div class="key-card-service">
-        <h3>
-          <span class="key-card-icon">🔍</span> Timeline Management
-        </h3>
-        <ul>
-          <li>Drone data-enabled milestone verification for on-time project delivery.</li>
-        </ul>
-      </div>
-
-      <div class="key-card-service">
-        <h3>
-          <span class="key-card-icon">🔍</span> 3D Mapping & Survey
-        </h3>
-        <ul>
-          <li>High-accuracy 3D mapping, earthwork volume metrics, and geospatial construction analytics.</li>
-        </ul>
-      </div>
-
+      <article class="key-card-service">
+        <h3><span class="key-card-icon">🗺️</span> 3D Mapping & Survey</h3>
+        <p>High-accuracy orthomosaic mapping and earthwork volume calculation for precise stockpile and geospatial analytics.</p>
+      </article>
     </div>
     
     <div class="lead-gen-block">
-        <h2 style="margin-bottom: 15px;">Ready to Accelerate Your Project Timeline?</h2>
+        <h2 style="margin-bottom: 15px;">Optimize Your Site Management Today</h2>
         <p style="margin-bottom: 25px; max-width: 600px; margin-left: auto; margin-right: auto; color: var(--muted);">
-            Get a tailored consultation on integrating drone monitoring for efficient site management.
+            Connect with our site survey experts for a specialized consultation on drone-BIM integration.
         </p>
-             <a href="https://forms.gle/N2oa6GqfGkhrokGy5"
-   target="_blank"
-   class="btn btn-primary">
-Schedule a Consultation
-</a>
+        <a href="https://forms.gle/N2oa6GqfGkhrokGy5" target="_blank" class="btn btn-primary">Schedule Site Consultation</a>
     </div>
-
   </div>
 </section>
-
+</main>
 
 <footer class="site-footer">
   <div class="container footer-grid">
-
     <div>
       <h4>Vaayuu Robotics</h4>
-      <p>Providing cutting-edge drone solutions with precision and reliability.</p>
+      <p>Precision drone solutions for construction and infrastructure site management across India.</p>
     </div>
-
     <div>
+      <h5>Quick Links</h5>
       <ul class="footer-links">
-             <h5>Quick Links</h5>
-  <li><a href="about.html">About us</a></li>
-  <li><a href="seva.html">Services</a></li>
-  <li><a href="blog.html">Blog</a></li>
-  <li><a href="contact.html">Contact</a></li>
-  <li><a href="careers.html">Careers / Internships</a></li>
-</ul>
-
+        <li><a href="about.html">About us</a></li>
+        <li><a href="seva.html">Services</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="careers.html">Careers / Internships</a></li>
+      </ul>
     </div>
-
     <div>
       <h5>Contact Us</h5>
-      <p>Email: contact@VaayuuRobotics.com</p>
-      <p>Phone: +91 81208 44716</p>
-      <p>Location: MP Nagar, Bhopal, MP</p>
-
+      <p>Email: info@vaayurobotics.in<br>
+         Phone: +91 81208 44716<br>
+         Location: MP Nagar, Bhopal, MP, India</p>
       <div class="social-links">
-
-     <a href="https://www.facebook.com/VAAYUROBOTICS/" target="_blank" class="social-icon">
-    <i class="fab fa-facebook-f"></i>
-</a>
-<a href="https://www.instagram.com/vaayurobotics/?hl=en" target="_blank" class="social-icon">
-    <i class="fab fa-instagram"></i>
-</a>
-
-<a href="https://www.linkedin.com/company/vaayu-robotics/posts/?feedView=all" target="_blank" class="social-icon">
-    <i class="fab fa-linkedin-in"></i>
-</a>
-
-</div>
-
-
+        <a href="https://www.facebook.com/VAAYUROBOTICS/" target="_blank" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/vaayurobotics/?hl=en" target="_blank" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/vaayu-robotics/" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
     </div>
-
   </div>
-
   <div class="site-copy">© 2025 Vaayuu Robotics. All Rights Reserved.</div>
 </footer>
-
 
 <script>
 (function() {
   const toggle = document.querySelector(".mobile-toggle");
   const nav = document.querySelector(".main-nav");
   const closeBtn = document.getElementById("closeMenu");
-
   if (!toggle || !nav || !closeBtn) return;
-
-  // Open menu
   toggle.addEventListener("click", (e) => {
     e.stopPropagation();
     nav.classList.add("open");
   });
-
-  // Close menu using X button
   closeBtn.addEventListener("click", ()=>{
     nav.classList.remove("open");
   });
-
-  // Close menu on outside click and resize
   document.addEventListener("click", (e) => {
     if (window.innerWidth <= 940 && nav.classList.contains("open")) {
       if (!nav.contains(e.target) && !toggle.contains(e.target)) {
@@ -478,12 +278,7 @@ Schedule a Consultation
       }
     }
   });
-
-  window.addEventListener("resize", () => {
-    if (window.innerWidth > 940) nav.classList.remove("open");
-  });
 })();
 </script>
-
 </body>
 </html>

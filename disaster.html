@@ -5,8 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>Disaster Management & Emergency Response Drone Mapping | Vaayuu Robotics</title>
-  <meta name="description" content="Vaayuu Robotics provides rapid drone mapping, damage assessment, and topographic surveys for emergency response and disaster management, supporting faster decision-making for authorities." />
+  <meta name="title" content="Disaster Management & Emergency Response Drone Mapping | Vaayuu Robotics">
+  <meta name="description" content="Vaayuu Robotics provides rapid drone mapping, damage assessment, and topographic surveys for emergency response across India. Supporting faster situational awareness for authorities." />
+  <meta name="keywords" content="Disaster management drone India, Emergency mapping UAV, Search and rescue drone support, Flood mapping drones, Vaayuu Robotics disaster response">
   <link rel="canonical" href="https://vaayuu-roboticss.vercel.app/disaster.html" />
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vaayuu-roboticss.vercel.app/disaster.html">
+  <meta property="og:title" content="Rapid Disaster Response & Drone Mapping | Vaayuu Robotics">
+  <meta property="og:description" content="Situational awareness and high-accuracy mapping for disaster-affected regions.">
+  <meta property="og:image" content="https://vaayuu-roboticss.vercel.app/assets/disaster.png">
 
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -20,6 +28,7 @@
       border-radius: 8px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.08);
       line-height: 1.4;
+      height: 100%;
     }
     
     .key-card-service h3 {
@@ -52,15 +61,6 @@
       left: -15px;
     }
     
-    .key-card-service li:last-child {
-      margin-bottom: 0;
-    }
-    
-    .key-card-icon {
-      font-size: 1.5rem;
-    }
-    
-    /* Grid layout fix - 2 cards side by side */
     .key-grid-service {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -68,18 +68,12 @@
       margin-top: 30px;
     }
     
-    /* Section spacing */
     .key-highlight-section {
       padding: 60px 0;
     }
     
-    .key-title {
-      margin-bottom: 30px;
-    }
-    
-    /* ADDED STYLE FOR LEAD GEN CTA */
     .lead-gen-block {
-        background: var(--cream); 
+        background: #fff9f0; 
         padding: 40px; 
         border-radius: 12px; 
         margin-top: 50px; 
@@ -87,28 +81,12 @@
         box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     }
     
-    /* Mobile responsiveness */
     @media (max-width: 768px) {
-      .key-grid-service {
-        grid-template-columns: 1fr;
-        gap: 20px;
-      }
-      
-      .key-card-service {
-        padding: 15px;
-      }
-      
-      .lead-gen-block {
-        padding: 30px 20px;
-        margin-top: 40px;
-      }
+      .key-grid-service { grid-template-columns: 1fr; gap: 20px; }
+      .lead-gen-block { padding: 30px 20px; }
     }
 
-    /* ============================================ */
-    /* BUTTON COLOR FIXES FOR DISASTER PAGE */
-    /* ============================================ */
-    
-    /* Download Brochure Button - BLUE */
+    /* BUTTON COLORS */
     .disaster-page .btn-download {
         background-color: #007bff !important;
         color: white !important;
@@ -121,15 +99,7 @@
         transition: all 0.3s ease !important;
     }
     
-    /* Hover effect for Download Brochure */
-    .disaster-page .btn-download:hover {
-        background-color: #0056b3 !important;
-        transform: translateY(-2px) !important;
-        box-shadow: 0 4px 8px rgba(0, 91, 187, 0.3) !important;
-    }
-    
-    /* Schedule Consultation Button - YELLOW */
-    .disaster-page .btn-yellow {
+    .disaster-page .btn-yellow, .disaster-page .lead-gen-block .btn-primary {
         background-color: #FFD700 !important;
         color: #000000 !important;
         border: 2px solid #FFC107 !important;
@@ -140,244 +110,131 @@
         display: inline-block !important;
         transition: all 0.3s ease !important;
     }
-    
-    /* Hover effect for Schedule Consultation */
-    .disaster-page .btn-yellow:hover {
-        background-color: #FFC107 !important;
-        transform: translateY(-2px) !important;
-        box-shadow: 0 4px 8px rgba(255, 193, 7, 0.3) !important;
-    }
-    
-    /* Connect with Experts Button - YELLOW */
-    .disaster-page .lead-gen-block .btn-primary {
-        background-color: #FFD700 !important;
-        color: #000000 !important;
-        border: 2px solid #FFC107 !important;
-        padding: 12px 24px !important;
-        border-radius: 5px !important;
-        font-weight: bold !important;
-        text-decoration: none !important;
-        display: inline-block !important;
-        transition: all 0.3s ease !important;
-    }
-    
-    /* Hover effect for Connect with Experts */
-    .disaster-page .lead-gen-block .btn-primary:hover {
-        background-color: #FFC107 !important;
-        transform: translateY(-2px) !important;
-        box-shadow: 0 4px 8px rgba(255, 193, 7, 0.3) !important;
-    }
-    /* ============================================ */
-    
   </style>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://vaayuu-roboticss.vercel.app/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Services",
-        "item": "https://vaayuu-roboticss.vercel.app/seva.html"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "Disaster Management",
-        "item": "https://vaayuu-roboticss.vercel.app/disaster.html"
-      }
-    ]
-  }
-  </script>
-
 </head>
 
 <body class="disaster-page">
 
 <header class="site-header">
   <div class="container header-inner">
-
     <a href="index.html" class="logo">
-      <img src="assets/logo.png" alt="Vaayuu Robotics Logo">
+      <img src="assets/logo.png" alt="Vaayuu Robotics - Drone Emergency Response Solutions">
     </a>
-
-    <nav class="main-nav">
-  <button id="closeMenu" class="mobile-close">✕</button>
-
-  <a href="index.html">Home</a>
-  <a href="seva.html">Services</a>
-  <a href="blog.html">Blog</a>
-
-  <div class="nav-dropdown">
-    <button class="dropbtn">Company ▾</button>
-    <div class="dropdown-menu">
-      <a href="company.html">Company Overview</a>
-      <a href="about.html">About Us</a>
-      <a href="faq.html">FAQ</a>
-      <a href="careers.html">Careers & Internships</a>
-    </div>
-  </div>
-
-  <a href="contact.html" class="nav-contact-btn">Contact Us</a>
-</nav>
-
-
-    <button class="mobile-toggle">☰</button>
-
+    <nav class="main-nav" aria-label="Main Navigation">
+      <button id="closeMenu" class="mobile-close" aria-label="Close menu">✕</button>
+      <a href="index.html">Home</a>
+      <a href="seva.html">Services</a>
+      <a href="blog.html">Blog</a>
+      <div class="nav-dropdown">
+        <button class="dropbtn">Company ▾</button>
+        <div class="dropdown-menu">
+          <a href="company.html">Company Overview</a>
+          <a href="about.html">About Us</a>
+          <a href="faq.html">FAQ</a>
+          <a href="careers.html">Careers & Internships</a>
+        </div>
+      </div>
+      <a href="contact.html" class="nav-contact-btn">Contact Us</a>
+    </nav>
+    <button class="mobile-toggle" aria-label="Open menu">☰</button>
   </div>
 </header>
 
-
-<section class="hero hero-page service-hero-custom"
-          style="background-image:url('assets/disaster.png');">
-
+<main>
+<section class="hero hero-page service-hero-custom" style="background-image:url('assets/disaster.png');" aria-label="Disaster Management Hero Banner">
   <div class="hero-overlay"></div>
-
   <div class="hero-content container">
-
-    <h1 class="hero-title">Disaster Management & Emergency Mapping</h1>
-
+    <h1 class="hero-title">Drone Disaster Management & Emergency Response</h1>
     <p class="lead">
-      Enable rapid response, high-accuracy mapping, and situational awareness in disaster-affected & risk-prone regions.
+      Enable rapid response with high-accuracy aerial mapping and real-time situational awareness for risk-prone and affected regions.
     </p>
-
     <div class="hero-ctas">
-      <a class="btn btn-download" href="assets/Drone-Booklet2.pdf" download>
-        Download Brochure
-      </a>
+      <a class="btn btn-download" href="assets/Drone-Booklet2.pdf" download>Download Brochure</a>
       <a href="contact.html" class="btn-yellow">Schedule Consultation</a>
-
     </div>
-
   </div>
 </section>
+
 
 
 <section class="section key-highlight-section">
   <div class="container center">
-
-    <h2 class="section-title key-title">
-      Key Disaster Response <span class="accent">Solutions</span>
-    </h2>
-
+    <h2 class="section-title key-title">Key Disaster Response <span class="accent">UAV Solutions</span></h2>
     <div class="key-grid-service">
-
       <div class="key-card-service">
-        <h3><span class="key-card-icon">🔍</span> Emergency Response Mapping</h3>
+        <h3><span class="key-card-icon">🚀</span> Emergency Response Mapping</h3>
         <ul>
-          <li>Rapid aerial mapping for damage assessment & rescue coordination.</li>
-          <li>Identify affected zones with high precision using drone data.</li>
-          <li>Faster recovery decision-making for authorities.</li>
+          <li>Rapid mapping for structural damage assessment.</li>
+          <li>Search and rescue coordination with thermal sensors.</li>
+          <li>Situational intelligence for faster recovery decisions.</li>
         </ul>
       </div>
 
       <div class="key-card-service">
-        <h3><span class="key-card-icon">🔍</span> Topographic & Land-Use Surveys</h3>
+        <h3><span class="key-card-icon">🗺️</span> Hazard Zone Prediction</h3>
         <ul>
-          <li>High-accuracy DEM & orthomosaic generation.</li>
-          <li>Flood, landslide & hazard-zone prediction mapping.</li>
-          <li>Support for urban planning and environmental studies.</li>
+          <li>High-accuracy DEM generation for flood modeling.</li>
+          <li>Landslide and earthquake risk zone mapping.</li>
+          <li>Topographic data for disaster mitigation planning.</li>
         </ul>
       </div>
-
     </div>
     
     <div class="lead-gen-block">
-        <h2 style="margin-bottom: 15px;">Partner with Vaayuu for Rapid Disaster Response</h2>
+        <h2 style="margin-bottom: 15px;">Partner with Vaayuu for Rapid Situational Awareness</h2>
         <p style="margin-bottom: 25px; max-width: 600px; margin-left: auto; margin-right: auto; color: var(--muted);">
-            Contact our team immediately to discuss rapid deployment for situational awareness.
+            Contact our drone experts for immediate deployment strategies and disaster mitigation technologies.
         </p>
-             <a href="https://forms.gle/N2oa6GqfGkhrokGy5"
-   target="_blank"
-   class="btn btn-primary">
-Connect with Experts
-</a>
+        <a href="https://forms.gle/N2oa6GqfGkhrokGy5" target="_blank" class="btn btn-primary">Connect with Experts</a>
     </div>
-
   </div>
 </section>
-
+</main>
 
 <footer class="site-footer">
   <div class="container footer-grid">
-
     <div>
       <h4>Vaayuu Robotics</h4>
-      <p>Providing cutting-edge drone solutions with precision and reliability.</p>
+      <p>Precision drone solutions for emergency response and reliability across India.</p>
     </div>
-
     <div>
-     <ul class="footer-links">
-  <ul class="footer-links">
-             <h5>Quick Links</h5>
-  <li><a href="about.html">About us</a></li>
-  <li><a href="seva.html">Services</a></li>
-  <li><a href="blog.html">Blog</a></li>
-  <li><a href="contact.html">Contact</a></li>
-  <li><a href="careers.html">Careers / Internships</a></li>
-</ul>
-
-
+      <h5>Quick Links</h5>
+      <ul class="footer-links">
+        <li><a href="about.html">About us</a></li>
+        <li><a href="seva.html">Services</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="careers.html">Careers / Internships</a></li>
+      </ul>
     </div>
-
     <div>
       <h5>Contact Us</h5>
-      <p>Email: contact@VaayuuRobotics.com</p>
-      <p>Phone: +91 81208 44716</p>
-      <p>Location: MP Nagar, Bhopal, MP</p>
-
+      <p>Email: info@vaayurobotics.in<br>
+         Phone: +91 81208 44716<br>
+         Location: MP Nagar, Bhopal, MP, India</p>
       <div class="social-links">
-
-    <a href="https://www.facebook.com/VAAYUROBOTICS/" target="_blank" class="social-icon">
-    <i class="fab fa-facebook-f"></i>
-</a>
-<a href="https://www.instagram.com/vaayurobotics/?hl=en" target="_blank" class="social-icon">
-    <i class="fab fa-instagram"></i>
-</a>
-
-<a href="https://www.linkedin.com/company/vaayu-robotics/posts/?feedView=all" target="_blank" class="social-icon">
-    <i class="fab fa-linkedin-in"></i>
-</a>
-
-</div>
-
-
+        <a href="https://www.facebook.com/VAAYUROBOTICS/" target="_blank" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/vaayurobotics/?hl=en" target="_blank" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/vaayu-robotics/" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
     </div>
-
   </div>
-
   <div class="site-copy">© 2025 Vaayuu Robotics. All Rights Reserved.</div>
 </footer>
-
 
 <script>
 (function() {
   const toggle = document.querySelector(".mobile-toggle");
   const nav = document.querySelector(".main-nav");
   const closeBtn = document.getElementById("closeMenu");
-
   if (!toggle || !nav || !closeBtn) return;
-
-  // Open menu
   toggle.addEventListener("click", (e) => {
     e.stopPropagation();
     nav.classList.add("open");
   });
-
-  // Close menu using X button
   closeBtn.addEventListener("click", ()=>{
     nav.classList.remove("open");
   });
-
-  // Close menu on outside click and resize
   document.addEventListener("click", (e) => {
     if (window.innerWidth <= 940 && nav.classList.contains("open")) {
       if (!nav.contains(e.target) && !toggle.contains(e.target)) {
@@ -385,12 +242,7 @@ Connect with Experts
       }
     }
   });
-
-  window.addEventListener("resize", () => {
-    if (window.innerWidth > 940) nav.classList.remove("open");
-  });
 })();
 </script>
-
 </body>
 </html>

@@ -4,10 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Industrial Drone Inspection Services | Pipeline, Plant & Asset Monitoring | Vaayuu Robotics</title>
-  <meta name="description" content="Vaayuu Robotics provides advanced industrial drone inspection services for oil & gas pipelines, manufacturing plants, storage tanks, and high-risk assets, utilizing thermal and visual analytics." />
+  <title>Industrial Drone Inspection Services | Pipeline & Plant Monitoring | Vaayuu Robotics</title>
+  <meta name="title" content="Industrial Drone Inspection Services | Pipeline & Plant Monitoring | Vaayuu Robotics">
+  <meta name="description" content="Vaayuu Robotics offers advanced industrial drone inspection for oil & gas pipelines, refineries, and manufacturing plants across India. Thermal mapping and structural audits." />
+  <meta name="keywords" content="Industrial drone inspection India, Pipeline monitoring drones, Refinery inspection UAV, Asset monitoring services, Vaayuu Robotics Industrial">
   <link rel="canonical" href="https://vaayuu-roboticss.vercel.app/industrial.html" />
   
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vaayuu-roboticss.vercel.app/industrial.html">
+  <meta property="og:title" content="Industrial Drone Solutions | Vaayuu Robotics">
+  <meta property="og:description" content="Minimize risk and downtime with our high-precision industrial drone audits.">
+  <meta property="og:image" content="https://vaayuu-roboticss.vercel.app/assets/oilgas.png">
+
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
@@ -24,7 +32,6 @@
         justify-content: center;
     }
 
-    /* DARK OVERLAY */
     .service-hero-custom .hero-overlay {
         position: absolute;
         top: 0;
@@ -35,14 +42,12 @@
         z-index: 1;
     }
 
-    /* CONTENT ABOVE OVERLAY */
     .hero-content {
         position: relative;
         z-index: 2;
         text-align: center;
     }
 
-    /* TEXT COLORS */
     .hero-title {
         color: #FFD75F;
         font-size: 3rem;
@@ -55,7 +60,6 @@
         margin: 20px auto;
     }
     
-    /* FIX FOR WHITE SPACE IN CARDS */
     .key-card-service {
       margin: 0;
       padding: 20px;
@@ -96,15 +100,6 @@
       left: -15px;
     }
     
-    .key-card-service li:last-child {
-      margin-bottom: 0;
-    }
-    
-    .key-card-icon {
-      font-size: 1.5rem;
-    }
-    
-    /* Grid layout fix - 4 cards in 2x2 layout */
     .key-grid-service {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -112,18 +107,12 @@
       margin-top: 30px;
     }
     
-    /* Section spacing */
     .key-highlight-section {
       padding: 60px 0;
     }
     
-    .key-title {
-      margin-bottom: 30px;
-    }
-    
-    /* ADDED STYLE FOR LEAD GEN CTA */
     .lead-gen-block {
-        background: var(--cream); 
+        background: #f8f9fa; 
         padding: 40px; 
         border-radius: 12px; 
         margin-top: 50px; 
@@ -131,42 +120,20 @@
         box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     }
     
-    /* Mobile responsiveness */
     @media (max-width: 992px) {
       .key-grid-service {
         grid-template-columns: 1fr;
         gap: 20px;
       }
-      
-      .key-card-service {
-        padding: 15px;
-      }
-      
-      .lead-gen-block {
-        padding: 30px 20px;
-        margin-top: 40px;
-      }
-      
-      .hero-title {
-        font-size: 2.5rem;
-      }
+      .hero-title { font-size: 2.5rem; }
     }
     
     @media (max-width: 768px) {
-      .hero-title {
-        font-size: 2rem;
-      }
-      
-      .service-hero-custom {
-        min-height: 70vh;
-      }
+      .hero-title { font-size: 2rem; }
+      .service-hero-custom { min-height: 70vh; }
     }
 
-    /* ============================================ */
-    /* BUTTON COLOR FIXES FOR INDUSTRIAL PAGE */
-    /* ============================================ */
-    
-    /* Download Brochure Button - BLUE */
+    /* BUTTONS */
     .industrial-page .btn-download {
         background-color: #007bff !important;
         color: white !important;
@@ -179,15 +146,7 @@
         transition: all 0.3s ease !important;
     }
     
-    /* Hover effect for Download Brochure */
-    .industrial-page .btn-download:hover {
-        background-color: #0056b3 !important;
-        transform: translateY(-2px) !important;
-        box-shadow: 0 4px 8px rgba(0, 91, 187, 0.3) !important;
-    }
-    
-    /* Request Inspection Quote Button - YELLOW */
-    .industrial-page .btn-yellow {
+    .industrial-page .btn-yellow, .industrial-page .lead-gen-block .btn-primary {
         background-color: #FFD700 !important;
         color: #000000 !important;
         border: 2px solid #FFC107 !important;
@@ -198,35 +157,6 @@
         display: inline-block !important;
         transition: all 0.3s ease !important;
     }
-    
-    /* Hover effect for Request Inspection Quote */
-    .industrial-page .btn-yellow:hover {
-        background-color: #FFC107 !important;
-        transform: translateY(-2px) !important;
-        box-shadow: 0 4px 8px rgba(255, 193, 7, 0.3) !important;
-    }
-    
-    /* Book a Project Feasibility Call Button - YELLOW */
-    .industrial-page .lead-gen-block .btn-primary {
-        background-color: #FFD700 !important;
-        color: #000000 !important;
-        border: 2px solid #FFC107 !important;
-        padding: 12px 24px !important;
-        border-radius: 5px !important;
-        font-weight: bold !important;
-        text-decoration: none !important;
-        display: inline-block !important;
-        transition: all 0.3s ease !important;
-    }
-    
-    /* Hover effect for Book a Project Feasibility Call */
-    .industrial-page .lead-gen-block .btn-primary:hover {
-        background-color: #FFC107 !important;
-        transform: translateY(-2px) !important;
-        box-shadow: 0 4px 8px rgba(255, 193, 7, 0.3) !important;
-    }
-    /* ============================================ */
-    
   </style>
 
   <script type="application/ld+json">
@@ -255,187 +185,133 @@
     ]
   }
   </script>
-
 </head>
 
 <body class="industrial-page">
 
 <header class="site-header">
   <div class="container header-inner">
-
     <a href="index.html" class="logo">
-      <img src="assets/logo.png" alt="Vaayuu Robotics Logo">
+      <img src="assets/logo.png" alt="Vaayuu Robotics - Industrial Drone Experts Logo">
     </a>
-<nav class="main-nav">
-  <button id="closeMenu" class="mobile-close">✕</button>
-
-  <a href="index.html">Home</a>
-  <a href="seva.html">Services</a>
-  <a href="blog.html">Blog</a>
-
-  <div class="nav-dropdown">
-    <button class="dropbtn">Company ▾</button>
-    <div class="dropdown-menu">
-      <a href="company.html">Company Overview</a>
-      <a href="about.html">About Us</a>
-      <a href="faq.html">FAQ</a>
-      <a href="careers.html">Careers & Internships</a>
-    </div>
-  </div>
-
-  <a href="contact.html" class="nav-contact-btn">Contact Us</a>
-</nav>
-
-
-
-    <button class="mobile-toggle">☰</button>
-
+    <nav class="main-nav" aria-label="Main Navigation">
+      <button id="closeMenu" class="mobile-close" aria-label="Close menu">✕</button>
+      <a href="index.html">Home</a>
+      <a href="seva.html">Services</a>
+      <a href="blog.html">Blog</a>
+      <div class="nav-dropdown">
+        <button class="dropbtn">Company ▾</button>
+        <div class="dropdown-menu">
+          <a href="company.html">Company Overview</a>
+          <a href="about.html">About Us</a>
+          <a href="faq.html">FAQ</a>
+          <a href="careers.html">Careers & Internships</a>
+        </div>
+      </div>
+      <a href="contact.html" class="nav-contact-btn">Contact Us</a>
+    </nav>
+    <button class="mobile-toggle" aria-label="Open menu">☰</button>
   </div>
 </header>
 
-
-<section class="hero hero-page service-hero-custom"
-          style="background-image:url('assets/oilgas.png');">
-
+<main>
+<section class="hero hero-page service-hero-custom" style="background-image:url('assets/oilgas.png');" aria-label="Industrial Drone Inspection Banner">
   <div class="hero-overlay"></div>
-
   <div class="hero-content container">
-
-    <h1 class="hero-title">Industrial Drone Inspection & Monitoring</h1>
-
+    <h1 class="hero-title">Industrial Drone Inspection & Asset Monitoring</h1>
     <p class="lead">
-      Advanced drone-based inspection solutions for factories, refineries, pipelines,
-      storage facilities, and heavy industrial assets.
+      Advanced UAV solutions for refineries, factories, pipelines, and heavy industrial assets. Enhance safety with visual and thermal analytics.
     </p>
-
     <div class="hero-ctas">
-      <a class="btn btn-download" href="assets/Drone-Booklet2.pdf" download>
-        Download Brochure
-      </a>
-      <a href="https://forms.gle/N2oa6GqfGkhrokGy5"
-   target="_blank"
-   class="btn btn-primary">
-Request Inspection Quote
-</a>
-
-     
+      <a class="btn btn-download" href="assets/Drone-Booklet2.pdf" download>Download Brochure</a>
+      <a href="https://forms.gle/N2oa6GqfGkhrokGy5" target="_blank" class="btn btn-primary" style="background:#FFD700; color:#000; padding:12px 24px; border-radius:5px; font-weight:bold; text-decoration:none;">Request Inspection Quote</a>
     </div>
-
   </div>
 </section>
-
 
 <section class="section key-highlight-section">
   <div class="container center">
-
-    <h2 class="section-title key-title">
-      Key Industrial <span class="accent">Applications</span>
-    </h2>
+    <h2 class="section-title key-title">Key Industrial <span class="accent">UAV Applications</span></h2>
 
     <div class="key-grid-service">
-
       <div class="key-card-service">
-        <h3><span class="key-card-icon">🔍</span> Pipeline & Plant Inspection</h3>
+        <h3><span class="key-card-icon">🏗️</span> Pipeline & Plant Audit</h3>
         <ul>
-          <li>Detect leaks, corrosion, and structural anomalies.</li>
-          <li>High-resolution visual & thermal inspection.</li>
-          <li>Reduce downtime with predictive analytics.</li>
+          <li>Detect leaks, corrosion, and structural issues.</li>
+          <li>High-resolution thermal imaging for refineries.</li>
+          <li>Reduce downtime with predictive UAV analytics.</li>
         </ul>
       </div>
 
       <div class="key-card-service">
-        <h3><span class="key-card-icon">🔍</span> Storage Tanks & Assets Audit</h3>
+        <h3><span class="key-card-icon">🛢️</span> Storage Tanks Inspection</h3>
         <ul>
-          <li>External & internal inspection using drone imaging.</li>
-          <li>Identify cracks, rust & coating failures.</li>
-          <li>Minimize manual risk-based inspections.</li>
+          <li>Safe external & internal drone imaging.</li>
+          <li>Identify rust, cracks, and coating failures.</li>
+          <li>Eliminate risks of manual high-altitude checks.</li>
         </ul>
       </div>
 
       <div class="key-card-service">
-        <h3><span class="key-card-icon">🔍</span> Factory & Workflow Monitoring</h3>
+        <h3><span class="key-card-icon">🏭</span> Factory Workflow Monitoring</h3>
         <ul>
-          <li>Monitor production areas & high-risk zones.</li>
-          <li>Heat signatures & energy loss identification.</li>
-          <li>Accurate industrial environment mapping.</li>
+          <li>Monitor production zones and high-risk areas.</li>
+          <li>Energy loss identification via heat signatures.</li>
+          <li>Accurate 3D industrial mapping.</li>
         </ul>
       </div>
 
       <div class="key-card-service">
-        <h3><span class="key-card-icon">🔍</span> Safety & Compliance Audits</h3>
+        <h3><span class="key-card-icon">🛡️</span> Safety & Compliance Audits</h3>
         <ul>
-          <li>Ensure regulatory readiness with aerial audits.</li>
-          <li>Identify safety loopholes and hazard points.</li>
-          <li>Comprehensive reporting for decision making.</li>
+          <li>Ensure DGCA and regulatory safety readiness.</li>
+          <li>Identify safety loopholes via aerial views.</li>
+          <li>Detailed audit reports for site management.</li>
         </ul>
       </div>
-
     </div>
 
     <div class="lead-gen-block">
-        <h2 style="margin-bottom: 15px;">Ready to Optimize Your Industrial Assets?</h2>
+        <h2 style="margin-bottom: 15px;">Optimize Your Industrial Assets Today</h2>
         <p style="margin-bottom: 25px; max-width: 600px; margin-left: auto; margin-right: auto; color: var(--muted);">
-            Schedule a feasibility call to discuss advanced UAV solutions for your unique operational needs.
+            Connect with Vaayuu Robotics for a feasibility study of drone integration in your industrial workflow.
         </p>
-          <a href="https://forms.gle/N2oa6GqfGkhrokGy5"
-   target="_blank"
-   class="btn btn-primary">
-Request Inspection Quote
-</a>
+        <a href="https://forms.gle/N2oa6GqfGkhrokGy5" target="_blank" class="btn btn-primary">Book Feasibility Call</a>
     </div>
-
   </div>
 </section>
-
+</main>
 
 <footer class="site-footer">
   <div class="container footer-grid">
-
     <div>
       <h4>Vaayuu Robotics</h4>
-      <p>Providing cutting-edge drone solutions with precision and reliability.</p>
+      <p>Precision drone solutions for industrial safety and reliability across India.</p>
     </div>
-
     <div>
+      <h5>Quick Links</h5>
       <ul class="footer-links">
-             <h5>Quick Links</h5>
-  <li><a href="about.html">About us</a></li>
-  <li><a href="seva.html">Services</a></li>
-  <li><a href="blog.html">Blog</a></li>
-  <li><a href="contact.html">Contact</a></li>
-  <li><a href="careers.html">Careers / Internships</a></li>
-</ul>
-
+        <li><a href="about.html">About us</a></li>
+        <li><a href="seva.html">Services</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="careers.html">Careers / Internships</a></li>
+      </ul>
     </div>
-
     <div>
       <h5>Contact Us</h5>
-      <p>Email: contact@VaayuuRobotics.com</p>
-      <p>Phone: +91 81208 44716</p>
-      <p>Location: MP Nagar, Bhopal, MP</p>
-<div class="social-links">
-
-     <a href="https://www.facebook.com/VAAYUROBOTICS/" target="_blank" class="social-icon">
-    <i class="fab fa-facebook-f"></i>
-</a>
-<a href="https://www.instagram.com/vaayurobotics/?hl=en" target="_blank" class="social-icon">
-    <i class="fab fa-instagram"></i>
-</a>
-
-<a href="https://www.linkedin.com/company/vaayu-robotics/posts/?feedView=all" target="_blank" class="social-icon">
-    <i class="fab fa-linkedin-in"></i>
-</a>
-
-</div>
-
-
+      <p>Email: info@vaayurobotics.in<br>
+         Phone: +91 81208 44716<br>
+         Location: MP Nagar, Bhopal, MP</p>
+      <div class="social-links">
+        <a href="https://www.facebook.com/VAAYUROBOTICS/" target="_blank" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/vaayurobotics/?hl=en" target="_blank" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/vaayu-robotics/" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
     </div>
-
   </div>
-
   <div class="site-copy">© 2025 Vaayuu Robotics. All Rights Reserved.</div>
 </footer>
-
 
 <script>
 (function() {
@@ -445,18 +321,15 @@ Request Inspection Quote
 
   if (!toggle || !nav || !closeBtn) return;
 
-  // Open menu
   toggle.addEventListener("click", (e) => {
     e.stopPropagation();
     nav.classList.add("open");
   });
 
-  // Close menu using X button
   closeBtn.addEventListener("click", ()=>{
     nav.classList.remove("open");
   });
 
-  // Close menu on outside click and resize
   document.addEventListener("click", (e) => {
     if (window.innerWidth <= 940 && nav.classList.contains("open")) {
       if (!nav.contains(e.target) && !toggle.contains(e.target)) {
