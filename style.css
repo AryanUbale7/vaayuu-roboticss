@@ -3069,3 +3069,52 @@ body{
 .btn-primary:hover {
   background: var(--primary-dark);
 }
+/* ===== BLOG PAGE ===== */
+.blog-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap:28px;
+}
+
+.blog-card{
+  background:#fff;
+  border-radius:14px;
+  overflow:hidden;
+  box-shadow:var(--shadow-soft);
+  display:flex;
+  flex-direction:column;
+}
+
+.blog-img{
+  height:180px;
+}
+
+.placeholder-img{
+  background:#e5e7eb;
+  color:#6b7280;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:600;
+}
+
+.blog-content{
+  padding:18px;
+}
+
+.blog-content h3{
+  margin-bottom:8px;
+  font-size:18px;
+}
+
+.blog-content p{
+  font-size:14px;
+  color:var(--muted-2);
+  margin-bottom:14px;
+}
+
+.blog-link{
+  font-weight:600;
+  color:#f5b700;
+  text-decoration:none;
+}

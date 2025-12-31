@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-xh6giXf0P4B+..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+
+  <link rel="icon" type="image/png" href="./assets/favicon.png">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>Blog | Vaayuu Robotics</title>
+  <meta name="description" content="Insights, case studies and updates on industrial drone services, UAV technology and aerial intelligence by Vaayuu Robotics.">
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER (SAME AS INDEX) ================= -->
+<header class="site-header">
+  <div class="container header-inner">
+
+    <a class="logo" href="index.html">
+      <img src="./assets/logo.png" alt="Vaayuu Robotics Logo">
+    </a>
+
+    <nav class="main-nav">
+      <button id="closeMenu" class="mobile-close">✕</button>
+
+      <a href="index.html">Home</a>
+      <a href="seva.html">Services</a>
+      <a href="blog.html" class="active">Blog</a>
+
+      <div class="nav-dropdown">
+        <button class="dropbtn">Company ▾</button>
+        <div class="dropdown-menu">
+          <a href="company.html">Company Overview</a>
+          <a href="about.html">About Us</a>
+          <a href="faq.html">FAQ</a>
+          <a href="careers.html">Careers & Internships</a>
+        </div>
+      </div>
+
+      <a href="contact.html" class="nav-contact-btn">Contact Us</a>
+    </nav>
+
+    <button class="mobile-toggle">☰</button>
+  </div>
+</header>
+
+<main>
+
+<!-- ================= BLOG HERO ================= -->
+<section class="section" style="background:var(--cream);padding:90px 0 60px;">
+  <div class="container center">
+    <h1 class="section-title">
+      Vaayuu Robotics <span class="accent">Blog</span>
+    </h1>
+    <p class="section-sub">
+      Insights on industrial drone services, UAV technology and real-world deployments.
+    </p>
+  </div>
+</section>
+
+<!-- ================= BLOG LIST ================= -->
+<section class="section">
+  <div class="container">
+
+    <div class="blog-grid">
+
+      <!-- BLOG CARD -->
+      <article class="blog-card">
+        <div class="blog-img placeholder-img">
+          Blog Image
+        </div>
+        <div class="blog-content">
+          <h3>How Drones Are Transforming Road Survey & Inspection</h3>
+          <p>
+            Discover how industrial drones improve accuracy, safety and speed
+            in large-scale road survey projects.
+          </p>
+          <a href="#" class="blog-link">Read More →</a>
+        </div>
+      </article>
+
+      <!-- BLOG CARD -->
+      <article class="blog-card">
+        <div class="blog-img placeholder-img">
+          Blog Image
+        </div>
+        <div class="blog-content">
+          <h3>Construction Monitoring Using Aerial Intelligence</h3>
+          <p>
+            Learn how drone-based progress tracking helps construction teams
+            reduce delays and optimize resources.
+          </p>
+          <a href="#" class="blog-link">Read More →</a>
+        </div>
+      </article>
+
+      <!-- BLOG CARD -->
+      <article class="blog-card">
+        <div class="blog-img placeholder-img">
+          Blog Image
+        </div>
+        <div class="blog-content">
+          <h3>Industrial Drone Inspection: Use Cases & Benefits</h3>
+          <p>
+            From solar plants to factories, explore key applications of
+            industrial inspection drones.
+          </p>
+          <a href="#" class="blog-link">Read More →</a>
+        </div>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER (SAME AS INDEX) ================= -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+
+    <div>
+      <h4>Vaayuu Robotics</h4>
+      <p>Providing cutting-edge drone solutions with precision and reliability.</p>
+    </div>
+
+    <div>
+      <h5>Quick Links</h5>
+      <ul class="footer-links">
+        <li><a href="about.html">About us</a></li>
+        <li><a href="seva.html">Services</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="careers.html">Careers / Internships</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h5>Contact Us</h5>
+      <p>
+        Email: contact@VaayuuRobotics.com<br>
+        Phone: +91 81208 44716<br>
+        Location: MP Nagar, Bhopal, MP
+        <div class="social-links">
+  <a href="https://www.facebook.com/VAAYUROBOTICS/" target="_blank" class="social-icon">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+
+  <a href="https://www.instagram.com/vaayurobotics/?hl=en" target="_blank" class="social-icon">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <a href="https://www.linkedin.com/company/vaayu-robotics/posts/?feedView=all" target="_blank" class="social-icon">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+</div>
+
+      </p>
+    </div>
+
+  </div>
+
+  <div class="site-copy">© 2025 Vaayuu Robotics. All Rights Reserved.</div>
+</footer>
+
+<!-- ================= MOBILE NAV SCRIPT ================= -->
+<script>
+(function(){
+  const toggle = document.querySelector(".mobile-toggle");
+  const nav = document.querySelector(".main-nav");
+  const closeBtn = document.getElementById("closeMenu");
+
+  if(!toggle || !nav || !closeBtn) return;
+
+  toggle.addEventListener("click", ()=> nav.classList.add("open"));
+  closeBtn.addEventListener("click", ()=> nav.classList.remove("open"));
+
+  document.addEventListener("click",(e)=>{
+    if(window.innerWidth <= 940 && nav.classList.contains("open")){
+      if(!nav.contains(e.target) && !toggle.contains(e.target)){
+        nav.classList.remove("open");
+      }
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
