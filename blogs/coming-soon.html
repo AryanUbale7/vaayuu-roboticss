@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Coming Soon | Vaayuu Robotics Blog</title>
+
+  <meta name="description" content="This blog article is coming soon. Stay tuned for insights from Vaayuu Robotics.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    .coming-wrapper {
+      min-height: 70vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .coming-wrapper h1 {
+      font-size: 2.6rem;
+      margin-bottom: 15px;
+    }
+    .coming-wrapper p {
+      max-width: 600px;
+      color: #555;
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+    }
+    .back-btn {
+      display: inline-block;
+      padding: 12px 26px;
+      background: #d99a00;
+      color: #fff;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .back-btn:hover {
+      background: #b88400;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- ✅ NAVBAR -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="../index.html">
+      <img src="../assets/logo.png" alt="Vaayuu Robotics Logo">
+    </a>
+
+    <nav class="main-nav">
+      <button id="closeMenu" class="mobile-close">✕</button>
+      <a href="../index.html">Home</a>
+      <a href="../seva.html">Services</a>
+      <a href="../blog.html" class="active">Blog</a>
+
+      <div class="nav-dropdown">
+        <button class="dropbtn">Company ▾</button>
+        <div class="dropdown-menu">
+          <a href="../company.html">Company Overview</a>
+          <a href="../about.html">About Us</a>
+          <a href="../faq.html">FAQ</a>
+          <a href="../careers.html">Careers & Internships</a>
+        </div>
+      </div>
+
+      <a href="../contact.html" class="nav-contact-btn">Contact Us</a>
+    </nav>
+
+    <button class="mobile-toggle">☰</button>
+  </div>
+</header>
+
+<!-- ✅ COMING SOON CONTENT -->
+<main class="coming-wrapper">
+  <h1>🚀 Coming Soon</h1>
+  <p>
+    This blog article is currently under preparation by our team.
+    We’re working on detailed insights and real-world use cases.
+    Stay tuned!
+  </p>
+
+  <a href="../blog.html" class="back-btn">← Back to Blog</a>
+</main>
+
+<!-- ✅ FOOTER -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h4>Vaayuu Robotics</h4>
+      <p>Providing cutting-edge drone solutions with precision and reliability across India.</p>
+    </div>
+
+    <div>
+      <h5>Quick Links</h5>
+      <ul class="footer-links">
+        <li><a href="../about.html">About us</a></li>
+        <li><a href="../seva.html">Services</a></li>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+        <li><a href="../careers.html">Careers / Internships</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h5>Contact Us</h5>
+      <p>
+        Email: info@vaayurobotics.in<br>
+        Phone: +91 81208 44716<br>
+        Location: MP Nagar, Bhopal, MP
+      </p>
+      <div class="social-links">
+        <a href="https://www.facebook.com/VAAYUROBOTICS/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/vaayurobotics/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/vaayu-robotics/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="site-copy">© 2025 Vaayuu Robotics. All Rights Reserved.</div>
+</footer>
+
+<script>
+(function(){
+  const toggle = document.querySelector(".mobile-toggle");
+  const nav = document.querySelector(".main-nav");
+  const closeBtn = document.getElementById("closeMenu");
+  if(!toggle || !nav || !closeBtn) return;
+  toggle.addEventListener("click", ()=> nav.classList.add("open"));
+  closeBtn.addEventListener("click", ()=> nav.classList.remove("open"));
+})();
+</script>
+
+</body>
+</html>

@@ -14,7 +14,6 @@
   <link rel="stylesheet" href="./style.css">
 
   <style>
-    /* Blog Specific Enhancements */
     .blog-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -49,7 +48,7 @@
       <img src="./assets/logo.png" alt="Vaayuu Robotics - Drone Experts Logo">
     </a>
     <nav class="main-nav" aria-label="Main Navigation">
-      <button id="closeMenu" class="mobile-close" aria-label="Close menu">✕</button>
+      <button id="closeMenu" class="mobile-close">✕</button>
       <a href="index.html">Home</a>
       <a href="seva.html">Services</a>
       <a href="blog.html" class="active">Blog</a>
@@ -64,11 +63,12 @@
       </div>
       <a href="contact.html" class="nav-contact-btn">Contact Us</a>
     </nav>
-    <button class="mobile-toggle" aria-label="Open menu">☰</button>
+    <button class="mobile-toggle">☰</button>
   </div>
 </header>
 
 <main>
+
 <section class="section" style="background:var(--cream);padding:90px 0 60px;">
   <div class="container center">
     <h1 class="section-title">Drone Technology <span class="accent">Blog</span></h1>
@@ -80,6 +80,25 @@
   <div class="container">
     <div class="blog-grid">
 
+      <!-- ✅ NEW BLOG FROM TEAM -->
+      <article class="blog-card">
+        <div class="blog-img">
+          <img src="assets/drone-business.jpg" alt="Drone as a Service for Smart Business">
+        </div>
+        <div class="blog-content">
+          <div class="blog-meta">📅 Jan 2025 | By Vaayuu Robotics</div>
+          <h3>Drones: The Next Frontier of Smart Business</h3>
+          <p>
+            Learn how Drone-as-a-Service (DaaS) and AI-powered aerial intelligence are transforming
+            infrastructure, agriculture, construction, and enterprise operations.
+          </p>
+          <a href="blogs/drone-smart-business.html" class="blog-link">
+            Read Full Article →
+          </a>
+        </div>
+      </article>
+
+      <!-- EXISTING BLOGS -->
       <article class="blog-card">
         <div class="blog-img">
           <img src="assets/hero-road.png" alt="Drone performing road survey and inspection">
@@ -88,7 +107,10 @@
           <div class="blog-meta">📅 Jan 2025 | By Vaayuu Tech Team</div>
           <h3>How Drones Are Transforming Road Survey & Inspection</h3>
           <p>Discover how industrial drones improve accuracy, safety, and speed in large-scale NHAI road survey projects.</p>
-          <a href="#" class="blog-link" aria-label="Read more about Drone Road Surveys">Read Full Article →</a>
+          <a href="blogs/coming-soon.html" class="blog-link">
+  Read Full Article →
+</a>
+
         </div>
       </article>
 
@@ -100,25 +122,17 @@
           <div class="blog-meta">📅 Dec 2024 | By Drone Expert</div>
           <h3>Construction Monitoring Using Aerial Intelligence</h3>
           <p>Learn how drone-based progress tracking helps construction teams reduce delays and optimize resources effectively.</p>
-          <a href="#" class="blog-link" aria-label="Read more about Construction Monitoring">Read Full Article →</a>
-        </div>
-      </article>
+          <a href="blogs/coming-soon.html" class="blog-link">
+  Read Full Article →
+</a>
 
-      <article class="blog-card">
-        <div class="blog-img">
-          <img src="assets/oilgas.png" alt="Industrial drone inspecting a factory plant">
-        </div>
-        <div class="blog-content">
-          <div class="blog-meta">📅 Nov 2024 | By Safety Auditor</div>
-          <h3>Industrial Drone Inspection: Use Cases & Benefits</h3>
-          <p>From solar plants to oil refineries, explore the key applications and ROI of industrial inspection drones.</p>
-          <a href="#" class="blog-link" aria-label="Read more about Industrial Drone Benefits">Read Full Article →</a>
         </div>
       </article>
 
     </div>
   </div>
 </section>
+
 </main>
 
 <footer class="site-footer">
@@ -144,7 +158,7 @@
         Phone: +91 81208 44716<br>
         Location: MP Nagar, Bhopal, MP
       </p>
-      <div class="social-links">
+     <div class="social-links">
         <a href="https://www.facebook.com/VAAYUROBOTICS/" target="_blank" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
         <a href="https://www.instagram.com/vaayurobotics/?hl=en" target="_blank" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
         <a href="https://www.linkedin.com/company/vaayu-robotics/" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
@@ -159,19 +173,9 @@
   const toggle = document.querySelector(".mobile-toggle");
   const nav = document.querySelector(".main-nav");
   const closeBtn = document.getElementById("closeMenu");
-
   if(!toggle || !nav || !closeBtn) return;
-
   toggle.addEventListener("click", ()=> nav.classList.add("open"));
   closeBtn.addEventListener("click", ()=> nav.classList.remove("open"));
-
-  document.addEventListener("click",(e)=>{
-    if(window.innerWidth <= 940 && nav.classList.contains("open")){
-      if(!nav.contains(e.target) && !toggle.contains(e.target)){
-        nav.classList.remove("open");
-      }
-    }
-  });
 })();
 </script>
 
