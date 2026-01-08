@@ -7,80 +7,47 @@
   <title>Drones: The Next Frontier of Smart Business | Vaayu Robotics</title>
 
   <!-- SEO -->
-  <meta name="description" content="Explore how Drone-as-a-Service (DaaS) and AI-powered drones by Vaayu Robotics are transforming modern businesses in India.">
-  <meta name="keywords" content="Drone as a Service, AI drones India, Vaayu Robotics, industrial drone inspection">
+  <meta name="description" content="Explore how Vaayu Robotics leverages Drone-as-a-Service (DaaS) and AI-enabled autonomous drones to revolutionize infrastructure, agriculture and enterprise operations in India.">
+  <meta name="keywords" content="drone as a service, autonomous drones India, AI drone solutions, industrial drone inspection, Vaayu Robotics">
+
+  <link rel="canonical" href="https://vaayuu-roboticss.vercel.app/blogs/drone-smart-business.html">
 
   <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <!-- 🔥 MAIN SITE CSS -->
+  <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <!-- ================= PAGE CSS (MATCHING LAYOUT) ================= -->
+  <!-- PAGE ONLY CSS (CONTENT LAYOUT ONLY) -->
   <style>
-    *{box-sizing:border-box;margin:0;padding:0}
-
     body{
-      font-family:"Segoe UI",system-ui,-apple-system,sans-serif;
       background:#f6f8fb;
-      color:#333;
-      padding-top:80px; /* fixed header */
     }
 
-    /* ===== HEADER ===== */
-    .site-header{
-      position:fixed;
-      top:0;
-      width:100%;
-      background:#fff;
-      z-index:1000;
-      box-shadow:0 2px 10px rgba(0,0,0,.08);
-    }
-    .header-inner{
-      max-width:1200px;
-      margin:auto;
-      padding:14px 20px;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-    }
-    .logo img{height:38px}
-    .main-nav a{
-      margin:0 12px;
-      text-decoration:none;
-      color:#222;
-      font-weight:500;
-    }
-    .nav-contact-btn{
-      background:#ffd35a;
-      padding:8px 16px;
-      border-radius:6px;
-      font-weight:600;
-    }
-
-    /* ===== HERO SECTION (SAME AS BEFORE) ===== */
     .blog-hero{
-      min-height:75vh;
-      background:
-        linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
-        url("../assets/drone-business.jpg") center/cover no-repeat;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      text-align:center;
-      padding:60px 20px;
-      color:#fff;
-    }
+  min-height:75vh;
+  background:
+    linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+    url("../assets/drone-business.jpg") center/cover no-repeat;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:120px 20px 60px;
+  color:#fff;
+  border-radius:16px;
+}
+
     .blog-hero h1{
-      max-width:900px;
+      max-width:960px;
       font-size:2.8rem;
       line-height:1.25;
-      font-weight:700;
     }
     .blog-hero-meta{
-      margin-top:18px;
+      margin-top:15px;
       font-size:.95rem;
       opacity:.9;
     }
 
-    /* ===== CONTENT CARD ===== */
     .blog-card{
       max-width:900px;
       margin:-90px auto 90px;
@@ -93,7 +60,7 @@
     .back-btn{
       display:inline-block;
       margin-bottom:30px;
-      color:#d99a00;
+      color:#f5b400;
       font-weight:600;
       text-decoration:none;
     }
@@ -112,6 +79,7 @@
       margin:14px 0;
       font-size:1.05rem;
       line-height:1.85;
+      color:#333;
     }
     .blog-card ul{
       margin:18px 0 30px 22px;
@@ -121,127 +89,117 @@
       line-height:1.6;
     }
 
-    /* ===== FOOTER ===== */
-    .site-footer{
-      background:#0f172a;
-      color:#fff;
-      padding:60px 20px 20px;
-    }
-    .footer-grid{
-      max-width:1200px;
-      margin:auto;
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-      gap:30px;
-    }
-    .footer-links{list-style:none;padding:0}
-    .footer-links li{margin-bottom:8px}
-    .footer-links a{color:#cbd5e1;text-decoration:none}
-    .social-links a{margin-right:10px;color:#fff}
-    .site-copy{
-      text-align:center;
-      margin-top:30px;
-      font-size:.85rem;
-      color:#cbd5e1;
-    }
-
-    /* ===== RESPONSIVE ===== */
     @media(max-width:768px){
-      body{padding-top:70px}
       .blog-hero h1{font-size:2rem}
-      .blog-card{padding:35px 25px;margin:-70px 15px 70px}
+      .blog-card{
+        padding:35px 25px;
+        margin:-70px 15px 70px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-<!-- ===== HEADER ===== -->
+<!-- ================= HEADER (SAME AS MAIN SITE) ================= -->
 <header class="site-header">
-  <div class="header-inner">
+  <div class="container header-inner">
     <a class="logo" href="../index.html">
       <img src="../assets/logo.png" alt="Vaayu Robotics Logo">
     </a>
-    <nav class="main-nav">
+
+    <nav class="main-nav" aria-label="Main Navigation">
+      <button id="closeMenu" class="mobile-close">✕</button>
+
       <a href="../index.html">Home</a>
       <a href="../seva.html">Services</a>
       <a href="../blog.html" class="active">Blog</a>
+
+      <div class="nav-dropdown">
+        <button class="dropbtn">Company ▾</button>
+        <div class="dropdown-menu">
+          <a href="../company.html">Company Overview</a>
+          <a href="../about.html">About Us</a>
+          <a href="../faq.html">FAQ</a>
+          <a href="../careers.html">Careers & Internships</a>
+        </div>
+      </div>
+
       <a href="../contact.html" class="nav-contact-btn">Contact Us</a>
     </nav>
+
+    <button class="mobile-toggle">☰</button>
   </div>
 </header>
 
-<!-- ===== HERO ===== -->
+<!-- ================= HERO ================= -->
 <section class="blog-hero">
   <div>
-    <h1>Drones: The Next Frontier of Smart Business</h1>
+    <h1>Drones: The Next Frontier of Smart Business — How Vaayu Robotics is Powering the Change</h1>
     <div class="blog-hero-meta">
       📅 January 2025 • By <strong>Vaayu Robotics</strong>
     </div>
   </div>
 </section>
 
-<!-- ===== CONTENT ===== -->
+<!-- ================= CONTENT (AS-IT-IS) ================= -->
 <main class="blog-card">
 
-  <a href="../blog.html" class="back-btn">← Back to Blog</a>
+<a href="../blog.html" class="back-btn">← Back to Blog</a>
 
-  <h2>Introduction: The Sky Is the New Workspace</h2>
-  <p>
-    From inspecting power lines to mapping farmland, drones are reshaping how modern businesses operate.
-    What once took hours of manual effort and high risk can now be achieved within minutes — accurately,
-    safely, and efficiently.
-  </p>
+<h2>Introduction: The Sky Is the New Workspace</h2>
+<p>From inspecting power lines to mapping farmland, drones are reshaping how modern businesses operate. What once took hours of manual effort and high risk can now be achieved within minutes — accurately, safely, and efficiently.</p>
 
-  <p>
-    At Vaayu Robotics, this transformation is known as <strong>Drone as a Solution</strong>,
-    a data-driven approach that converts aerial intelligence into actionable business insights.
-  </p>
+<p>At Vaayu Robotics, we call this transformation “Drone as a Solution” — a data-driven approach that turns aerial intelligence into actionable business insights.</p>
 
-  <h2>Why Businesses Are Turning to Drone-Powered Solutions</h2>
+<h2>Why Businesses Are Turning to Drone-Powered Solutions</h2>
 
-  <h3>1. Data Is the New Oil — and Drones Are the Wells</h3>
-  <p>
-    Drones capture real-time, high-resolution visuals, thermal images, and 3D models
-    that traditional surveys cannot match, enabling faster and smarter decision-making.
-  </p>
+<h3>1. Data Is the New Oil — and Drones Are the Wells</h3>
+<p>Every decision today depends on the quality and speed of data. Drones collect real-time, high-resolution visuals, thermal images, and 3D models that traditional ground surveys can’t match.</p>
 
-  <h3>2. Reducing Risks, Not Just Costs</h3>
-  <p>
-    Drone-based inspections eliminate human exposure in hazardous environments such as
-    solar plants and large infrastructure sites.
-  </p>
+<p>Imagine getting a full construction site update or a crop health report in under 30 minutes — that’s the power of aerial analytics.</p>
 
-  <h3>3. Faster Decisions, Smarter Businesses</h3>
-  <p>
-    With real-time dashboards and AI insights, potential issues are detected early,
-    preventing costly failures.
-  </p>
+<h3>2. Reducing Risks, Not Just Costs</h3>
+<p>Industrial inspections, tall towers, or large solar farms come with safety hazards. Drone-based inspections eliminate human risk, ensuring compliance with zero downtime.</p>
 
-  <h2>Drone as a Service (DaaS): The Future</h2>
-  <ul>
-    <li>Automated mission planning</li>
-    <li>AI-powered data analytics</li>
-    <li>Secure cloud dashboards</li>
-    <li>Compliance and pilot training</li>
-  </ul>
+<p>For example, Vaayu’s drone solutions helped a renewable-energy client reduce inspection time by 70% and improve efficiency with AI-powered hotspot detection.</p>
 
-  <h2>Industries Transformed</h2>
-  <ul>
-    <li><strong>Infrastructure & Energy</strong></li>
-    <li><strong>Agriculture & Environment</strong></li>
-    <li><strong>Construction & Real Estate</strong></li>
-    <li><strong>Security & Surveillance</strong></li>
-  </ul>
+<h3>3. Faster Decisions, Smarter Businesses</h3>
+<p>With our real-time dashboards, you get more than just footage — you get insights.</p>
+
+<p>Whether it’s identifying irrigation issues in agriculture or detecting cracks in infrastructure, our system highlights what matters before it becomes a problem.</p>
+
+<h2>Drone as a Service (DaaS): The Future of On-Demand Aerial Intelligence</h2>
+<p>Instead of buying, maintaining, and managing drone fleets, companies can now access Drones-as-a-Service (DaaS) — a scalable, cost-efficient model.</p>
+
+<p>At Vaayu Robotics, our DaaS offering includes:</p>
+
+<ul>
+  <li>Mission planning and flight execution</li>
+  <li>Real-time data collection and analysis</li>
+  <li>Secure cloud dashboards for reports and insights</li>
+  <li>Pilot training and compliance support</li>
+</ul>
+
+<p>It’s like having an aerial analytics team — without the overhead.</p>
+
+<h2>Industries Transformed by Drone Solutions</h2>
+<ul>
+  <li><strong>Infrastructure & Energy</strong> – Automated inspection, thermal mapping, predictive maintenance</li>
+  <li><strong>Agriculture & Environment</strong> – Crop health monitoring, yield forecasting, sustainable resource use</li>
+  <li><strong>Construction & Real-Estate</strong> – Site progress tracking, marketing visuals, safety compliance</li>
+  <li><strong>Security & Surveillance</strong> – Border patrol, crowd management, disaster response</li>
+</ul>
 
 </main>
 
-<!-- ===== FOOTER ===== -->
+
+<!-- FOOTER -->
 <footer class="site-footer">
-  <div class="footer-grid">
+  <div class="container footer-grid">
     <div>
-      <h4>Vaayu Robotics</h4>
-      <p>Your trusted partner for advanced UAV consulting and drone training across India.</p>
+      <h4>Vaayuu Robotics</h4>
+      <p>Providing cutting-edge drone solutions with precision and reliability across India.</p>
     </div>
     <div>
       <h5>Quick Links</h5>
@@ -255,20 +213,30 @@
     </div>
     <div>
       <h5>Contact Us</h5>
-      <p>
-        Email: info@vaayurobotics.in<br>
-        Phone: +91 81208 44716<br>
-        Location: MP Nagar, Bhopal, MP, India
-      </p>
+      <p>Email: info@vaayurobotics.in<br>
+         Phone: +91 81208 44716<br>
+         Location: MP Nagar, Bhopal, MP</p>
       <div class="social-links">
-        <a href="https://www.facebook.com/VAAYUROBOTICS/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://www.instagram.com/vaayurobotics/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/company/vaayu-robotics/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.facebook.com/VAAYUROBOTICS/" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/vaayurobotics/?hl=en" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/vaayu-robotics/" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
       </div>
     </div>
   </div>
-  <div class="site-copy">© 2025 Vaayu Robotics. All Rights Reserved.</div>
+  <div class="site-copy">© 2025 Vaayuu Robotics. All Rights Reserved.</div>
 </footer>
+
+<!-- ================= JS (SAME AS MAIN SITE) ================= -->
+<script>
+(function(){
+  const toggle=document.querySelector(".mobile-toggle");
+  const nav=document.querySelector(".main-nav");
+  const closeBtn=document.getElementById("closeMenu");
+  if(!toggle||!nav||!closeBtn)return;
+  toggle.addEventListener("click",()=>nav.classList.add("open"));
+  closeBtn.addEventListener("click",()=>nav.classList.remove("open"));
+})();
+</script>
 
 </body>
 </html>
