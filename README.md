@@ -228,5 +228,5 @@ For collaborations or project inquiries:
 
 <div align="center">
   <h3>🌬️ Vaayu Robotics — Shaping Tomorrow From the Sky 🚁</h3>
-  <strong>© 2025 Vaayu Robotics. All Rights Reserved.</strong>
+  <strong>© 2026 Vaayu Robotics. All Rights Reserved.</strong>
 </div>
