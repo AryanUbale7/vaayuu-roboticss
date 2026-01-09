@@ -37,7 +37,7 @@ Deliver high-accuracy aerial insights that empower industries to make smarter an
 ---
 
 ## 🌐 Live Website  
-🔗 **https://vaayu-robotics.netlify.app**
+🔗 **https://vaayuu-roboticss.vercel.app/**
 
 ---
 
